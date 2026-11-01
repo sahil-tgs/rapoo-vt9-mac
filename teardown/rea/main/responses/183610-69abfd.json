@@ -1,0 +1,153 @@
+{
+ "evidence_id": "ev_39221f36162ca361c6715f1067ed4bf1dd8a64e2c34a364a230f4fa4ecda68f8",
+ "subject": {
+  "name": "RapooGameDev.exe",
+  "digest": {
+   "sha256": "ff11081104c9e6dd51a10fef49f4f343cb00ac58b5bb29400531c60827acba5b"
+  },
+  "format": "pe",
+  "architecture": "x86",
+  "local_path": "/Users/sahil-m-TC/personal-projects/rapoo-vt9-mac/teardown/bin/app3/INSTDIR/RapooGameDev.exe"
+ },
+ "provider": {
+  "id": "rea-workflow",
+  "name": "REA composed investigation workflow",
+  "version": "1"
+ },
+ "analysis_profile": {
+  "provider": {
+   "id": "rea-workflow",
+   "name": "REA composed investigation workflow",
+   "version": "1"
+  },
+  "parameters": {
+   "upstream_analysis_profile": {
+    "provider": {
+     "id": "ghidra",
+     "name": "Ghidra",
+     "version": "12.1.4"
+    },
+    "parameters": {
+     "target_kind": "executable",
+     "target_format": "pe",
+     "executable_role": "application",
+     "managed": false,
+     "native_aot_metadata": {
+      "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+      "source_bytes": 134217728,
+      "work_units": 67108864,
+      "working_memory_bytes": 67108864,
+      "report_bytes": 4194304
+     },
+     "architecture": "x86",
+     "available_architectures": [
+      "x86"
+     ],
+     "import_mode": "ephemeral-source-immutable",
+     "annotation_policy": "atomic-function-entry-metadata-v1",
+     "load_image_observations": "source-mappings-entry-context-v2",
+     "function_body_evidence": "complete-inclusive-ranges-v1",
+     "function_references": "complete-body-and-entry-reference-manager-v2",
+     "string_inventory_evidence": "defined-data-coverage-v1",
+     "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+     "instruction_flow_evidence": "decoded-return-pcode-v1",
+     "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+     "no_return_repair": "returning-imports-decoded-return-v2",
+     "process_launch": "inspected-jvm-launch-support-v1",
+     "jump_table_evidence": "typed-case-default-blocks-v1",
+     "decompiler_jump_loads": true,
+     "loader": "auto-from-header",
+     "language_id": "auto-from-header",
+     "compiler_spec_id": "auto-default",
+     "analyzer_preset": "ghidra-default"
+    },
+    "digest": "4f6212bfe31448a7b96743a449e91c35890105cedd34e1d9951e9467d284e0a5"
+   },
+   "workflow_revision": 2
+  },
+  "digest": "4ac93523d89696a48def07d531bb54c8331c5fd9eb058f5a45b9444a3d4389d6"
+ },
+ "predicate_type": "rea.analysis",
+ "operation": "batch_decompile",
+ "parameters": {
+  "addresses": [
+   "0xfc6900",
+   "0xfc69a0",
+   "0xfc60f0",
+   "0xfc6240"
+  ]
+ },
+ "raw_result": null,
+ "normalized_result": {
+  "items": [
+   {
+    "address": "0xfc6900",
+    "procedure": {
+     "status": "resolved",
+     "address": "0xfc6900",
+     "name": "FUN_00fc6900"
+    },
+    "status": "ok",
+    "pseudocode": "\nbool FUN_00fc6900(undefined1 *param_1,void *param_2,size_t param_3)\n\n{\n  int iVar1;\n  int in_ECX;\n  bool bVar2;\n  \n  if (*(char *)(in_ECX + 0x1068) == '\\0') {\n    bVar2 = false;\n  }\n  else {\n    memset((void *)(in_ECX + 0x68),0,(uint)*(ushort *)(in_ECX + 0x1e));\n    *(undefined1 *)(in_ECX + 0x68) = *param_1;\n    memcpy((void *)(in_ECX + 0x69),param_2,param_3);\n    iVar1 = FUN_00fbc970(in_ECX + 0x60,in_ECX + 0x68,*(undefined2 *)(in_ECX + 0x1e));\n    bVar2 = iVar1 != 0;\n  }\n  return bVar2;\n}\n\n"
+   },
+   {
+    "address": "0xfc69a0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0xfc69a0",
+     "name": "FUN_00fc69a0"
+    },
+    "status": "ok",
+    "pseudocode": "\nbool FUN_00fc69a0(undefined1 *param_1,void *param_2)\n\n{\n  int iVar1;\n  int in_ECX;\n  \n  memset((void *)(in_ECX + 0x868),0,(uint)*(ushort *)(in_ECX + 0x1c));\n  *(undefined1 *)(in_ECX + 0x868) = *param_1;\n  iVar1 = FUN_00fbca40(in_ECX + 100,in_ECX + 0x868,*(undefined2 *)(in_ECX + 0x1c));\n  if (iVar1 != 0) {\n    memcpy(param_2,(void *)(in_ECX + 0x868),(uint)*(ushort *)(in_ECX + 0x1c));\n  }\n  return iVar1 != 0;\n}\n\n"
+   },
+   {
+    "address": "0xfc60f0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0xfc60f0",
+     "name": "FUN_00fc60f0"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined1 FUN_00fc60f0(void)\n\n{\n  QMessageLogger *this;\n  undefined4 *puVar1;\n  int in_ECX;\n  int iVar2;\n  undefined1 **ppuVar3;\n  undefined1 *apuStackY_ac [4];\n  undefined1 *puStackY_9c;\n  char *pcStackY_94;\n  undefined1 auStackY_90 [16];\n  undefined4 uStackY_80;\n  QDebug *pQVar4;\n  QMessageLogger local_3c [20];\n  undefined1 *local_28;\n  QDebug local_24 [4];\n  QDebug *local_20;\n  QDebug *local_1c;\n  undefined1 local_14;\n  undefined1 local_13;\n  undefined1 local_12;\n  char local_11;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  puStack_c = &LAB_0120edb5;\n  local_10 = ExceptionList;\n  ExceptionList = &local_10;\n  local_8 = 0;\n  if (*(char *)(in_ECX + 0x1068) == '\\0') {\n    local_11 = '\\0';\n    local_28 = auStackY_90;\n    pcStackY_94 = &local_11;\n    puStackY_9c = &stack0x00000014;\n    apuStackY_ac[3] = &stack0x00000010;\n    apuStackY_ac[2] = &stack0x0000000c;\n    apuStackY_ac[1] = &stack0x00000008;\n    apuStackY_ac[0] = &stack0x00000004;\n    puVar1 = (undefined4 *)FUN_00fc7840();\n    ppuVar3 = apuStackY_ac;\n    for (iVar2 = 7; iVar2 != 0; iVar2 = iVar2 + -1) {\n      *ppuVar3 = (undefined1 *)*puVar1;\n      puVar1 = puVar1 + 1;\n      ppuVar3 = ppuVar3 + 1;\n    }\n    FID_conflict_function<void___cdecl(Concurrency::message<unsigned_int>*)><<lambda_585d1183dd7288406f8b545e733d6ea7>,void>\n              ();\n    pcStackY_94 = (char *)0xfc61d9;\n    FUN_00fbbf20();\n    if (local_11 == '\\0') {\n      local_14 = 0;\n      local_8 = 0xffffffff;\n      QString::~QString((QString *)&stack0x00000014);\n      local_12 = local_14;\n    }\n    else {\n      FUN_00fb86b0();\n      local_13 = FUN_00fc6390();\n      local_8 = 0xffffffff;\n      QString::~QString((QString *)&stack0x00000014);\n      local_12 = local_13;\n    }\n  }\n  else {\n    pQVar4 = local_24;\n    uStackY_80 = 0xfc6148;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_3c,(char *)0x0,0,(char *)0x0);\n    local_20 = (QDebug *)QMessageLogger::debug(this);\n    local_8._0_1_ = 1;\n    local_1c = local_20;\n    QDebug::operator<<(local_20,(char *)pQVar4);\n    local_8 = (uint)local_8._1_3_ << 8;\n    QDebug::~QDebug(local_24);\n    local_12 = 0;\n    local_8 = 0xffffffff;\n    QString::~QString((QString *)&stack0x00000014);\n  }\n  ExceptionList = local_10;\n  return local_12;\n}\n\n"
+   },
+   {
+    "address": "0xfc6240",
+    "procedure": {
+     "status": "resolved",
+     "address": "0xfc6240",
+     "name": "FUN_00fc6240"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined1 FUN_00fc6240(void)\n\n{\n  QMessageLogger *this;\n  undefined4 *puVar1;\n  int in_ECX;\n  int iVar2;\n  undefined1 **ppuVar3;\n  undefined1 *apuStackY_b4 [4];\n  undefined1 *puStackY_a4;\n  undefined1 *puStackY_a0;\n  char *pcStackY_98;\n  undefined1 auStackY_94 [16];\n  undefined4 uStackY_84;\n  QDebug *pQVar4;\n  QMessageLogger local_3c [20];\n  undefined1 *local_28;\n  QDebug local_24 [4];\n  QDebug *local_20;\n  QDebug *local_1c;\n  undefined1 local_14;\n  undefined1 local_13;\n  undefined1 local_12;\n  char local_11;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  puStack_c = &LAB_0120ede2;\n  local_10 = ExceptionList;\n  ExceptionList = &local_10;\n  local_8 = 0;\n  if (*(char *)(in_ECX + 0x1068) == '\\0') {\n    local_11 = '\\0';\n    local_28 = auStackY_94;\n    pcStackY_98 = &local_11;\n    puStackY_a0 = &stack0x00000014;\n    puStackY_a4 = &stack0x00000018;\n    apuStackY_b4[3] = &stack0x00000010;\n    apuStackY_b4[2] = &stack0x0000000c;\n    apuStackY_b4[1] = &stack0x00000008;\n    apuStackY_b4[0] = &stack0x00000004;\n    puVar1 = (undefined4 *)FUN_00fc77e0();\n    ppuVar3 = apuStackY_b4;\n    for (iVar2 = 8; iVar2 != 0; iVar2 = iVar2 + -1) {\n      *ppuVar3 = (undefined1 *)*puVar1;\n      puVar1 = puVar1 + 1;\n      ppuVar3 = ppuVar3 + 1;\n    }\n    FID_conflict_function<void___cdecl(Concurrency::message<unsigned_int>*)><<lambda_585d1183dd7288406f8b545e733d6ea7>,void>\n              ();\n    pcStackY_98 = (char *)0xfc632d;\n    FUN_00fbbf20();\n    if (local_11 == '\\0') {\n      local_14 = 0;\n      local_8 = 0xffffffff;\n      QString::~QString((QString *)&stack0x00000014);\n      local_12 = local_14;\n    }\n    else {\n      FUN_00fb86b0();\n      local_13 = FUN_00fc6390();\n      local_8 = 0xffffffff;\n      QString::~QString((QString *)&stack0x00000014);\n      local_12 = local_13;\n    }\n  }\n  else {\n    pQVar4 = local_24;\n    uStackY_84 = 0xfc6298;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_3c,(char *)0x0,0,(char *)0x0);\n    local_20 = (QDebug *)QMessageLogger::debug(this);\n    local_8._0_1_ = 1;\n    local_1c = local_20;\n    QDebug::operator<<(local_20,(char *)pQVar4);\n    local_8 = (uint)local_8._1_3_ << 8;\n    QDebug::~QDebug(local_24);\n    local_12 = 0;\n    local_8 = 0xffffffff;\n    QString::~QString((QString *)&stack0x00000014);\n  }\n  ExceptionList = local_10;\n  return local_12;\n}\n\n"
+   }
+  ],
+  "total": 4,
+  "succeeded": 4,
+  "failed": 0
+ },
+ "confidence": "derived",
+ "authority": "shipped-artifact",
+ "environment": null,
+ "limitations": [
+  "Derived by an REA composed workflow."
+ ],
+ "locations": [
+  {
+   "kind": "address",
+   "address": "0xfc6900"
+  },
+  {
+   "kind": "address",
+   "address": "0xfc69a0"
+  },
+  {
+   "kind": "address",
+   "address": "0xfc60f0"
+  },
+  {
+   "kind": "address",
+   "address": "0xfc6240"
+  }
+ ],
+ "evidence_links": []
+}

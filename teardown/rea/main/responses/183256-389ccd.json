@@ -1,0 +1,101 @@
+{
+ "evidence_id": "ev_777a8e0e1a56803de197a2be5017713933d3db6f55eb055a715f4862094c0f54",
+ "subject": {
+  "name": "RapooGameDev.exe",
+  "digest": {
+   "sha256": "ff11081104c9e6dd51a10fef49f4f343cb00ac58b5bb29400531c60827acba5b"
+  },
+  "format": "pe",
+  "architecture": "x86",
+  "local_path": "/Users/sahil-m-TC/personal-projects/rapoo-vt9-mac/teardown/bin/app3/INSTDIR/RapooGameDev.exe"
+ },
+ "provider": {
+  "id": "rea-workflow",
+  "name": "REA composed investigation workflow",
+  "version": "1"
+ },
+ "analysis_profile": {
+  "provider": {
+   "id": "rea-workflow",
+   "name": "REA composed investigation workflow",
+   "version": "1"
+  },
+  "parameters": {
+   "upstream_analysis_profile": {
+    "provider": {
+     "id": "ghidra",
+     "name": "Ghidra",
+     "version": "12.1.4"
+    },
+    "parameters": {
+     "target_kind": "executable",
+     "target_format": "pe",
+     "executable_role": "application",
+     "managed": false,
+     "native_aot_metadata": {
+      "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+      "source_bytes": 134217728,
+      "work_units": 67108864,
+      "working_memory_bytes": 67108864,
+      "report_bytes": 4194304
+     },
+     "architecture": "x86",
+     "available_architectures": [
+      "x86"
+     ],
+     "import_mode": "ephemeral-source-immutable",
+     "annotation_policy": "atomic-function-entry-metadata-v1",
+     "load_image_observations": "source-mappings-entry-context-v2",
+     "function_body_evidence": "complete-inclusive-ranges-v1",
+     "function_references": "complete-body-and-entry-reference-manager-v2",
+     "string_inventory_evidence": "defined-data-coverage-v1",
+     "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+     "instruction_flow_evidence": "decoded-return-pcode-v1",
+     "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+     "no_return_repair": "returning-imports-decoded-return-v2",
+     "process_launch": "inspected-jvm-launch-support-v1",
+     "jump_table_evidence": "typed-case-default-blocks-v1",
+     "decompiler_jump_loads": true,
+     "loader": "auto-from-header",
+     "language_id": "auto-from-header",
+     "compiler_spec_id": "auto-default",
+     "analyzer_preset": "ghidra-default"
+    },
+    "digest": "4f6212bfe31448a7b96743a449e91c35890105cedd34e1d9951e9467d284e0a5"
+   }
+  },
+  "digest": "14d6c4d91833235021e3c59b494d4319c6e50830362075364ae31d5378eb1949"
+ },
+ "predicate_type": "rea.analysis",
+ "operation": "find_xrefs_to_name",
+ "parameters": {
+  "name": "KERNEL32.DLL::ReadFile"
+ },
+ "raw_result": null,
+ "normalized_result": {
+  "status": "resolved",
+  "name": "KERNEL32.DLL::ReadFile",
+  "address": "EXTERNAL:0x472",
+  "xrefs": [
+   "0xfbcc09",
+   "0xfd3ae0",
+   "0xfd4364",
+   "0x11c8611",
+   "0x11c8bb6",
+   "0x11c97e1",
+   "0x11c9dc0",
+   "0x11ca368",
+   "0x11ca90b",
+   "0x11cb57d",
+   "0x1257108"
+  ]
+ },
+ "confidence": "derived",
+ "authority": "shipped-artifact",
+ "environment": null,
+ "limitations": [
+  "Derived by an REA composed workflow."
+ ],
+ "locations": [],
+ "evidence_links": []
+}

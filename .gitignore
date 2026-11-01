@@ -1,0 +1,4 @@
+.DS_Store
+# Vendor binaries and clones of other repos: kept in the USB backup, not in git
+teardown/bin/
+teardown/refs/

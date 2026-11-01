@@ -1,0 +1,1083 @@
+{
+ "evidence_id": "ev_f752e06eaad2499457b40d13f230458c351e0e5b4ff233e96b779f25a30d1a11",
+ "subject": {
+  "name": "RapooGameDev.exe",
+  "digest": {
+   "sha256": "ff11081104c9e6dd51a10fef49f4f343cb00ac58b5bb29400531c60827acba5b"
+  },
+  "format": "pe",
+  "architecture": "x86",
+  "local_path": "/Users/sahil-m-TC/personal-projects/rapoo-vt9-mac/teardown/bin/app3/INSTDIR/RapooGameDev.exe"
+ },
+ "provider": {
+  "id": "rea-workflow",
+  "name": "REA composed investigation workflow",
+  "version": "1"
+ },
+ "analysis_profile": {
+  "provider": {
+   "id": "rea-workflow",
+   "name": "REA composed investigation workflow",
+   "version": "1"
+  },
+  "parameters": {
+   "upstream_analysis_profile": {
+    "provider": {
+     "id": "ghidra",
+     "name": "Ghidra",
+     "version": "12.1.4"
+    },
+    "parameters": {
+     "target_kind": "executable",
+     "target_format": "pe",
+     "executable_role": "application",
+     "managed": false,
+     "native_aot_metadata": {
+      "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+      "source_bytes": 134217728,
+      "work_units": 67108864,
+      "working_memory_bytes": 67108864,
+      "report_bytes": 4194304
+     },
+     "architecture": "x86",
+     "available_architectures": [
+      "x86"
+     ],
+     "import_mode": "ephemeral-source-immutable",
+     "annotation_policy": "atomic-function-entry-metadata-v1",
+     "load_image_observations": "source-mappings-entry-context-v2",
+     "function_body_evidence": "complete-inclusive-ranges-v1",
+     "function_references": "complete-body-and-entry-reference-manager-v2",
+     "string_inventory_evidence": "defined-data-coverage-v1",
+     "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+     "instruction_flow_evidence": "decoded-return-pcode-v1",
+     "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+     "no_return_repair": "returning-imports-decoded-return-v2",
+     "process_launch": "inspected-jvm-launch-support-v1",
+     "jump_table_evidence": "typed-case-default-blocks-v1",
+     "decompiler_jump_loads": true,
+     "loader": "auto-from-header",
+     "language_id": "auto-from-header",
+     "compiler_spec_id": "auto-default",
+     "analyzer_preset": "ghidra-default"
+    },
+    "digest": "4f6212bfe31448a7b96743a449e91c35890105cedd34e1d9951e9467d284e0a5"
+   },
+   "workflow_revision": 2
+  },
+  "digest": "4ac93523d89696a48def07d531bb54c8331c5fd9eb058f5a45b9444a3d4389d6"
+ },
+ "predicate_type": "rea.analysis",
+ "operation": "batch_decompile",
+ "parameters": {
+  "addresses": [
+   "0x112c980",
+   "0x1174fb0",
+   "0x1175280",
+   "0x11752a0",
+   "0x1175490",
+   "0x11755b0",
+   "0x1175850",
+   "0x1175960",
+   "0x1175d40",
+   "0x1175e50",
+   "0x1175fd0",
+   "0x11760e0",
+   "0x1129d80",
+   "0x1176e20",
+   "0x1177410",
+   "0x1176f40",
+   "0x1177060",
+   "0x11772f0",
+   "0x1177620",
+   "0x1177730",
+   "0x1124860",
+   "0x1177840",
+   "0x1124940",
+   "0x112c090",
+   "0x1177850",
+   "0x1177d10",
+   "0x1177fe0",
+   "0x1178220",
+   "0x11786e0",
+   "0x1178b40",
+   "0x1178e30",
+   "0x1179120",
+   "0x11793d0",
+   "0x117bb00",
+   "0x112a740",
+   "0x117a8f0",
+   "0x117a8e0",
+   "0x117b560",
+   "0x117b870",
+   "0x117bd30",
+   "0x117c070",
+   "0x117f860",
+   "0x117c2b0",
+   "0x117c520",
+   "0x117c7f0",
+   "0x11246c0",
+   "0x1124a20",
+   "0x117cda0",
+   "0x117d1d0",
+   "0x112b580",
+   "0x117da20",
+   "0x117db60",
+   "0x117c8c0",
+   "0x112c2a0",
+   "0x117e4e0",
+   "0x117df00",
+   "0x117fde0",
+   "0x117fee0",
+   "0x1182690",
+   "0x11828d0",
+   "0x1182a70",
+   "0x1182b30",
+   "0x112c4f0",
+   "0x112c6d0",
+   "0x112c7e0",
+   "0x112c890"
+  ]
+ },
+ "raw_result": null,
+ "normalized_result": {
+  "items": [
+   {
+    "address": "0x112c980",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112c980",
+     "name": "FUN_0112c980"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0112c980(uint param_1)\n\n{\n  undefined4 in_ECX;\n  \n  FUN_010d7bd0();\n  if ((param_1 & 1) != 0) {\n    FUN_01209c9b(in_ECX,0x678);\n  }\n  return in_ECX;\n}\n\n"
+   },
+   {
+    "address": "0x1174fb0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1174fb0",
+     "name": "FUN_01174fb0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01174fb0(void)\n\n{\n  char cVar1;\n  undefined4 uVar2;\n  QMessageLogger *pQVar3;\n  QDebug *pQVar4;\n  undefined4 *puVar5;\n  int in_ECX;\n  undefined1 auStack_110 [28];\n  undefined4 uStack_f4;\n  QEventLoop *pQStack_f0;\n  int iStack_ec;\n  undefined1 auStack_e8 [16];\n  undefined4 uStack_d8;\n  undefined1 uVar6;\n  char *pcVar7;\n  QMessageLogger local_b4 [20];\n  QMessageLogger local_a0 [28];\n  undefined1 *local_84;\n  undefined1 *local_80;\n  undefined4 local_7c;\n  undefined1 *local_78;\n  undefined1 *local_74;\n  QEventLoop local_70 [8];\n  undefined1 *local_68;\n  int local_64;\n  QDebug local_60 [4];\n  QDebug *local_5c;\n  QDebug *local_58;\n  QDebug local_54 [4];\n  QDebug *local_50;\n  QDebug *local_4c;\n  int local_48;\n  undefined1 local_42;\n  undefined1 local_41;\n  int local_40;\n  undefined1 local_3c [40];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236d64;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_40 = in_ECX;\n  if (*(int *)(in_ECX + 0x1a8) != 0) {\n    QObject::deleteLater(*(QObject **)(in_ECX + 0x1a8));\n    *(undefined4 *)(local_40 + 0x1a8) = 0;\n  }\n  FUN_010f41d0();\n  uVar2 = FUN_00fbfd40();\n  *(undefined4 *)(local_40 + 0x1a8) = uVar2;\n  FUN_010f41d0();\n  uVar2 = FUN_00fbfda0();\n  *(undefined4 *)(local_40 + 0x628) = uVar2;\n  local_48 = 0;\n  while (((cVar1 = FUN_00fc5fe0(), cVar1 == '\\0' && (local_48 < 3)) &&\n         (*(char *)(local_40 + 9) == '\\0'))) {\n    Sleep(500);\n    pcVar7 = \"[ERROR] init fail retry\";\n    pQVar4 = local_54;\n    uStack_d8 = 0x11750b4;\n    pQVar3 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_a0,(char *)0x0,0,(char *)0x0);\n    local_50 = (QDebug *)QMessageLogger::debug(pQVar3);\n    local_8 = 0;\n    local_4c = local_50;\n    pQVar4 = QDebug::operator<<(local_50,(char *)pQVar4);\n    QDebug::operator<<(pQVar4,(int)pcVar7);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_54);\n    local_48 = local_48 + 1;\n  }\n  if (*(char *)(local_40 + 9) == '\\0') {\n    local_41 = local_48 < 3;\n    *(undefined1 *)(local_40 + 8) = local_41;\n    uVar6 = 8;\n    pQVar4 = local_60;\n    uStack_d8 = 0x1175140;\n    pQVar3 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_b4,(char *)0x0,0,(char *)0x0);\n    local_5c = (QDebug *)QMessageLogger::debug(pQVar3);\n    local_8 = 1;\n    local_58 = local_5c;\n    pQVar4 = QDebug::operator<<(local_5c,(char *)pQVar4);\n    QDebug::operator<<(pQVar4,(bool)uVar6);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_60);\n    QEventLoop::QEventLoop(local_70,(QObject *)0x0);\n    local_8 = 2;\n    if (*(char *)(local_40 + 8) != '\\0') {\n      local_64 = local_40;\n      local_68 = &LAB_010f3b7c;\n      local_74 = &stack0xffffff38;\n      uStack_d8 = 0x11751bd;\n      make_pair<>();\n      FID_conflict_function<void___cdecl(Concurrency::message<unsigned_int>*)><<lambda_585d1183dd7288406f8b545e733d6ea7>,void>\n                ();\n      local_8._0_1_ = 3;\n      local_78 = auStack_e8;\n      iStack_ec = local_40;\n      pQStack_f0 = local_70;\n      uStack_f4 = 0x11751e7;\n      puVar5 = (undefined4 *)FUN_00fc13f0();\n      iStack_ec = puVar5[1];\n      pQStack_f0 = (QEventLoop *)*puVar5;\n      uStack_f4 = 0x11751f5;\n      local_7c = FID_conflict_function<void___cdecl(Concurrency::message<unsigned_int>*)><<lambda_585d1183dd7288406f8b545e733d6ea7>,void>\n                           ();\n      local_8._0_1_ = 4;\n      local_80 = auStack_110;\n      function<>(local_3c);\n      local_8._0_1_ = 3;\n      FUN_00fd8c20();\n      local_84 = &stack0xffffff3c;\n      FUN_00fb8360();\n      QEventLoop::exec(local_70);\n      local_8 = CONCAT31(local_8._1_3_,2);\n      FUN_00fb87f0();\n    }\n    local_42 = *(undefined1 *)(local_40 + 8);\n    local_8 = 0xffffffff;\n    QEventLoop::~QEventLoop(local_70);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1175280",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1175280",
+     "name": "FUN_01175280"
+    },
+    "status": "ok",
+    "pseudocode": "\nint FUN_01175280(void)\n\n{\n  int in_ECX;\n  \n  return in_ECX + 0x1ac;\n}\n\n"
+   },
+   {
+    "address": "0x11752a0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11752a0",
+     "name": "FUN_011752a0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011752a0(void)\n\n{\n  uint uVar1;\n  bool *pbVar2;\n  int iVar3;\n  QString local_64 [4];\n  QString *local_60;\n  QString *local_5c;\n  QString local_58 [4];\n  QString *local_54;\n  QString *local_50;\n  undefined4 local_4c;\n  int *local_48;\n  void *local_44;\n  char local_40;\n  undefined1 local_3f;\n  undefined1 local_3e;\n  undefined1 local_3d;\n  uint local_3c;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236d9e;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar1;\n  local_44 = malloc(0x20);\n  if (local_44 != (void *)0x0) {\n    memset(local_44,0,0x20);\n    local_3d = 0;\n    local_3e = 0xa3;\n    FUN_011825d0(local_44,&local_3e,&local_3d,0);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_3f = 0xba;\n    local_4c = 0x20;\n    local_40 = (**(code **)(*local_48 + 0x150))(local_44,&local_38,&local_4c,&local_3f,uVar1);\n    free(local_44);\n    if (local_40 != '\\0') {\n      local_3c = 0;\n      if (local_38._2_1_ == 0) {\n        local_3c = local_38 >> 8 & 0xff;\n      }\n      else {\n        iVar3 = 10;\n        pbVar2 = (bool *)0x0;\n        local_54 = (QString *)QString::number((int)local_58,(uint)local_38._2_1_);\n        local_8 = 0;\n        local_50 = local_54;\n        iVar3 = QString::toInt(local_54,pbVar2,iVar3);\n        local_3c = iVar3 * 100;\n        local_8 = 0xffffffff;\n        QString::~QString(local_58);\n        iVar3 = 10;\n        pbVar2 = (bool *)0x0;\n        local_60 = (QString *)QString::number((int)local_64,local_38 >> 8 & 0xff);\n        local_8 = 1;\n        local_5c = local_60;\n        iVar3 = QString::toInt(local_60,pbVar2,iVar3);\n        local_3c = iVar3 + local_3c;\n        local_8 = 0xffffffff;\n        QString::~QString(local_64);\n      }\n      local_48[0x78] = local_3c;\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1175490",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1175490",
+     "name": "FUN_01175490"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01175490(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  void *local_38;\n  int *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  uint local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_38 = malloc(0x20);\n  if (local_38 != (void *)0x0) {\n    memset(local_38,0,0x20);\n    local_2e = 0x18;\n    local_2f = 0xa4;\n    FUN_011825d0(local_38,&local_2f,&local_2e,0x898);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_34 + 0x150))(local_38,&local_2c,&local_40,&local_30);\n    free(local_38);\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      *(undefined1 *)((int)local_34 + 0x49b) = (undefined1)local_28;\n      local_34[0x7c] = local_28 & 0xff;\n      local_3c = (uint)*(byte *)((int)local_34 + 0x49b);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11755b0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11755b0",
+     "name": "FUN_011755b0"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Type propagation algorithm not settling */\n\nvoid FUN_011755b0(void)\n\n{\n  uint uVar1;\n  int local_5c [3];\n  undefined1 local_50 [4];\n  void *local_4c;\n  int local_48;\n  char local_44;\n  undefined1 local_43;\n  undefined1 local_42;\n  undefined1 local_41;\n  short local_40;\n  int *local_3c;\n  byte local_38 [36];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236dcb;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_5c[2] = 0;\n  local_14 = uVar1;\n  local_4c = malloc(0x20);\n  memset(local_4c,0,0x20);\n  local_41 = 0x18;\n  local_42 = 0xa4;\n  FUN_011825d0(local_4c,&local_42,&local_41,0x888);\n  local_38[0] = 0;\n  local_38[1] = 0;\n  local_38[2] = 0;\n  local_38[3] = 0;\n  local_38[4] = 0;\n  local_38[5] = 0;\n  local_38[6] = 0;\n  local_38[7] = 0;\n  local_38[8] = 0;\n  local_38[9] = 0;\n  local_38[10] = 0;\n  local_38[0xb] = 0;\n  local_38[0xc] = 0;\n  local_38[0xd] = 0;\n  local_38[0xe] = 0;\n  local_38[0xf] = 0;\n  local_38[0x10] = 0;\n  local_38[0x11] = 0;\n  local_38[0x12] = 0;\n  local_38[0x13] = 0;\n  local_38[0x14] = 0;\n  local_38[0x15] = 0;\n  local_38[0x16] = 0;\n  local_38[0x17] = 0;\n  local_38[0x18] = 0;\n  local_38[0x19] = 0;\n  local_38[0x1a] = 0;\n  local_38[0x1b] = 0;\n  local_38[0x1c] = 0;\n  local_38[0x1d] = 0;\n  local_38[0x1e] = 0;\n  local_38[0x1f] = 0;\n  local_38[0x20] = 0;\n  local_43 = 0xba;\n  local_5c[1] = 0x20;\n  local_44 = (**(code **)(*local_3c + 0x150))(local_4c,local_38,local_5c + 1,&local_43,uVar1);\n  free(local_4c);\n  FUN_00fb8560();\n  local_8 = 0;\n  if (local_44 != '\\0') {\n    *(byte *)((int)local_3c + 0x48b) = local_38[4];\n    *(byte *)(local_3c + 0x123) = local_38[5];\n    *(byte *)((int)local_3c + 0x48d) = local_38[6];\n    *(byte *)((int)local_3c + 0x48e) = local_38[7];\n    *(byte *)((int)local_3c + 0x48f) = local_38[8];\n    *(byte *)(local_3c + 0x124) = local_38[9];\n    *(byte *)((int)local_3c + 0x491) = local_38[10];\n    *(byte *)((int)local_3c + 0x493) = local_38[0xb];\n    *(byte *)(local_3c + 0x125) = local_38[0xc];\n    *(byte *)((int)local_3c + 0x495) = local_38[0xd];\n    *(byte *)((int)local_3c + 0x496) = local_38[0xe];\n    *(byte *)((int)local_3c + 0x497) = local_38[0xf];\n    *(byte *)(local_3c + 0x126) = local_38[0x10];\n    local_40 = 0;\n    for (local_48 = 2; local_48 < 9; local_48 = local_48 + 1) {\n      local_40 = (ushort)local_38[local_48 * 2 + 1] << 8;\n      local_5c[0] = ((uint)local_38[local_48 * 2 + 1] * 0x100 + (uint)local_38[local_48 * 2]) * 0x32\n      ;\n      FUN_00ff6c50(local_5c);\n    }\n  }\n  FUN_00ff62d0(local_50);\n  local_5c[2] = local_5c[2] | 1;\n  local_8 = 0xffffffff;\n  FUN_00fb86c0();\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1175850",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1175850",
+     "name": "FUN_01175850"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01175850(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2e = 0x18;\n    local_2f = 0xa4;\n    FUN_011825d0(local_34,&local_2f,&local_2e,0x896);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_40,&local_30);\n    free(local_34);\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      *(char *)((int)local_38 + 0x499) = (char)local_28 + '\\x01';\n      local_3c = (uint)*(byte *)((int)local_38 + 0x499);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1175960",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1175960",
+     "name": "FUN_01175960"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01175960(void)\n\n{\n  undefined4 local_50;\n  undefined4 local_4c;\n  int local_48;\n  int local_44;\n  void *local_40;\n  undefined1 local_3b;\n  undefined1 local_3a;\n  undefined1 local_39;\n  int *local_38;\n  byte local_32;\n  char local_31;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_40 = malloc(0x20);\n  if (local_40 != (void *)0x0) {\n    memset(local_40,0,0x20);\n    local_39 = 0x18;\n    local_3a = 0xa4;\n    FUN_011825d0(local_40,&local_3a,&local_39,0x880);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_3b = 0xba;\n    local_50 = 0x20;\n    local_31 = (**(code **)(*local_38 + 0x150))(local_40,&local_2c,&local_50,&local_3b);\n    free(local_40);\n    if (local_31 != '\\0') {\n      *(byte *)((int)local_38 + 0x483) = (byte)local_28;\n      *(byte *)(local_38 + 0x121) = local_28._1_1_;\n      *(byte *)((int)local_38 + 0x485) = local_28._2_1_;\n    }\n    local_30 = 0;\n    if (local_31 != '\\0') {\n      if ((char)local_38[0x77] == '\\0') {\n        if ((local_38[0x78] < local_38[0x7a]) || ((char)local_38[0x6f] != -1)) {\n          local_32 = (byte)local_28;\n        }\n        else {\n          local_32 = local_28._2_1_;\n        }\n        local_48 = local_32 - 1;\n        switch(local_32) {\n        case 1:\n          local_30 = 3;\n          break;\n        case 2:\n          local_30 = 2;\n          break;\n        case 4:\n          local_30 = 1;\n          break;\n        case 8:\n          local_30 = 0;\n          break;\n        case 0x81:\n          local_30 = 6;\n          break;\n        case 0x82:\n          local_30 = 5;\n          break;\n        case 0x84:\n          local_30 = 4;\n          break;\n        case 0x88:\n          local_30 = 3;\n        }\n      }\n      else {\n        local_44 = local_28._1_1_ - 1;\n        switch(local_28._1_1_) {\n        case 1:\n          local_30 = 0;\n          break;\n        case 2:\n          local_30 = 6;\n          break;\n        case 4:\n          local_30 = 5;\n          break;\n        case 8:\n          local_30 = 4;\n          break;\n        case 0x81:\n          local_30 = 3;\n          break;\n        case 0x82:\n          local_30 = 2;\n          break;\n        case 0x84:\n          local_30 = 1;\n          break;\n        case 0x88:\n          local_30 = 0;\n        }\n      }\n    }\n    if (local_31 == '\\0') {\n      local_4c = 0xffffffff;\n    }\n    else {\n      local_4c = local_30;\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1175d40",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1175d40",
+     "name": "FUN_01175d40"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01175d40(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2e = 0x18;\n    local_2f = 0xa4;\n    FUN_011825d0(local_34,&local_2f,&local_2e,0x898);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_40,&local_30);\n    free(local_34);\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      *(undefined1 *)(local_38 + 0x127) = local_28._1_1_;\n      local_3c = (uint)*(byte *)(local_38 + 0x127);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1175e50",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1175e50",
+     "name": "FUN_01175e50"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Exceeded maximum restarts with more pending */\n\nvoid FUN_01175e50(void)\n\n{\n  undefined4 local_48;\n  uint local_44;\n  uint local_40;\n  void *local_3c;\n  undefined1 local_37;\n  undefined1 local_36;\n  undefined1 local_35;\n  int *local_34;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_3c = malloc(0x20);\n  if (local_3c != (void *)0x0) {\n    memset(local_3c,0,0x20);\n    local_35 = 0x18;\n    local_36 = 0xa4;\n    FUN_011825d0(local_3c,&local_36,&local_35,0x898);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_37 = 0xba;\n    local_48 = 0x20;\n    local_2d = (**(code **)(*local_34 + 0x150))(local_3c,&local_2c,&local_48,&local_37);\n    free(local_3c);\n    if (local_2d != '\\0') {\n      *(byte *)((int)local_34 + 0x49d) = local_28._2_1_;\n    }\n    local_40 = (uint)local_28._2_1_;\n    switch(local_40) {\n    case 0x1175f75:\n                    /* WARNING: This code block may not be properly labeled as switch case */\n      *(undefined1 *)((int)local_34 + 0x49d) = 10;\n    }\n    if (local_2d == '\\0') {\n      local_44 = 0xffffffff;\n    }\n    else {\n      local_44 = (uint)*(byte *)((int)local_34 + 0x49d);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1175fd0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1175fd0",
+     "name": "FUN_01175fd0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01175fd0(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2e = 0x18;\n    local_2f = 0xa4;\n    FUN_011825d0(local_34,&local_2f,&local_2e,0x898);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_40,&local_30);\n    free(local_34);\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      *(char *)((int)local_38 + 0x49e) = local_28._3_1_ + '\\x01';\n      local_3c = (uint)*(byte *)((int)local_38 + 0x49e);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11760e0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11760e0",
+     "name": "FUN_011760e0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011760e0(undefined4 param_1,int param_2)\n\n{\n  uint uVar1;\n  uint *puVar2;\n  undefined4 local_8c;\n  uint local_88;\n  QString local_84 [4];\n  QString local_80 [4];\n  QString local_7c [4];\n  QString local_78 [4];\n  QString local_74 [4];\n  QString local_70 [4];\n  QString local_6c [4];\n  QString local_68 [4];\n  QString local_64 [4];\n  QString local_60 [4];\n  QString local_5c [4];\n  QString local_58 [4];\n  int local_54;\n  int local_50;\n  undefined4 local_4c;\n  void *local_48;\n  char local_44;\n  undefined1 local_43;\n  undefined1 local_42;\n  undefined1 local_41;\n  undefined1 local_40 [4];\n  int *local_3c;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236e64;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_88 = 0;\n  local_14 = uVar1;\n  local_48 = malloc(0x20);\n  memset(local_48,0,0x20);\n  local_54 = param_2;\n  if (param_2 == 0) {\n    local_4c = 0x8b8;\n  }\n  else if (param_2 == 1) {\n    local_4c = 0x8b9;\n  }\n  else {\n    local_4c = 0x8b8;\n  }\n  local_41 = 0x18;\n  local_42 = 0xa4;\n  FUN_011825d0(local_48,&local_42,&local_41,local_4c);\n  local_38 = 0;\n  local_34 = 0;\n  local_30 = 0;\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  local_43 = 0xba;\n  local_8c = 0x20;\n  local_44 = (**(code **)(*local_3c + 0x150))(local_48,&local_38,&local_8c,&local_43,uVar1);\n  free(local_48);\n  FUN_00fc1060();\n  local_8 = 0;\n  if (local_44 != '\\0') {\n    local_50 = param_2;\n    if (param_2 == 0) {\n      *(undefined1 *)((int)local_3c + 0x4bd) = local_34._2_1_;\n      *(undefined1 *)(local_3c + 0x12f) = local_34._1_1_;\n      *(undefined1 *)((int)local_3c + 0x4bb) = (undefined1)local_34;\n      QString::QString(local_58,\"r\");\n      local_8._0_1_ = 1;\n      uVar1 = local_34 & 0xff;\n      puVar2 = (uint *)FUN_010cf220(local_58);\n      *puVar2 = uVar1;\n      local_8._0_1_ = 0;\n      QString::~QString(local_58);\n      QString::QString(local_5c,\"g\");\n      local_8._0_1_ = 2;\n      uVar1 = local_34 >> 8;\n      puVar2 = (uint *)FUN_010cf220(local_5c);\n      *puVar2 = uVar1 & 0xff;\n      local_8._0_1_ = 0;\n      QString::~QString(local_5c);\n      QString::QString(local_60,\"b\");\n      local_8._0_1_ = 3;\n      uVar1 = local_34 >> 0x10;\n      puVar2 = (uint *)FUN_010cf220(local_60);\n      *puVar2 = uVar1 & 0xff;\n      local_8 = (uint)local_8._1_3_ << 8;\n      QString::~QString(local_60);\n    }\n    else if (param_2 == 1) {\n      *(undefined1 *)((int)local_3c + 0x4c1) = local_34._2_1_;\n      *(undefined1 *)(local_3c + 0x130) = local_34._1_1_;\n      *(undefined1 *)((int)local_3c + 0x4bf) = (undefined1)local_34;\n      QString::QString(local_64,\"r\");\n      local_8._0_1_ = 4;\n      uVar1 = local_34 & 0xff;\n      puVar2 = (uint *)FUN_010cf220(local_64);\n      *puVar2 = uVar1;\n      local_8._0_1_ = 0;\n      QString::~QString(local_64);\n      QString::QString(local_68,\"g\");\n      local_8._0_1_ = 5;\n      uVar1 = local_34 >> 8;\n      puVar2 = (uint *)FUN_010cf220(local_68);\n      *puVar2 = uVar1 & 0xff;\n      local_8._0_1_ = 0;\n      QString::~QString(local_68);\n      QString::QString(local_6c,\"b\");\n      local_8._0_1_ = 6;\n      uVar1 = local_34 >> 0x10;\n      puVar2 = (uint *)FUN_010cf220(local_6c);\n      *puVar2 = uVar1 & 0xff;\n      local_8 = (uint)local_8._1_3_ << 8;\n      QString::~QString(local_6c);\n    }\n    else if (param_2 == 2) {\n      *(undefined1 *)((int)local_3c + 0x4c5) = local_34._2_1_;\n      *(undefined1 *)(local_3c + 0x131) = local_34._1_1_;\n      *(undefined1 *)((int)local_3c + 0x4c3) = (undefined1)local_34;\n      QString::QString(local_70,\"r\");\n      local_8._0_1_ = 7;\n      uVar1 = local_34 & 0xff;\n      puVar2 = (uint *)FUN_010cf220(local_70);\n      *puVar2 = uVar1;\n      local_8._0_1_ = 0;\n      QString::~QString(local_70);\n      QString::QString(local_74,\"g\");\n      local_8._0_1_ = 8;\n      uVar1 = local_34 >> 8;\n      puVar2 = (uint *)FUN_010cf220(local_74);\n      *puVar2 = uVar1 & 0xff;\n      local_8._0_1_ = 0;\n      QString::~QString(local_74);\n      QString::QString(local_78,\"b\");\n      local_8._0_1_ = 9;\n      uVar1 = local_34 >> 0x10;\n      puVar2 = (uint *)FUN_010cf220(local_78);\n      *puVar2 = uVar1 & 0xff;\n      local_8 = (uint)local_8._1_3_ << 8;\n      QString::~QString(local_78);\n    }\n    else {\n      *(undefined1 *)((int)local_3c + 0x4bd) = local_34._2_1_;\n      *(undefined1 *)(local_3c + 0x12f) = local_34._1_1_;\n      *(undefined1 *)((int)local_3c + 0x4bb) = (undefined1)local_34;\n      QString::QString(local_7c,\"r\");\n      local_8._0_1_ = 10;\n      uVar1 = local_34 & 0xff;\n      puVar2 = (uint *)FUN_010cf220(local_7c);\n      *puVar2 = uVar1;\n      local_8._0_1_ = 0;\n      QString::~QString(local_7c);\n      QString::QString(local_80,\"g\");\n      local_8._0_1_ = 0xb;\n      uVar1 = local_34 >> 8;\n      puVar2 = (uint *)FUN_010cf220(local_80);\n      *puVar2 = uVar1 & 0xff;\n      local_8._0_1_ = 0;\n      QString::~QString(local_80);\n      QString::QString(local_84,\"b\");\n      local_8._0_1_ = 0xc;\n      uVar1 = local_34 >> 0x10;\n      puVar2 = (uint *)FUN_010cf220(local_84);\n      *puVar2 = uVar1 & 0xff;\n      local_8 = (uint)local_8._1_3_ << 8;\n      QString::~QString(local_84);\n    }\n  }\n  FUN_00fef880(local_40);\n  local_88 = local_88 | 1;\n  local_8 = 0xffffffff;\n  FUN_00fe1210();\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1129d80",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1129d80",
+     "name": "FUN_01129d80"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01129d80(void)\n\n{\n  char cVar1;\n  QMessageLogger *pQVar2;\n  int *piVar3;\n  undefined4 *puVar4;\n  int iVar5;\n  undefined4 uVar6;\n  QDebug *pQVar7;\n  undefined1 *puVar8;\n  QMessageLogger local_1c8 [20];\n  QMessageLogger local_1b4 [20];\n  QMessageLogger local_1a0 [20];\n  undefined1 local_18c [44];\n  undefined1 local_160 [4];\n  undefined1 local_15c [4];\n  QDebug *local_158;\n  QDebug *local_154;\n  undefined4 local_150;\n  int local_14c;\n  undefined4 local_148;\n  undefined4 local_144;\n  undefined4 local_140;\n  undefined4 local_13c;\n  undefined4 local_138;\n  undefined4 local_134;\n  undefined4 local_130;\n  undefined4 local_12c;\n  undefined4 local_128;\n  undefined4 local_124;\n  undefined4 local_120;\n  undefined4 local_11c;\n  undefined4 local_118;\n  undefined4 local_114;\n  undefined1 local_110 [4];\n  QDebug local_10c [4];\n  QDebug *local_108;\n  QDebug *local_104;\n  undefined4 local_100;\n  QDebug local_fc [4];\n  QDebug *local_f8;\n  QDebug *local_f4;\n  undefined4 local_f0;\n  QDebug local_ec [8];\n  undefined1 *local_e4;\n  int local_e0;\n  undefined1 local_d9;\n  undefined1 local_d8;\n  undefined1 local_d7;\n  undefined1 local_d6;\n  undefined1 local_d5;\n  undefined1 local_d4;\n  undefined1 local_d3;\n  undefined1 local_d2;\n  undefined1 local_d1;\n  uint local_d0;\n  int local_cc;\n  undefined1 local_c8 [4];\n  void *local_c4;\n  byte local_bd;\n  int *local_b8;\n  undefined4 local_b4;\n  undefined4 local_b0;\n  undefined4 local_ac;\n  undefined4 local_a8;\n  undefined4 local_a4;\n  undefined4 local_a0;\n  undefined4 local_9c;\n  undefined4 local_98;\n  undefined4 local_94;\n  undefined4 local_90;\n  undefined4 local_8c;\n  undefined4 local_88;\n  undefined4 local_84;\n  undefined4 local_80;\n  undefined1 local_7c [4];\n  undefined1 local_78 [24];\n  undefined1 local_60 [24];\n  undefined1 local_48 [16];\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_012317c7;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_d0 = 0;\n  FUN_00fc1060(local_14);\n  local_8 = 0;\n  local_c4 = malloc(0x20);\n  memset(local_c4,0,0x20);\n  local_d1 = 0x18;\n  local_d2 = 0xa4;\n  FUN_011825d0(local_c4,&local_d2,&local_d1,0x600);\n  local_38 = 0;\n  local_34 = 0;\n  local_30 = 0;\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  memset(local_78,0,0x40);\n  local_d3 = 0xba;\n  local_13c = 0x20;\n  cVar1 = (**(code **)(*local_b8 + 0x150))(local_c4,&local_38,&local_13c,&local_d3);\n  if (cVar1 == '\\0') {\n    pQVar7 = local_ec;\n    pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_1a0,(char *)0x0,0,(char *)0x0);\n    local_158 = (QDebug *)QMessageLogger::debug(pQVar2);\n    local_8._0_1_ = 1;\n    local_154 = local_158;\n    QDebug::operator<<(local_158,(char *)pQVar7);\n    local_8 = (uint)local_8._1_3_ << 8;\n    QDebug::~QDebug(local_ec);\n    free(local_c4);\n    FUN_00fef880(local_c8);\n    local_d0 = local_d0 | 1;\n    local_8 = 0xffffffff;\n    FUN_00fe1260();\n  }\n  else {\n    memcpy(local_78,&local_34,0x18);\n    memset(local_c4,0,0x20);\n    local_d4 = 0x18;\n    local_d5 = 0xa4;\n    FUN_011825d0(local_c4,&local_d5,&local_d4,0x618);\n    memset(&local_38,0,0x21);\n    local_d6 = 0xba;\n    local_f0 = 0x20;\n    cVar1 = (**(code **)(*local_b8 + 0x150))(local_c4,&local_38,&local_f0,&local_d6);\n    if (cVar1 == '\\0') {\n      pQVar7 = local_fc;\n      pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_1b4,(char *)0x0,0,(char *)0x0)\n      ;\n      local_f8 = (QDebug *)QMessageLogger::debug(pQVar2);\n      local_8._0_1_ = 2;\n      local_f4 = local_f8;\n      QDebug::operator<<(local_f8,(char *)pQVar7);\n      local_8 = (uint)local_8._1_3_ << 8;\n      QDebug::~QDebug(local_fc);\n      free(local_c4);\n      FUN_00fef880(local_c8);\n      local_d0 = local_d0 | 1;\n      local_8 = 0xffffffff;\n      FUN_00fe1260();\n    }\n    else {\n      memcpy(local_60,&local_34,0x18);\n      memset(local_c4,0,0x20);\n      local_d9 = 0x18;\n      local_d7 = 0xa4;\n      FUN_011825d0(local_c4,&local_d7,&local_d9,0x630);\n      memset(&local_38,0,0x21);\n      local_d8 = 0xba;\n      local_100 = 0x20;\n      cVar1 = (**(code **)(*local_b8 + 0x150))(local_c4,&local_38,&local_100,&local_d8);\n      if (cVar1 == '\\0') {\n        pQVar7 = local_10c;\n        pQVar2 = (QMessageLogger *)\n                 QMessageLogger::QMessageLogger(local_1c8,(char *)0x0,0,(char *)0x0);\n        local_108 = (QDebug *)QMessageLogger::debug(pQVar2);\n        local_8._0_1_ = 3;\n        local_104 = local_108;\n        QDebug::operator<<(local_108,(char *)pQVar7);\n        local_8 = (uint)local_8._1_3_ << 8;\n        QDebug::~QDebug(local_10c);\n        free(local_c4);\n        FUN_00fef880(local_c8);\n        local_d0 = local_d0 | 1;\n        local_8 = 0xffffffff;\n        FUN_00fe1260();\n      }\n      else {\n        free(local_c4);\n        memcpy(local_48,&local_34,8);\n        FUN_00fc1060();\n        local_8._0_1_ = 4;\n        for (local_cc = 0; local_cc < 0xe; local_cc = local_cc + 1) {\n          FUN_010e3880(local_78[local_cc * 4],local_78[local_cc * 4 + 2],local_78[local_cc * 4 + 1],\n                       local_78[local_cc * 4 + 3]);\n          FUN_010f40d0(local_160,&local_cc,local_110);\n        }\n        local_114 = 0;\n        piVar3 = (int *)FUN_01104090(&local_114);\n        local_b8[0x7d] = *piVar3;\n        local_118 = 1;\n        piVar3 = (int *)FUN_01104090(&local_118);\n        local_b8[0x7e] = *piVar3;\n        local_11c = 2;\n        piVar3 = (int *)FUN_01104090(&local_11c);\n        local_b8[0x7f] = *piVar3;\n        local_120 = 3;\n        piVar3 = (int *)FUN_01104090(&local_120);\n        local_b8[0x80] = *piVar3;\n        local_124 = 4;\n        piVar3 = (int *)FUN_01104090(&local_124);\n        local_b8[0x81] = *piVar3;\n        local_128 = 5;\n        piVar3 = (int *)FUN_01104090(&local_128);\n        local_b8[0x82] = *piVar3;\n        local_12c = 6;\n        piVar3 = (int *)FUN_01104090(&local_12c);\n        local_b8[0x83] = *piVar3;\n        local_130 = 7;\n        piVar3 = (int *)FUN_01104090(&local_130);\n        local_b8[0x84] = *piVar3;\n        local_134 = 8;\n        piVar3 = (int *)FUN_01104090(&local_134);\n        local_b8[0x85] = *piVar3;\n        local_138 = 9;\n        piVar3 = (int *)FUN_01104090(&local_138);\n        local_b8[0x86] = *piVar3;\n        local_150 = 10;\n        piVar3 = (int *)FUN_01104090(&local_150);\n        local_b8[0x87] = *piVar3;\n        local_140 = 0xb;\n        piVar3 = (int *)FUN_01104090(&local_140);\n        local_b8[0x88] = *piVar3;\n        local_144 = 0xc;\n        piVar3 = (int *)FUN_01104090(&local_144);\n        local_b8[0x89] = *piVar3;\n        local_148 = 0xd;\n        piVar3 = (int *)FUN_01104090(&local_148);\n        local_b8[0x8a] = *piVar3;\n        local_b4 = 0;\n        local_b0 = 2;\n        local_ac = 1;\n        local_a8 = 5;\n        local_a4 = 6;\n        local_a0 = 7;\n        local_9c = 8;\n        local_98 = 9;\n        local_94 = 10;\n        local_90 = 0xb;\n        local_8c = 0xc;\n        local_88 = 0x8e;\n        local_84 = 0x8f;\n        local_80 = 0xd;\n        puVar4 = (undefined4 *)FUN_00fc13f0(&local_b4,local_7c);\n        FUN_00fc12b0(*puVar4,puVar4[1]);\n        local_8._0_1_ = 5;\n        local_e4 = local_78;\n        local_14c = 0x600;\n        local_bd = 0;\n        local_e0 = 0;\n        while( true ) {\n          iVar5 = FUN_00fc0ae0();\n          if (iVar5 <= local_e0) break;\n          piVar3 = (int *)FUN_00fe8400(local_e0);\n          if (*piVar3 == -1) {\n            piVar3 = (int *)FUN_00fe8400(local_e0);\n            if (*piVar3 != 4) goto LAB_0112a627;\n            piVar3 = (int *)FUN_00fe8400(local_e0);\n            if (*piVar3 != 3) goto LAB_0112a627;\n          }\n          else {\nLAB_0112a627:\n            FUN_01124b90(local_18c,local_e4,local_e4 + 1,local_e4 + 2,local_e4 + 3,\n                         local_14c + (uint)local_bd * 4);\n            local_8._0_1_ = 6;\n            puVar8 = local_18c;\n            uVar6 = FUN_00fe8400(local_e0);\n            FUN_010dd600(local_15c,uVar6,puVar8);\n            local_bd = local_bd + 1;\n            local_e4 = local_e4 + 4;\n            local_8._0_1_ = 5;\n            FUN_01033240();\n          }\n          local_e0 = local_e0 + 1;\n        }\n        FUN_00fef880(local_c8);\n        local_d0 = local_d0 | 1;\n        local_8._0_1_ = 4;\n        FUN_00fb86c0();\n        local_8 = (uint)local_8._1_3_ << 8;\n        FUN_00fc0220();\n        local_8 = 0xffffffff;\n        FUN_00fe1260();\n      }\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1176e20",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1176e20",
+     "name": "FUN_01176e20"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01176e20(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2e = 4;\n    local_2f = 0xa4;\n    FUN_011825d0(local_34,&local_2f,&local_2e,0x884);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_40,&local_30);\n    free(local_34);\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      *(char *)((int)local_38 + 0x487) = (char)local_28 + -1;\n      local_3c = (uint)*(byte *)((int)local_38 + 0x487);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177410",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177410",
+     "name": "FUN_01177410"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Exceeded maximum restarts with more pending */\n\nvoid FUN_01177410(void)\n\n{\n  char cVar1;\n  uint uVar2;\n  QMessageLogger *this;\n  QDebug *pQVar3;\n  QMessageLogger local_74 [20];\n  uint local_60;\n  QDebug local_5c [4];\n  QDebug *local_58;\n  QDebug *local_54;\n  undefined4 local_50;\n  uint local_4c;\n  int *local_48;\n  void *local_44;\n  undefined1 local_3f;\n  undefined1 local_3e;\n  undefined1 local_3d;\n  undefined4 local_3c;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236f44;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_3c = 0;\n  local_14 = uVar2;\n  local_44 = malloc(0x20);\n  if (local_44 != (void *)0x0) {\n    memset(local_44,0,0x20);\n    local_3d = 0x18;\n    local_3e = 0xa4;\n    FUN_011825d0(local_44,&local_3e,&local_3d,0x8ac);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_3f = 0xba;\n    local_50 = 0x20;\n    cVar1 = (**(code **)(*local_48 + 0x150))(local_44,&local_38,&local_50,&local_3f,uVar2);\n    if (cVar1 == '\\0') {\n      pQVar3 = local_5c;\n      this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_74,(char *)0x0,0,(char *)0x0);\n      local_58 = (QDebug *)QMessageLogger::debug(this);\n      local_8 = 0;\n      local_54 = local_58;\n      QDebug::operator<<(local_58,(char *)pQVar3);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_5c);\n      free(local_44);\n    }\n    else {\n      free(local_44);\n      local_60 = local_34 >> 8 & 0xff;\n      switch(local_60) {\n      case 0x117756f:\n                    /* WARNING: This code block may not be properly labeled as switch case */\n        local_3c = 0;\n        break;\n      default:\n        local_3c = 7;\n      }\n      local_4c = local_60;\n      if (local_34._2_1_ == '\\x01') {\n        local_3c = 7;\n      }\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1176f40",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1176f40",
+     "name": "FUN_01176f40"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01176f40(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  void *local_38;\n  int *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_38 = malloc(0x20);\n  if (local_38 != (void *)0x0) {\n    memset(local_38,0,0x20);\n    local_2e = 4;\n    local_2f = 0xa4;\n    FUN_011825d0(local_38,&local_2f,&local_2e,0x89c);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_34 + 0x150))(local_38,&local_2c,&local_40,&local_30);\n    free(local_38);\n    if (local_2d != '\\0') {\n      *(undefined1 *)((int)local_34 + 0x49f) = (undefined1)local_28;\n      (**(code **)(*local_34 + 0x144))();\n    }\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      local_3c = (uint)*(byte *)((int)local_34 + 0x49f);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177060",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177060",
+     "name": "FUN_01177060"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01177060(void)\n\n{\n  uint uVar1;\n  QMessageLogger *pQVar2;\n  QDebug *pQVar3;\n  char *pcVar4;\n  QMessageLogger local_a8 [20];\n  QMessageLogger local_94 [20];\n  QMessageLogger local_80 [20];\n  QDebug local_6c [4];\n  QDebug *local_68;\n  QDebug *local_64;\n  QDebug local_60 [4];\n  QDebug *local_5c;\n  QDebug *local_58;\n  QDebug local_54 [4];\n  QDebug *local_50;\n  QDebug *local_4c;\n  undefined4 local_48;\n  void *local_44;\n  int *local_40;\n  char local_3c;\n  undefined1 local_3b;\n  undefined1 local_3a;\n  undefined1 local_39;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236f13;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar1;\n  local_44 = malloc(0x20);\n  if (local_44 != (void *)0x0) {\n    memset(local_44,0,0x20);\n    local_39 = 0;\n    local_3a = 0xaa;\n    FUN_011825d0(local_44,&local_3a,&local_39,0);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_3b = 0xba;\n    local_48 = 0x20;\n    local_3c = (**(code **)(*local_40 + 0x150))(local_44,&local_38,&local_48,&local_3b,uVar1);\n    free(local_44);\n    if ((local_3c != '\\0') && (local_38._1_1_ != '\\0')) {\n      if (local_38._1_1_ == '\\x01') {\n        pQVar3 = local_54;\n        pQVar2 = (QMessageLogger *)\n                 QMessageLogger::QMessageLogger(local_80,(char *)0x0,0,(char *)0x0);\n        local_50 = (QDebug *)QMessageLogger::debug(pQVar2);\n        local_8 = 0;\n        local_4c = local_50;\n        QDebug::operator<<(local_50,(char *)pQVar3);\n        local_8 = 0xffffffff;\n        QDebug::~QDebug(local_54);\n        FUN_01202500(0);\n      }\n      else if (local_38._1_1_ == '\\x02') {\n        pQVar3 = local_60;\n        pQVar2 = (QMessageLogger *)\n                 QMessageLogger::QMessageLogger(local_94,(char *)0x0,0,(char *)0x0);\n        local_5c = (QDebug *)QMessageLogger::debug(pQVar2);\n        local_8 = 1;\n        local_58 = local_5c;\n        QDebug::operator<<(local_5c,(char *)pQVar3);\n        local_8 = 0xffffffff;\n        QDebug::~QDebug(local_60);\n        FUN_01202500(1);\n        pcVar4 = \"inBuffer[2]\";\n        pQVar3 = local_6c;\n        pQVar2 = (QMessageLogger *)\n                 QMessageLogger::QMessageLogger(local_a8,(char *)0x0,0,(char *)0x0);\n        local_68 = (QDebug *)QMessageLogger::debug(pQVar2);\n        local_8 = 2;\n        local_64 = local_68;\n        pQVar3 = QDebug::operator<<(local_68,(char *)pQVar3);\n        QDebug::operator<<(pQVar3,(int)pcVar4);\n        local_8 = 0xffffffff;\n        QDebug::~QDebug(local_6c);\n      }\n      if (100 < local_38._2_1_) {\n        local_38._0_3_ = CONCAT12(100,(undefined2)local_38);\n      }\n      local_40[0x71] = local_38 >> 0x10 & 0xff;\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11772f0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11772f0",
+     "name": "FUN_011772f0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011772f0(void)\n\n{\n  undefined4 local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  undefined1 local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2d = 0;\n    local_2e = 0xaa;\n    FUN_011825d0(local_34,&local_2e,&local_2d,0);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_2f = 0xba;\n    local_3c = 0x20;\n    local_30 = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_3c,&local_2f);\n    free(local_34);\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177620",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177620",
+     "name": "FUN_01177620"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01177620(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2e = 0x18;\n    local_2f = 0xa4;\n    FUN_011825d0(local_34,&local_2f,&local_2e,0x89c);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_40,&local_30);\n    free(local_34);\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      *(undefined1 *)(local_38 + 0x128) = local_28._1_1_;\n      local_3c = (uint)*(byte *)(local_38 + 0x128);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177730",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177730",
+     "name": "FUN_01177730"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01177730(void)\n\n{\n  undefined4 local_40;\n  uint local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2e = 0x18;\n    local_2f = 0xa4;\n    FUN_011825d0(local_34,&local_2f,&local_2e,0x89c);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_30 = 0xba;\n    local_40 = 0x20;\n    local_2d = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_40,&local_30);\n    free(local_34);\n    if (local_2d == '\\0') {\n      local_3c = 0xffffffff;\n    }\n    else {\n      *(undefined1 *)((int)local_38 + 0x4a1) = local_28._2_1_;\n      local_3c = (uint)*(byte *)((int)local_38 + 0x4a1);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1124860",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1124860",
+     "name": "FUN_01124860"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01124860(void)\n\n{\n  undefined4 local_40;\n  int *local_3c;\n  undefined1 local_35;\n  void *local_34;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  undefined1 local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2d = 0x18;\n    local_2e = 0xa4;\n    FUN_011825d0(local_34,&local_2e,&local_2d,0x8ac);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_2f = 0xba;\n    local_40 = 0x20;\n    local_35 = (**(code **)(*local_3c + 0x150))(local_34,&local_2c,&local_40,&local_2f);\n    free(local_34);\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177840",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177840",
+     "name": "FUN_01177840"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_01177840(void)\n\n{\n  return 0xaa0;\n}\n\n"
+   },
+   {
+    "address": "0x1124940",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1124940",
+     "name": "FUN_01124940"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01124940(void)\n\n{\n  undefined4 local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  undefined1 local_2d;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2d = 0x18;\n    local_2e = 0xa4;\n    FUN_011825d0(local_34,&local_2e,&local_2d,0x884);\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_14 = 0;\n    local_10 = 0;\n    local_c = 0;\n    local_2f = 0xba;\n    local_3c = 0x20;\n    local_30 = (**(code **)(*local_38 + 0x150))(local_34,&local_2c,&local_3c,&local_2f);\n    free(local_34);\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x112c090",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112c090",
+     "name": "FUN_0112c090"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0112c090(void)\n\n{\n  uint uVar1;\n  int iVar2;\n  bool *pbVar3;\n  QString local_70 [4];\n  QString *local_6c;\n  QString *local_68;\n  QString local_64 [4];\n  QString *local_60;\n  QString *local_5c;\n  QString local_58 [4];\n  QString *local_54;\n  QString *local_50;\n  undefined4 local_4c;\n  int *local_48;\n  undefined1 *local_44;\n  int local_40;\n  char local_3a;\n  undefined1 local_39;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01231a22;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar1;\n  local_44 = malloc(0x20);\n  if (local_44 == (undefined1 *)0x0) {\n    iVar2 = -1;\n  }\n  else {\n    memset(local_44,0,0x20);\n    *local_44 = 0xb0;\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_39 = 0xba;\n    local_4c = 0x20;\n    local_3a = (**(code **)(*local_48 + 0x150))(local_44,&local_38,&local_4c,&local_39,uVar1);\n    free(local_44);\n    if (local_3a == '\\0') {\n      iVar2 = -1;\n    }\n    else {\n      local_40 = 0;\n      if (local_38._2_1_ == 0) {\n        iVar2 = 10;\n        pbVar3 = (bool *)0x0;\n        local_6c = (QString *)QString::number((int)local_70,local_38 >> 8 & 0xff);\n        local_8 = 2;\n        local_68 = local_6c;\n        local_40 = QString::toInt(local_6c,pbVar3,iVar2);\n        local_8 = 0xffffffff;\n        QString::~QString(local_70);\n      }\n      else {\n        iVar2 = 10;\n        pbVar3 = (bool *)0x0;\n        local_54 = (QString *)QString::number((int)local_58,(uint)local_38._2_1_);\n        local_8 = 0;\n        local_50 = local_54;\n        local_40 = QString::toInt(local_54,pbVar3,iVar2);\n        local_40 = local_40 * 100;\n        local_8 = 0xffffffff;\n        QString::~QString(local_58);\n        iVar2 = 10;\n        pbVar3 = (bool *)0x0;\n        local_60 = (QString *)QString::number((int)local_64,local_38 >> 8 & 0xff);\n        local_8 = 1;\n        local_5c = local_60;\n        iVar2 = QString::toInt(local_60,pbVar3,iVar2);\n        local_40 = iVar2 + local_40;\n        local_8 = 0xffffffff;\n        QString::~QString(local_64);\n      }\n      local_48[0x79] = local_40;\n      iVar2 = local_40 >> 0x1f;\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc,iVar2);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177850",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177850",
+     "name": "FUN_01177850"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Type propagation algorithm not settling */\n\nvoid FUN_01177850(void)\n\n{\n  uint uVar1;\n  undefined1 auStack_bc [4];\n  undefined1 auStack_b8 [4];\n  undefined1 auStack_b4 [4];\n  undefined1 auStack_b0 [4];\n  undefined1 auStack_ac [4];\n  undefined1 auStack_a8 [4];\n  undefined1 auStack_a4 [4];\n  undefined1 auStack_a0 [4];\n  uint auStack_9c [5];\n  uint uStack_88;\n  uint auStack_84 [3];\n  uint auStack_78 [3];\n  uint auStack_6c [3];\n  int *local_60;\n  int iStack_5c;\n  int local_58;\n  void *local_54;\n  undefined1 local_4d;\n  char cStack_4c;\n  char local_4b;\n  undefined1 local_4a;\n  undefined1 local_49;\n  undefined4 uStack_48;\n  undefined4 local_44;\n  uint local_40;\n  undefined1 local_3c [4];\n  undefined4 local_38;\n  undefined4 local_34;\n  uint local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236f71;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_40 = 0;\n  FUN_00fc1060(local_14);\n  local_8 = 0;\n  local_54 = malloc(0x20);\n  if (local_54 == (void *)0x0) {\n    FUN_00fef880(local_3c);\n    local_40 = local_40 | 1;\n    local_8 = 0xffffffff;\n    FUN_00fc1420();\n  }\n  else {\n    memset(local_54,0,0x20);\n    local_4d = 0x18;\n    local_49 = 0xa4;\n    FUN_011825d0(local_54,&local_49,&local_4d,0x8c0);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    local_4a = 0xba;\n    auStack_6c[2] = 0x20;\n    local_4b = (**(code **)(*local_60 + 0x150))(local_54,&local_38,auStack_6c + 2,&local_4a);\n    if (local_4b == '\\0') {\n      FUN_00fef880(local_3c);\n      local_40 = local_40 | 1;\n      local_8 = 0xffffffff;\n      FUN_00fc1420();\n    }\n    else {\n      local_44 = 0xffffffff;\n      local_58 = (local_34 & 0xff) - 1;\n      switch(local_34 & 0xff) {\n      case 1:\n        local_44 = 0;\n        break;\n      case 2:\n        local_44 = 1;\n        break;\n      default:\n        FUN_00fc1060();\n        local_40 = local_40 | 1;\n        local_8 = 0xffffffff;\n        FUN_00fc1420();\n        goto LAB_01177c69;\n      case 4:\n        local_44 = 2;\n        break;\n      case 8:\n        local_44 = 3;\n        break;\n      case 0x10:\n        local_44 = 4;\n        break;\n      case 0x18:\n        local_44 = 5;\n        break;\n      case 0x20:\n        local_44 = 6;\n      }\n      auStack_6c[1] = 0;\n      FUN_00fc5810(auStack_a0,auStack_6c + 1,&local_44);\n      uStack_48 = 0xffffffff;\n      uVar1 = local_34 >> 8 & 0xff;\n      iStack_5c = uVar1 - 1;\n      switch(uVar1) {\n      case 1:\n        uStack_48 = 0;\n        break;\n      case 2:\n        uStack_48 = 1;\n        break;\n      default:\n        FUN_00fc1060();\n        local_40 = local_40 | 1;\n        local_8 = 0xffffffff;\n        FUN_00fc1420();\n        goto LAB_01177c69;\n      case 4:\n        uStack_48 = 2;\n        break;\n      case 8:\n        uStack_48 = 3;\n        break;\n      case 0x10:\n        uStack_48 = 4;\n        break;\n      case 0x18:\n        uStack_48 = 5;\n        break;\n      case 0x20:\n        uStack_48 = 6;\n      }\n      auStack_6c[0] = 1;\n      FUN_00fc5810(auStack_a4,auStack_6c,&uStack_48);\n      auStack_78[2] = local_34 >> 0x10 & 0xff;\n      auStack_78[1] = 2;\n      FUN_00fc5810(auStack_a8,auStack_78 + 1,auStack_78 + 2);\n      auStack_9c[0] = local_34._3_1_ & 1 ^ 1;\n      auStack_84[2] = (int)(local_34._3_1_ & 2) >> 1 ^ 1;\n      auStack_78[0] = 3;\n      FUN_00fc5810(auStack_ac,auStack_78,auStack_9c);\n      auStack_84[1] = 4;\n      FUN_00fc5810(auStack_b0,auStack_84 + 1,auStack_84 + 2);\n      cStack_4c = (char)local_30;\n      auStack_9c[4] = local_30 >> 8 & 0xff;\n      auStack_84[0] = (uint)(char)local_30;\n      uStack_88 = 6;\n      FUN_00fc5810(auStack_b4,&uStack_88,auStack_84);\n      auStack_9c[3] = 5;\n      FUN_00fc5810(auStack_b8,auStack_9c + 3,auStack_9c + 4);\n      auStack_9c[2] = 0;\n      auStack_9c[1] = 7;\n      FUN_00fc5810(auStack_bc,auStack_9c + 1,auStack_9c + 2);\n      FUN_00fef880(local_3c);\n      local_40 = local_40 | 1;\n      local_8 = 0xffffffff;\n      FUN_00fc1420();\n    }\n  }\nLAB_01177c69:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177d10",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177d10",
+     "name": "FUN_01177d10"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01177d10(void)\n\n{\n  uint uVar1;\n  undefined1 local_a0 [8];\n  uint local_98;\n  uint local_94;\n  undefined4 local_90;\n  undefined4 local_8c;\n  undefined1 local_88 [4];\n  uint local_84;\n  int *local_80;\n  int local_7c;\n  undefined1 local_76;\n  undefined1 local_75;\n  undefined1 local_74;\n  undefined1 local_73;\n  undefined1 local_72;\n  undefined1 local_71;\n  void *local_70;\n  char local_69;\n  undefined4 local_68;\n  undefined4 local_64;\n  undefined4 local_60;\n  undefined4 local_5c;\n  undefined4 local_58;\n  undefined4 local_54;\n  undefined4 local_50;\n  undefined4 local_4c;\n  undefined4 local_48;\n  undefined4 local_44;\n  undefined4 local_40;\n  undefined4 local_3c;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236fa4;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_84 = 0;\n  local_14 = uVar1;\n  local_70 = malloc(0x20);\n  memset(local_70,0,0x20);\n  local_71 = 0x18;\n  local_72 = 0xa4;\n  FUN_011825d0(local_70,&local_72,&local_71,0x888);\n  local_38 = 0;\n  local_34 = 0;\n  local_30 = 0;\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  local_73 = 0xba;\n  local_8c = 0x20;\n  local_69 = (**(code **)(*local_80 + 0x150))(local_70,&local_38,&local_8c,&local_73,uVar1);\n  if (local_69 == '\\0') {\n    free(local_70);\n    FUN_00fb8560();\n    local_84 = local_84 | 1;\n  }\n  else {\n    local_50 = 0;\n    local_4c = 0;\n    local_48 = 0;\n    local_44 = 0;\n    local_40 = 0;\n    local_3c = 0;\n    memcpy(&local_50,&local_34,0x18);\n    memset(local_70,0,0x20);\n    memset(&local_38,0,0x21);\n    local_74 = 0x18;\n    local_75 = 0xa4;\n    FUN_011825d0(local_70,&local_75,&local_74,0x8c8);\n    local_76 = 0xba;\n    local_90 = 0x20;\n    local_69 = (**(code **)(*local_80 + 0x150))(local_70,&local_38,&local_90,&local_76);\n    if (local_69 == '\\0') {\n      free(local_70);\n      FUN_00fb8560();\n      local_84 = local_84 | 1;\n    }\n    else {\n      local_68 = 0;\n      local_64 = 0;\n      local_60 = 0;\n      local_5c = 0;\n      local_58 = 0;\n      local_54 = 0;\n      memcpy(&local_68,&local_34,0x18);\n      free(local_70);\n      FUN_00fb8560();\n      local_8 = 0;\n      for (local_7c = 0; local_7c < 0xd; local_7c = local_7c + 2) {\n        local_98 = (uint)CONCAT11(*(undefined1 *)((int)&local_50 + local_7c + 1),\n                                  *(undefined1 *)((int)&local_50 + local_7c));\n        local_94 = (uint)CONCAT11(*(undefined1 *)((int)&local_68 + local_7c + 1),\n                                  *(undefined1 *)((int)&local_68 + local_7c));\n        FUN_00fc13f0(local_98,local_94);\n        FUN_010d0600(local_a0);\n      }\n      FUN_00ff62d0(local_88);\n      local_84 = local_84 | 1;\n      local_8 = 0xffffffff;\n      FUN_00fe12b0();\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1177fe0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1177fe0",
+     "name": "FUN_01177fe0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01177fe0(int *param_1)\n\n{\n  char cVar1;\n  QMessageLogger *this;\n  QDebug *pQVar2;\n  QMessageLogger local_e4 [20];\n  QDebug local_d0 [4];\n  QDebug *local_cc;\n  QDebug *local_c8;\n  undefined4 local_c4;\n  int *local_c0;\n  undefined1 local_bc;\n  undefined1 local_bb;\n  undefined1 local_ba;\n  char local_b9;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01236fd8;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  if (*param_1 < 8) {\n    memset(local_b8,0,0x80);\n    local_ba = 4;\n    local_bb = 0xa5;\n    FUN_011825d0(local_b8,&local_bb,&local_ba,0x898);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    cVar1 = FUN_01182530(&local_38,0x898);\n    if (cVar1 == '\\0') {\n      pQVar2 = local_d0;\n      this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_e4,(char *)0x0,0,(char *)0x0);\n      local_cc = (QDebug *)QMessageLogger::debug(this);\n      local_8 = 0;\n      local_c8 = local_cc;\n      QDebug::operator<<(local_cc,(char *)pQVar2);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_d0);\n    }\n    else {\n      uStack_b1 = (undefined1)*param_1;\n      uStack_b0 = local_34._1_1_;\n      uStack_af = local_34._2_1_;\n      uStack_ae = local_34._3_1_;\n      cVar1 = (**(code **)(*local_c0 + 0x148))();\n      if (cVar1 != '\\0') {\n        local_bc = 0xba;\n        local_c4 = 0x20;\n        local_b9 = (**(code **)(*local_c0 + 0x14c))(local_b8,&local_c4,&local_bc);\n        if (local_b9 != '\\0') {\n          local_c0[0x7c] = *param_1;\n        }\n      }\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1178220",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1178220",
+     "name": "FUN_01178220"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01178220(void)\n\n{\n  char cVar1;\n  uint uVar2;\n  int iVar3;\n  char *pcVar4;\n  undefined4 uVar5;\n  int *piVar6;\n  undefined1 *puVar7;\n  undefined4 local_cc;\n  uint local_c8;\n  int local_c4;\n  int local_c0;\n  undefined1 local_bc [8];\n  int local_b4;\n  int local_b0;\n  int local_a8;\n  undefined1 local_a3;\n  undefined1 local_a2;\n  undefined1 local_a1;\n  undefined1 local_a0;\n  undefined1 local_9f;\n  undefined1 local_9e;\n  undefined1 local_9d;\n  int *local_9c;\n  int local_98;\n  char local_94 [128];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237021;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar2;\n  memset(local_94,0,0x80);\n  local_9d = 0x10;\n  local_9e = 0xa5;\n  cVar1 = FUN_011825d0(local_94,&local_9e,&local_9d,0x888);\n  if (cVar1 != '\\0') {\n    puVar7 = local_bc;\n    FUN_00fb9e10(puVar7,uVar2);\n    FUN_011c4290();\n    FUN_01070b20();\n    FUN_0101f640(puVar7);\n    local_8 = 0;\n    local_98 = 7;\n    local_b4 = 0;\n    FUN_00fb8560();\n    local_8._0_1_ = 1;\n    FUN_00fb8560();\n    local_8 = CONCAT31(local_8._1_3_,2);\n    local_a8 = 0;\n    while (iVar3 = FUN_00fc0ae0(), local_a8 < iVar3) {\n      pcVar4 = (char *)FUN_01026ce0(local_a8);\n      if (*pcVar4 == '\\0') {\n        uVar5 = FUN_00fe16c0(local_a8);\n        FUN_00fe75e0(uVar5);\n        local_b4 = local_b4 + 1;\n      }\n      else {\n        uVar5 = FUN_00fe16c0(local_a8);\n        FUN_00fe75e0(uVar5);\n        piVar6 = (int *)FUN_00fe16c0(local_a8);\n        local_c4 = *piVar6 / 0x32;\n        local_94[local_98] = (char)local_c4;\n        local_94[local_98 + 1] = (char)((uint)local_c4 >> 8);\n        local_98 = local_98 + 2;\n      }\n      local_a8 = local_a8 + 1;\n    }\n    for (local_b0 = 0; local_b0 < local_b4; local_b0 = local_b0 + 1) {\n      uVar5 = FUN_00fe8400(local_b0);\n      FUN_00fe75e0(uVar5);\n      piVar6 = (int *)FUN_00fe8400(local_b0);\n      local_94[local_98] = (char)(*piVar6 / 0x32);\n      local_98 = local_98 + 1;\n      piVar6 = (int *)FUN_00fe8400(local_b0);\n      local_94[local_98] = (char)((uint)(*piVar6 / 0x32) >> 8);\n      local_98 = local_98 + 1;\n    }\n    local_94[local_98] = '\\x06' - (char)local_b4;\n    local_c8 = local_98 + 1;\n    local_98 = local_98 + 2;\n    if (0x7f < local_c8) {\n      ___report_rangecheckfailure();\n    }\n    local_94[local_c8] = '\\0';\n    local_c0 = (**(code **)(*local_9c + 0x38))();\n    if (6 - local_b4 < local_c0) {\n      local_c0 = 6 - local_b4;\n      cVar1 = (**(code **)(*local_9c + 0xac))(&local_c0);\n      if (cVar1 == '\\0') {\n        local_9f = 0;\n        local_8._0_1_ = 1;\n        FUN_00fb86c0();\n        local_8 = (uint)local_8._1_3_ << 8;\n        FUN_00fb86c0();\n        local_8 = 0xffffffff;\n        FUN_01022fa0();\n        goto LAB_011786be;\n      }\n    }\n    cVar1 = (**(code **)(*local_9c + 0x148))();\n    if (cVar1 == '\\0') {\n      local_a0 = 0;\n      local_8._0_1_ = 1;\n      FUN_00fb86c0();\n      local_8 = (uint)local_8._1_3_ << 8;\n      FUN_00fb86c0();\n      local_8 = 0xffffffff;\n      FUN_01022fa0();\n    }\n    else {\n      local_a1 = 0xba;\n      local_cc = 0x20;\n      local_a3 = (**(code **)(*local_9c + 0x14c))(local_94,&local_cc,&local_a1);\n      local_8._0_1_ = 1;\n      local_a2 = local_a3;\n      FUN_00fb86c0();\n      local_8 = (uint)local_8._1_3_ << 8;\n      FUN_00fb86c0();\n      local_8 = 0xffffffff;\n      FUN_01022fa0();\n    }\n  }\nLAB_011786be:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11786e0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11786e0",
+     "name": "FUN_011786e0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011786e0(undefined4 *param_1)\n\n{\n  char cVar1;\n  uint uVar2;\n  QMessageLogger *this;\n  QDebug *pQVar3;\n  QMessageLogger local_f4 [20];\n  QDebug local_e0 [4];\n  QDebug *local_dc;\n  QDebug *local_d8;\n  undefined4 local_d4;\n  undefined4 local_d0;\n  undefined4 local_cc;\n  undefined1 local_c7;\n  undefined1 local_c6;\n  undefined1 local_c5;\n  undefined4 local_c4;\n  char local_bd;\n  int *local_bc;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237055;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar2;\n  memset(local_b8,0,0x80);\n  local_38 = 0;\n  local_34 = 0;\n  local_30 = 0;\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  cVar1 = FUN_01182530(&local_38,0x880);\n  if (cVar1 == '\\0') {\n    pQVar3 = local_e0;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_f4,(char *)0x0,0,(char *)0x0);\n    local_dc = (QDebug *)QMessageLogger::debug(this);\n    local_8 = 0;\n    local_d8 = local_dc;\n    QDebug::operator<<(local_dc,(char *)pQVar3);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_e0);\n  }\n  else {\n    local_c5 = 4;\n    local_c6 = 0xa5;\n    FUN_011825d0(local_b8,&local_c6,&local_c5,0x880);\n    uStack_b1 = (undefined1)local_34;\n    uStack_b0 = local_34._1_1_;\n    uStack_af = local_34._2_1_;\n    uStack_ae = local_34._3_1_;\n    if ((char)local_bc[0x77] == '\\0') {\n      local_c4 = 0;\n      local_d0 = *param_1;\n      switch(local_d0) {\n      case 0:\n        local_c4 = 8;\n        break;\n      case 1:\n        local_c4 = 4;\n        break;\n      case 2:\n        local_c4 = 2;\n        break;\n      case 3:\n        local_c4 = 1;\n        break;\n      case 4:\n        local_c4 = 0x84;\n        break;\n      case 5:\n        local_c4 = 0x82;\n        break;\n      case 6:\n        local_c4 = 0x81;\n      }\n      if ((char)local_bc[0x6f] == -1) {\n        if (local_bc[0x7a] <= local_bc[0x78]) {\n          uStack_af = (undefined1)local_c4;\n        }\n        uStack_b1 = (undefined1)local_c4;\n      }\n      else {\n        uStack_b1 = (undefined1)local_c4;\n      }\n    }\n    else {\n      local_cc = *param_1;\n      switch(local_cc) {\n      case 0:\n        uStack_b0 = 0x88;\n        break;\n      case 1:\n        uStack_b0 = 0x84;\n        break;\n      case 2:\n        uStack_b0 = 0x82;\n        break;\n      case 3:\n        uStack_b0 = 2;\n        break;\n      case 4:\n        uStack_b0 = 8;\n        break;\n      case 5:\n        uStack_b0 = 4;\n        break;\n      case 6:\n        uStack_b0 = 2;\n      }\n    }\n    cVar1 = (**(code **)(*local_bc + 0x148))(uVar2);\n    if (cVar1 != '\\0') {\n      local_c7 = 0xba;\n      local_d4 = 0x20;\n      local_bd = (**(code **)(*local_bc + 0x14c))(local_b8,&local_d4,&local_c7);\n      if (local_bd != '\\0') {\n        *(undefined1 *)((int)local_bc + 0x483) = uStack_b1;\n        *(undefined1 *)(local_bc + 0x121) = uStack_b0;\n        *(undefined1 *)((int)local_bc + 0x485) = uStack_af;\n      }\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1178b40",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1178b40",
+     "name": "FUN_01178b40"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Removing unreachable block (ram,0x01178c37) */\n\nvoid FUN_01178b40(undefined4 *param_1)\n\n{\n  char cVar1;\n  QMessageLogger *this;\n  QDebug *pQVar2;\n  QMessageLogger local_ec [20];\n  QDebug local_d8 [4];\n  QDebug *local_d4;\n  QDebug *local_d0;\n  undefined4 local_cc;\n  undefined4 local_c8;\n  undefined4 local_c4;\n  int *local_c0;\n  undefined1 local_bc;\n  undefined1 local_bb;\n  undefined1 local_ba;\n  char local_b9;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237089;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  memset(local_b8,0,0x80);\n  local_ba = 4;\n  local_bb = 0xa5;\n  FUN_011825d0(local_b8,&local_bb,&local_ba,0x898);\n  local_38 = 0;\n  local_34 = 0;\n  local_30 = 0;\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  cVar1 = FUN_01182530(&local_38,0x898);\n  if (cVar1 == '\\0') {\n    pQVar2 = local_d8;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_ec,(char *)0x0,0,(char *)0x0);\n    local_d4 = (QDebug *)QMessageLogger::debug(this);\n    local_8 = 0;\n    local_d0 = local_d4;\n    QDebug::operator<<(local_d4,(char *)pQVar2);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_d8);\n  }\n  else {\n    local_c4 = *param_1;\n    switch(local_c4) {\n    case 0:\n      local_c8 = 8;\n      uStack_b0 = 0;\n      break;\n    case 1:\n      uStack_b0 = 1;\n      break;\n    case 2:\n      uStack_b0 = 2;\n      break;\n    case 3:\n      uStack_b0 = 3;\n      break;\n    case 4:\n      uStack_b0 = 4;\n      break;\n    case 5:\n      uStack_b0 = 5;\n      break;\n    default:\n      goto switchD_01178c14_default;\n    }\n    uStack_b1 = (undefined1)local_34;\n    uStack_af = local_34._2_1_;\n    uStack_ae = local_34._3_1_;\n    cVar1 = (**(code **)(*local_c0 + 0x148))();\n    if (cVar1 != '\\0') {\n      local_bc = 0xba;\n      local_cc = 0x20;\n      local_b9 = (**(code **)(*local_c0 + 0x14c))(local_b8,&local_cc,&local_bc);\n      if (local_b9 != '\\0') {\n        *(undefined1 *)(local_c0 + 0x127) = uStack_b0;\n      }\n    }\n  }\nswitchD_01178c14_default:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1178e30",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1178e30",
+     "name": "FUN_01178e30"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01178e30(int *param_1)\n\n{\n  int iVar1;\n  char cVar2;\n  QMessageLogger *this;\n  QDebug *pQVar3;\n  QMessageLogger local_ec [20];\n  QDebug local_d8 [4];\n  QDebug *local_d4;\n  QDebug *local_d0;\n  undefined4 local_cc;\n  int local_c8;\n  int *local_c4;\n  undefined1 local_c0;\n  undefined1 local_bf;\n  undefined1 local_be;\n  undefined1 local_bd;\n  uint local_bc;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_012370bd;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  iVar1 = *param_1;\n  if ((iVar1 == 0) || (iVar1 == 1)) {\n    local_bc = 1;\n  }\n  else {\n    local_bc = iVar1 / 2;\n  }\n  local_c8 = local_bc + -1;\n  switch(local_c8) {\n  case 0:\n    local_bc = 4;\n    break;\n  case 1:\n    local_bc = 3;\n    break;\n  case 2:\n    local_bc = 2;\n    break;\n  case 3:\n    local_bc = 1;\n    break;\n  case 4:\n    local_bc = 0;\n    break;\n  default:\n    local_bc = 2;\n  }\n  if (local_bc < 5) {\n    memset(local_b8,0,0x80);\n    local_bd = 4;\n    local_be = 0xa5;\n    FUN_011825d0(local_b8,&local_be,&local_bd,0x898);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    cVar2 = FUN_01182530(&local_38,0x898);\n    if (cVar2 == '\\0') {\n      pQVar3 = local_d8;\n      this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_ec,(char *)0x0,0,(char *)0x0);\n      local_d4 = (QDebug *)QMessageLogger::debug(this);\n      local_8 = 0;\n      local_d0 = local_d4;\n      QDebug::operator<<(local_d4,(char *)pQVar3);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_d8);\n    }\n    else {\n      uStack_b1 = (undefined1)local_34;\n      uStack_b0 = local_34._1_1_;\n      uStack_af = (undefined1)local_bc;\n      uStack_ae = local_34._3_1_;\n      cVar2 = (**(code **)(*local_c4 + 0x148))();\n      if (cVar2 != '\\0') {\n        local_bf = 0xba;\n        local_cc = 0x20;\n        local_c0 = (**(code **)(*local_c4 + 0x14c))(local_b8,&local_cc,&local_bf);\n      }\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1179120",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1179120",
+     "name": "FUN_01179120"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01179120(int *param_1)\n\n{\n  char cVar1;\n  uint uVar2;\n  QMessageLogger *pQVar3;\n  QDebug *pQVar4;\n  QMessageLogger local_108 [20];\n  QMessageLogger local_f4 [20];\n  QDebug local_e0 [4];\n  QDebug *local_dc;\n  QDebug *local_d8;\n  undefined4 local_d4;\n  QDebug local_d0 [4];\n  QDebug *local_cc;\n  QDebug *local_c8;\n  int local_c4;\n  int *local_c0;\n  undefined1 local_bc;\n  undefined1 local_bb;\n  undefined1 local_ba;\n  undefined1 local_b9;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_012370fd;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  if (*param_1 == 0) {\n    local_c4 = *param_1;\n  }\n  else {\n    local_c4 = *param_1 + -1;\n  }\n  local_14 = uVar2;\n  if ((local_c4 < 10) && (-1 < local_c4)) {\n    memset(local_b8,0,0x80);\n    local_b9 = 4;\n    local_ba = 0xa5;\n    FUN_011825d0(local_b8,&local_ba,&local_b9,0x898);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    cVar1 = FUN_01182530(&local_38,0x898);\n    if (cVar1 == '\\0') {\n      pQVar4 = local_e0;\n      pQVar3 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_108,(char *)0x0,0,(char *)0x0)\n      ;\n      local_dc = (QDebug *)QMessageLogger::debug(pQVar3);\n      local_8 = 1;\n      local_d8 = local_dc;\n      QDebug::operator<<(local_dc,(char *)pQVar4);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_e0);\n    }\n    else {\n      uStack_b1 = (undefined1)local_34;\n      uStack_b0 = local_34._1_1_;\n      uStack_af = local_34._2_1_;\n      uStack_ae = (undefined1)local_c4;\n      cVar1 = (**(code **)(*local_c0 + 0x148))(uVar2);\n      if (cVar1 != '\\0') {\n        local_bb = 0xba;\n        local_d4 = 0x20;\n        local_bc = (**(code **)(*local_c0 + 0x14c))(local_b8,&local_d4,&local_bb);\n      }\n    }\n  }\n  else {\n    pQVar4 = local_d0;\n    pQVar3 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_f4,(char *)0x0,0,(char *)0x0);\n    local_cc = (QDebug *)QMessageLogger::debug(pQVar3);\n    local_8 = 0;\n    local_c8 = local_cc;\n    QDebug::operator<<(local_cc,(char *)pQVar4);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_d0);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11793d0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11793d0",
+     "name": "FUN_011793d0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011793d0(undefined4 param_1,int param_2)\n\n{\n  char cVar1;\n  undefined1 uVar2;\n  QMessageLogger *this;\n  QDebug *pQVar3;\n  QMessageLogger local_114 [20];\n  undefined4 local_100;\n  QDebug local_fc [4];\n  QDebug *local_f8;\n  QDebug *local_f4;\n  QString local_f0 [4];\n  QString local_ec [4];\n  QString local_e8 [4];\n  QString local_e4 [4];\n  QString local_e0 [4];\n  QString local_dc [4];\n  QString local_d8 [4];\n  QString local_d4 [4];\n  QString local_d0 [4];\n  QString local_cc [4];\n  QString local_c8 [4];\n  QString local_c4 [4];\n  QString local_c0 [4];\n  QString local_bc [4];\n  QString local_b8 [4];\n  undefined4 local_b4;\n  int local_b0;\n  undefined4 local_ac;\n  int local_a8;\n  undefined1 local_a1;\n  undefined1 local_a0;\n  undefined1 local_9f;\n  char local_9e;\n  char local_9d;\n  int *local_9c;\n  uint local_98;\n  undefined1 local_94 [7];\n  undefined1 uStack_8d;\n  undefined1 uStack_8c;\n  undefined1 uStack_8b;\n  undefined1 uStack_8a;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_0123722a;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_98 = 0;\n  QString::QString(local_c0,\"r\");\n  local_8 = 0;\n  local_98 = local_98 | 1;\n  cVar1 = FUN_010529f0(local_c0);\n  if (cVar1 != '\\0') {\n    QString::QString(local_bc,\"b\");\n    local_8 = 1;\n    local_98 = local_98 | 2;\n    cVar1 = FUN_010529f0(local_bc);\n    if (cVar1 != '\\0') {\n      QString::QString(local_b8,\"b\");\n      local_8 = 2;\n      local_98 = local_98 | 4;\n      cVar1 = FUN_010529f0(local_b8);\n      if ((cVar1 != '\\0') && (param_2 < 3)) {\n        local_b4 = 0;\n        goto LAB_011794e2;\n      }\n    }\n  }\n  local_b4 = 1;\nLAB_011794e2:\n  local_9e = (char)local_b4;\n  local_8 = 1;\n  if ((local_98 & 4) != 0) {\n    local_98 = local_98 & 0xfffffffb;\n    QString::~QString(local_b8);\n  }\n  local_8 = 0;\n  if ((local_98 & 2) != 0) {\n    local_98 = local_98 & 0xfffffffd;\n    QString::~QString(local_bc);\n  }\n  local_8 = 0xffffffff;\n  if ((local_98 & 1) != 0) {\n    local_98 = local_98 & 0xfffffffe;\n    QString::~QString(local_c0);\n  }\n  if (local_9e == '\\0') {\n    local_a8 = param_2;\n    if (param_2 == 0) {\n      local_ac = 0x8b8;\n    }\n    else if (param_2 == 1) {\n      local_ac = 0x8b9;\n    }\n    else if (param_2 == 2) {\n      local_ac = 0x8ca;\n    }\n    memset(local_94,0,0x80);\n    local_9f = 4;\n    local_a0 = 0xa5;\n    FUN_011825d0(local_94,&local_a0,&local_9f,local_ac);\n    QString::QString(local_c4,\"r\");\n    local_8 = 4;\n    uStack_8d = FUN_010f3870(local_c4);\n    local_8 = 0xffffffff;\n    QString::~QString(local_c4);\n    QString::QString(local_c8,\"g\");\n    local_8 = 5;\n    uStack_8c = FUN_010f3870(local_c8);\n    local_8 = 0xffffffff;\n    QString::~QString(local_c8);\n    QString::QString(local_cc,\"b\");\n    local_8 = 6;\n    uStack_8b = FUN_010f3870(local_cc);\n    local_8 = 0xffffffff;\n    QString::~QString(local_cc);\n    uStack_8a = 0xff;\n    cVar1 = (**(code **)(*local_9c + 0x148))();\n    if (cVar1 != '\\0') {\n      local_a1 = 0xba;\n      local_100 = 0x20;\n      local_9d = (**(code **)(*local_9c + 0x14c))(local_94,&local_100,&local_a1);\n      if (local_9d != '\\0') {\n        local_b0 = param_2;\n        if (param_2 == 0) {\n          QString::QString(local_d0,\"b\");\n          local_8 = 7;\n          uVar2 = FUN_010f3870(local_d0);\n          *(undefined1 *)((int)local_9c + 0x4bd) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_d0);\n          QString::QString(local_d4,\"g\");\n          local_8 = 8;\n          uVar2 = FUN_010f3870(local_d4);\n          *(undefined1 *)(local_9c + 0x12f) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_d4);\n          QString::QString(local_d8,\"r\");\n          local_8 = 9;\n          uVar2 = FUN_010f3870(local_d8);\n          *(undefined1 *)((int)local_9c + 0x4bb) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_d8);\n        }\n        else if (param_2 == 1) {\n          QString::QString(local_dc,\"b\");\n          local_8 = 10;\n          uVar2 = FUN_010f3870(local_dc);\n          *(undefined1 *)((int)local_9c + 0x4c1) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_dc);\n          QString::QString(local_e0,\"g\");\n          local_8 = 0xb;\n          uVar2 = FUN_010f3870(local_e0);\n          *(undefined1 *)(local_9c + 0x130) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_e0);\n          QString::QString(local_e4,\"r\");\n          local_8 = 0xc;\n          uVar2 = FUN_010f3870(local_e4);\n          *(undefined1 *)((int)local_9c + 0x4bf) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_e4);\n        }\n        else if (param_2 == 2) {\n          QString::QString(local_e8,\"b\");\n          local_8 = 0xd;\n          uVar2 = FUN_010f3870(local_e8);\n          *(undefined1 *)((int)local_9c + 0x4c5) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_e8);\n          QString::QString(local_ec,\"g\");\n          local_8 = 0xe;\n          uVar2 = FUN_010f3870(local_ec);\n          *(undefined1 *)(local_9c + 0x131) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_ec);\n          QString::QString(local_f0,\"r\");\n          local_8 = 0xf;\n          uVar2 = FUN_010f3870(local_f0);\n          *(undefined1 *)((int)local_9c + 0x4c3) = uVar2;\n          local_8 = 0xffffffff;\n          QString::~QString(local_f0);\n        }\n      }\n    }\n  }\n  else {\n    pQVar3 = local_fc;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_114,(char *)0x0,0,(char *)0x0);\n    local_f8 = (QDebug *)QMessageLogger::debug(this);\n    local_8 = 3;\n    local_f4 = local_f8;\n    QDebug::operator<<(local_f8,(char *)pQVar3);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_fc);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117bb00",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117bb00",
+     "name": "FUN_0117bb00"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0117bb00(undefined4 *param_1)\n\n{\n  char cVar1;\n  int *in_ECX;\n  undefined4 uStack_34;\n  undefined4 uStack_30;\n  undefined4 uStack_2c;\n  undefined4 uStack_28;\n  undefined4 uStack_24;\n  undefined4 uStack_20;\n  undefined4 uStack_1c;\n  undefined4 uStack_18;\n  undefined4 uStack_14;\n  undefined4 uStack_10;\n  undefined4 local_c;\n  int *local_8;\n  \n  local_c = *param_1;\n  local_8 = in_ECX;\n  switch(local_c) {\n  case 0:\n    uStack_10 = 100;\n    cVar1 = (**(code **)(*in_ECX + 0xdc))(&uStack_10);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    uStack_14 = 10;\n    cVar1 = (**(code **)(*local_8 + 0xc0))(&uStack_14,0);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    uStack_18 = 4;\n    cVar1 = (**(code **)(*local_8 + 0xb8))(&uStack_18,1);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    cVar1 = (**(code **)(*local_8 + 0xfc))(0);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    uStack_1c = 1;\n    cVar1 = (**(code **)(*local_8 + 0xe0))(&uStack_1c);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    break;\n  case 1:\n    uStack_20 = 0x50;\n    cVar1 = (**(code **)(*in_ECX + 0xdc))(&uStack_20);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    uStack_24 = 8;\n    cVar1 = (**(code **)(*local_8 + 0xc0))(&uStack_24,0);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    uStack_28 = 4;\n    cVar1 = (**(code **)(*local_8 + 0xb8))(&uStack_28,1);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    cVar1 = (**(code **)(*local_8 + 0xfc))(1);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    uStack_2c = 1;\n    cVar1 = (**(code **)(*local_8 + 0xe0))(&uStack_2c);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    break;\n  case 2:\n    uStack_30 = 0;\n    cVar1 = (**(code **)(*in_ECX + 0xb8))(&uStack_30,1);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    uStack_34 = 9;\n    cVar1 = (**(code **)(*local_8 + 0xe0))(&uStack_34);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n    break;\n  case 3:\n    break;\n  default:\n    return 0;\n  }\n  return 1;\n}\n\n"
+   },
+   {
+    "address": "0x112a740",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112a740",
+     "name": "FUN_0112a740"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0112a740(int *param_1,int *param_2,QVariant *param_3)\n\n{\n  char cVar1;\n  uint uVar2;\n  undefined4 *puVar3;\n  int iVar4;\n  int *piVar5;\n  uint uVar6;\n  QMessageLogger *pQVar7;\n  undefined4 uVar8;\n  undefined1 *puVar9;\n  undefined4 uVar10;\n  QDebug *pQVar11;\n  QMessageLogger local_1c8 [20];\n  QMessageLogger local_1b4 [28];\n  undefined1 local_198 [4];\n  QDebug *local_194;\n  undefined4 local_190;\n  QDebug local_18c [4];\n  undefined4 uStack_188;\n  QDebug *local_184;\n  QDebug local_180 [4];\n  QDebug *local_17c;\n  QDebug *local_178;\n  undefined4 local_174;\n  undefined4 local_170;\n  undefined4 local_16c;\n  undefined4 uStack_168;\n  undefined4 uStack_164;\n  undefined4 uStack_160;\n  undefined4 uStack_15c;\n  undefined4 uStack_158;\n  undefined4 uStack_154;\n  undefined4 uStack_150;\n  undefined4 uStack_14c;\n  undefined4 uStack_148;\n  undefined4 uStack_144;\n  undefined4 uStack_140;\n  undefined4 uStack_13c;\n  undefined4 uStack_138;\n  undefined4 uStack_134;\n  undefined4 uStack_130;\n  undefined4 uStack_12c;\n  undefined4 uStack_128;\n  undefined4 uStack_124;\n  undefined4 uStack_120;\n  undefined4 uStack_11c;\n  int local_118;\n  int local_114;\n  int local_110;\n  int local_10c;\n  undefined4 local_108 [2];\n  undefined1 local_100 [4];\n  undefined4 local_fc;\n  int local_f8;\n  int local_f4;\n  char local_ee;\n  undefined1 local_ed;\n  undefined1 local_ec;\n  undefined1 local_eb;\n  byte local_ea;\n  undefined1 local_e9;\n  int local_e8;\n  char local_e1;\n  int local_dc;\n  undefined1 *local_d8;\n  int *local_d4;\n  undefined4 local_d0;\n  undefined4 local_cc;\n  undefined4 local_c8;\n  undefined4 local_c4;\n  undefined4 local_c0;\n  undefined4 local_bc;\n  undefined4 local_b8;\n  undefined4 local_b4;\n  undefined4 local_b0;\n  undefined4 local_ac;\n  undefined4 local_a8;\n  undefined4 local_a4;\n  undefined4 local_a0;\n  undefined4 local_9c;\n  undefined1 local_98 [4];\n  undefined1 local_94 [7];\n  undefined1 local_8d [121];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  puStack_c = &LAB_0123183a;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_8 = 1;\n  local_d0 = 0;\n  local_cc = 2;\n  local_c8 = 1;\n  local_c4 = 5;\n  local_c0 = 6;\n  local_bc = 7;\n  local_b8 = 8;\n  local_b4 = 9;\n  local_b0 = 10;\n  local_ac = 0xb;\n  local_a8 = 0xc;\n  local_a4 = 0x8e;\n  local_a0 = 0x8f;\n  local_9c = 0xd;\n  local_14 = uVar2;\n  puVar3 = (undefined4 *)FUN_00fc13f0(&local_d0,local_98);\n  FUN_00fc12b0(*puVar3,puVar3[1]);\n  local_8._0_1_ = 2;\n  local_10c = 0;\n  local_f4 = 0;\n  while (iVar4 = FUN_00fc0ae0(uVar2), local_f4 < iVar4) {\n    piVar5 = (int *)FUN_00fe8400(local_f4);\n    if (*piVar5 == *param_1) {\n      local_10c = local_f4;\n    }\n    local_f4 = local_f4 + 1;\n  }\n  FUN_00fc1060();\n  local_8._0_1_ = 3;\n  puVar9 = local_100;\n  FUN_00fb9e10(puVar9);\n  FUN_011c4290();\n  FUN_01070b60();\n  FUN_01040b60(puVar9);\n  local_8._0_1_ = 4;\n  local_f8 = 0;\n  while (iVar4 = FUN_00ff83e0(), local_f8 < iVar4) {\n    FUN_00ffc860(local_f8);\n    local_108[0] = FUN_0104d480();\n    local_16c = FUN_01033710();\n    FUN_00fc5810(local_198,&local_16c,local_108);\n    local_f8 = local_f8 + 1;\n  }\n  if ((*param_1 == 0) && (*param_2 != 0xb9)) {\n    local_190 = 0;\n    cVar1 = (**(code **)(*local_d4 + 0xf0))(&local_190);\n    if (cVar1 == '\\0') {\n      local_e9 = 0;\n      local_8._0_1_ = 3;\n      FUN_00ff63a0();\n      local_8._0_1_ = 2;\n      FUN_00fc1420();\n      local_8._0_1_ = 1;\n      FUN_00fb86c0();\n      local_8 = (uint)local_8._1_3_ << 8;\n      QVariant::~QVariant((QVariant *)&stack0x00000010);\n      local_8 = 0xffffffff;\n      QVariant::~QVariant((QVariant *)&stack0x00000020);\n      goto LAB_0112b4b8;\n    }\n  }\n  local_ea = 4;\n  memset(local_94,0,0x80);\n  local_eb = 4;\n  local_ec = 0xa5;\n  FUN_011825d0(local_94,&local_ec,&local_eb,(uint)local_ea * local_10c + 0x600);\n  local_d8 = local_8d;\n  local_e8 = 0;\n  while (iVar4 = FUN_00fc0ae0(), local_e8 < iVar4) {\n    piVar5 = (int *)FUN_00fe8400(local_e8);\n    if (*piVar5 != -1) {\n      if ((*param_2 == 0x1d) && (piVar5 = (int *)FUN_00fe8400(local_e8), *piVar5 == *param_1)) {\n        uVar10 = 0;\n        uVar8 = 0;\n        uVar2 = QVariant::toUInt(param_3,(bool *)0x0);\n        FUN_011817e0(param_2,local_d8,uVar2,uVar8,uVar10);\n      }\n      else if ((*param_2 == 0x1b) && (piVar5 = (int *)FUN_00fe8400(local_e8), *piVar5 == *param_1))\n      {\n        uVar10 = 0;\n        uVar8 = 0;\n        uVar2 = QVariant::toUInt(param_3,(bool *)0x0);\n        FUN_011817e0(param_2,local_d8,uVar2,uVar8,uVar10);\n      }\n      else if ((*param_2 == 0x2a) && (piVar5 = (int *)FUN_00fe8400(local_e8), *piVar5 == *param_1))\n      {\n        uVar8 = 0;\n        uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n        uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n        FUN_011817e0(param_2,local_d8,uVar6,uVar2,uVar8);\n      }\n      else {\n        piVar5 = (int *)FUN_00fe8400(local_e8);\n        if (*piVar5 == *param_1) {\n          if (*param_2 == 0) {\n            local_110 = *param_1;\n            switch(local_110) {\n            case 0:\n              uStack_11c = 9;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_11c,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 1:\n              uStack_124 = 0xb;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_124,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 2:\n              uStack_120 = 10;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_120,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 5:\n              uStack_128 = 0x27;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_128,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 7:\n              uStack_12c = 0xe;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_12c,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 8:\n              uStack_130 = 0xf;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_130,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 9:\n              uStack_134 = 0x1b;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_134,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 0xb:\n              uStack_138 = 0x25;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_138,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 0xc:\n              uStack_13c = 0x26;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_13c,local_d8,uVar6,uVar2,uVar8);\n              break;\n            case 0xd:\n              uStack_140 = 0x24;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n              FUN_011817e0(&uStack_140,local_d8,uVar6,uVar2,uVar8);\n            }\n          }\n          else if (*param_2 == 0xb9) {\n            local_114 = *param_1;\n            switch(local_114) {\n            case 0:\n              uStack_144 = 9;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_144,local_d8,1,uVar2,uVar8);\n              break;\n            case 1:\n              uStack_14c = 0xb;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_14c,local_d8,1,uVar2,uVar8);\n              break;\n            case 2:\n              uStack_148 = 10;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_148,local_d8,1,uVar2,uVar8);\n              break;\n            case 5:\n              uStack_150 = 0x27;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_150,local_d8,1,uVar2,uVar8);\n              break;\n            case 6:\n              uStack_154 = 0x28;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_154,local_d8,1,uVar2,uVar8);\n              break;\n            case 7:\n              uStack_158 = 0xc;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_158,local_d8,1,uVar2,uVar8);\n              break;\n            case 8:\n              uStack_15c = 0xd;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_15c,local_d8,1,uVar2,uVar8);\n              break;\n            case 9:\n              uStack_160 = 0x1b;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_160,local_d8,1,uVar2,uVar8);\n              break;\n            case 0xb:\n              uStack_164 = 0x25;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_164,local_d8,1,uVar2,uVar8);\n              break;\n            case 0xc:\n              uStack_168 = 0x26;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_168,local_d8,1,uVar2,uVar8);\n              break;\n            case 0xd:\n              uStack_188 = 0x24;\n              uVar8 = 0;\n              uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n              FUN_011817e0(&uStack_188,local_d8,1,uVar2,uVar8);\n            }\n          }\n          else {\n            uVar8 = 0;\n            uVar2 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n            uVar6 = QVariant::toUInt(param_3,(bool *)0x0);\n            FUN_011817e0(param_2,local_d8,uVar6,uVar2,uVar8);\n          }\n        }\n      }\n      local_170 = 0;\n      puVar3 = &local_170;\n      uVar8 = FUN_00fe8400(local_e8);\n      local_fc = FUN_01000270(uVar8,puVar3);\n      piVar5 = (int *)FUN_00fe8400(local_e8);\n      if (*piVar5 == *param_1) {\n        FUN_010333f0(*local_d8,0);\n        FUN_010333a0(local_d8[1],0);\n        FUN_01033350(local_d8[2],0);\n        FUN_01033350(local_d8[3],0);\n      }\n    }\n    local_e8 = local_e8 + 1;\n  }\n  local_ed = 0xba;\n  local_174 = 0x20;\n  local_e1 = (**(code **)(*local_d4 + 0x14c))(local_94,&local_174,&local_ed);\n  if (local_e1 == '\\0') {\n    pQVar11 = local_18c;\n    pQVar7 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_1c8,(char *)0x0,0,(char *)0x0);\n    local_194 = (QDebug *)QMessageLogger::debug(pQVar7);\n    local_8._0_1_ = 6;\n    local_184 = local_194;\n    QDebug::operator<<(local_194,(char *)pQVar11);\n    local_8 = CONCAT31(local_8._1_3_,4);\n    QDebug::~QDebug(local_18c);\n  }\n  else {\n    FUN_010e3880(*local_d8,local_d8[2],local_d8[1],local_d8[3]);\n    local_118 = *param_1;\n    switch(local_118) {\n    case 0:\n      local_d4[0x7d] = local_dc;\n      break;\n    case 1:\n      local_d4[0x7f] = local_dc;\n      break;\n    case 2:\n      local_d4[0x7e] = local_dc;\n      break;\n    case 5:\n      local_d4[0x80] = local_dc;\n      break;\n    case 6:\n      local_d4[0x81] = local_dc;\n      break;\n    case 7:\n      local_d4[0x82] = local_dc;\n      break;\n    case 8:\n      local_d4[0x83] = local_dc;\n      break;\n    case 9:\n      local_d4[0x84] = local_dc;\n      break;\n    case 10:\n      local_d4[0x85] = local_dc;\n      break;\n    case 0xb:\n      local_d4[0x86] = local_dc;\n      break;\n    case 0xc:\n      local_d4[0x87] = local_dc;\n      break;\n    case 0xd:\n      local_d4[0x8a] = local_dc;\n    }\n    pQVar11 = local_180;\n    pQVar7 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_1b4,(char *)0x0,0,(char *)0x0);\n    local_17c = (QDebug *)QMessageLogger::debug(pQVar7);\n    local_8._0_1_ = 5;\n    local_178 = local_17c;\n    QDebug::operator<<(local_17c,(char *)pQVar11);\n    local_8 = CONCAT31(local_8._1_3_,4);\n    QDebug::~QDebug(local_180);\n  }\n  Sleep(local_d4[0x70]);\n  local_ee = local_e1;\n  local_8._0_1_ = 3;\n  FUN_00ff63a0();\n  local_8._0_1_ = 2;\n  FUN_00fc1420();\n  local_8._0_1_ = 1;\n  FUN_00fb86c0();\n  local_8 = (uint)local_8._1_3_ << 8;\n  QVariant::~QVariant((QVariant *)&stack0x00000010);\n  local_8 = 0xffffffff;\n  QVariant::~QVariant((QVariant *)&stack0x00000020);\nLAB_0112b4b8:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117a8f0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117a8f0",
+     "name": "FUN_0117a8f0"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */\n\nvoid FUN_0117a8f0(char param_1,int *param_2,undefined4 param_3)\n\n{\n  byte bVar1;\n  char cVar2;\n  uint uVar3;\n  QMessageLogger *pQVar4;\n  int *in_stack_00000020;\n  QDebug *pQVar5;\n  char *pcVar6;\n  QMessageLogger local_112c [20];\n  QMessageLogger local_1118 [40];\n  undefined4 local_10f0;\n  QDebug *local_10ec;\n  QDebug *local_10e8;\n  undefined4 local_10e4;\n  undefined4 local_10e0;\n  undefined4 local_10dc;\n  QDebug local_10d8 [4];\n  QDebug *local_10d4;\n  QDebug *local_10d0;\n  int local_10cc;\n  undefined4 local_10c8;\n  undefined4 local_10c4;\n  QDebug local_10c0 [4];\n  int local_10bc;\n  uint local_10b8;\n  undefined1 local_10b4 [4];\n  int local_10b0;\n  int local_10ac;\n  uint local_10a8;\n  int local_10a4;\n  int local_10a0;\n  int local_109c;\n  int local_1098;\n  uint local_1094;\n  int local_1090;\n  int local_108c;\n  int local_1088;\n  byte *local_1084;\n  int local_1080;\n  int local_107c;\n  char local_1078;\n  int local_1074;\n  uint local_1070;\n  undefined4 local_1068;\n  int local_1064;\n  uint local_1060;\n  int local_105c;\n  int local_1058;\n  byte local_1051;\n  undefined1 local_1050;\n  undefined1 local_104f;\n  undefined1 local_104e;\n  undefined1 local_104d;\n  byte local_104c;\n  byte local_104b;\n  byte local_104a;\n  byte local_1049;\n  int local_1048;\n  int *local_1044;\n  char local_103f;\n  byte local_103e;\n  byte local_103d;\n  int local_103c;\n  byte local_1038 [4096];\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  uint local_8;\n  \n  puStack_c = &LAB_012372f1;\n  local_10 = ExceptionList;\n  uVar3 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_8 = 0;\n  local_14 = uVar3;\n  memset(local_1038,0,0x1000);\n  local_1058 = 0;\n  local_103c = 1;\n  FUN_0104dd40(uVar3);\n  local_8 = CONCAT31(local_8._1_3_,1);\n  local_103f = '\\0';\n  local_1088 = *param_2;\n  if (local_1088 == 1) {\n    uVar3 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n    local_1038[2] = (byte)uVar3;\n    uVar3 = QVariant::toUInt((QVariant *)&stack0x00000010,(bool *)0x0);\n    local_1038[3] = (byte)(uVar3 >> 8);\n  }\n  else if (local_1088 == 2) {\n    local_1038[2] = 0xfe;\n    local_1038[3] = 0xff;\n  }\n  else if (local_1088 == 3) {\n    local_1038[2] = 0xff;\n    local_1038[3] = 0xff;\n  }\n  FUN_010f2c50(local_10b4,param_3);\n  for (; (local_10a8 != 0 && (local_10b0 != local_10ac)); local_10b0 = local_10b0 + 0x14) {\n    FUN_00fe0d60(local_10b0);\n    while (local_10a8 != 0) {\n      local_10cc = local_1048;\n      if (local_107c == 0) {\n        local_1048 = 0;\n        if (local_1078 == '\\0') {\n          if (local_103f == '\\0') {\n            local_10a4 = 3;\n          }\n          else {\n            local_10a4 = 6;\n          }\n          local_103c = local_103c + local_10a4;\n          local_1038[local_103c] = 1;\n          local_10b8 = local_103c + 1;\n          if (0xfff < local_10b8) {\n            ___report_rangecheckfailure();\n          }\n          local_1038[local_10b8] = 0;\n          local_1038[local_103c + 2] = (byte)local_1074;\n          *(char *)(local_1044 + 0x18b) = local_1078;\n        }\n        else {\n          if (local_103f == '\\0') {\n            local_10bc = 3;\n          }\n          else {\n            local_10bc = 6;\n          }\n          local_103c = local_103c + local_10bc;\n          local_1038[local_103c + 2] = (byte)local_1074;\n          *(char *)(local_1044 + 0x18b) = local_1078;\n        }\n      }\n      else if (local_107c == 1) {\n        local_1048 = 1;\n        if (local_1078 == '\\0') {\n          if (local_103f == '\\0') {\n            local_1090 = 3;\n          }\n          else {\n            local_1090 = 6;\n          }\n          local_103c = local_103c + local_1090;\n          local_1038[local_103c] = 1;\n          local_1094 = local_103c + 1;\n          if (0xfff < local_1094) {\n            ___report_rangecheckfailure();\n          }\n          local_1038[local_1094] = 0;\n          if (local_1074 == 1) {\n            local_1038[local_103c + 2] = 0xf0;\n          }\n          else if (local_1074 == 2) {\n            local_1038[local_103c + 2] = 0xf2;\n          }\n          else if (local_1074 == 3) {\n            local_1038[local_103c + 2] = 0xf1;\n          }\n          else if (local_1074 == 4) {\n            local_1038[local_103c + 2] = 0xf4;\n          }\n          else if (local_1074 == 5) {\n            local_1038[local_103c + 2] = 0xf3;\n          }\n          *(char *)(local_1044 + 0x18b) = local_1078;\n        }\n        else {\n          if (local_103f == '\\0') {\n            local_1098 = 3;\n          }\n          else {\n            local_1098 = 6;\n          }\n          local_103c = local_103c + local_1098;\n          if (local_1074 == 1) {\n            local_1038[local_103c + 2] = 0xf0;\n          }\n          else if (local_1074 == 2) {\n            local_1038[local_103c + 2] = 0xf2;\n          }\n          else if (local_1074 == 3) {\n            local_1038[local_103c + 2] = 0xf1;\n          }\n          else if (local_1074 == 4) {\n            local_1038[local_103c + 2] = 0xf4;\n          }\n          else if (local_1074 == 5) {\n            local_1038[local_103c + 2] = 0xf3;\n          }\n          *(char *)(local_1044 + 0x18b) = local_1078;\n        }\n      }\n      else if (local_107c == 2) {\n        local_1058 = local_1074;\n        if (0x7fff < local_1074) {\n          local_1058 = 30000;\n        }\n        local_1048 = 2;\n        if (local_103c == 1) {\n          if (param_1 == '\\0') {\n            local_105c = local_1058 << 1;\n            local_103c = 4;\n            local_1038[4] = (undefined1)local_105c;\n            local_1038[5] = (byte)((uint)local_105c >> 8);\n          }\n        }\n        else {\n          if (param_1 != '\\0') {\n            local_1058 = 5;\n          }\n          if ((char)local_1044[0x18b] == '\\0') {\n            local_1060 = local_1058 << 1 | 1;\n            local_1038[local_103c] = (byte)local_1060;\n            local_1038[local_103c + 1] = (byte)((uint)(local_1058 << 1) >> 8);\n          }\n          else {\n            local_1064 = local_1058 << 1;\n            local_1038[local_103c] = (byte)local_1064;\n            local_1038[local_103c + 1] = (byte)((uint)local_1064 >> 8);\n          }\n        }\n      }\n      else if ((local_107c == 3) && ((local_1074 != 0 || (local_1070 != 0)))) {\n        local_1048 = 3;\n        if (local_103f == '\\0') {\n          local_109c = 3;\n        }\n        else {\n          local_109c = 6;\n        }\n        local_103c = local_103c + local_109c;\n        local_1038[local_103c + 2] = 0xf7;\n        local_104c = ~(byte)local_1070 + 1;\n        local_104a = (byte)(~local_1070 + 1 >> 8) & 0xf;\n        bVar1 = (byte)((uint)local_1074 >> 8);\n        local_1049 = bVar1 & 0xf;\n        local_104b = bVar1 * '\\x10' + local_104a;\n        local_1038[local_103c + 3] = local_104b;\n        local_1038[local_103c + 4] = (byte)local_1074;\n        local_1038[local_103c + 5] = local_104c;\n        local_103f = '\\x01';\n        local_1051 = (byte)local_1074;\n      }\n      local_10a8 = 0;\n    }\n    FUN_00fe1650();\n    local_10a8 = local_10a8 ^ 1;\n  }\n  FUN_010f3850();\n  if (local_1048 == 3) {\n    local_1068 = 3;\n    local_1038[local_103c] = 3;\n    local_1038[local_103c + 1] = 0;\n    local_103c = local_103c + 3;\n  }\n  else if ((local_1048 == 2) && (local_10cc == 3)) {\n    local_103c = local_103c + 3;\n  }\n  local_103c = local_103c + 3;\n  local_103e = (byte)local_103c;\n  local_1038[1] = (byte)((uint)local_103c >> 8);\n  local_38 = 0;\n  local_34 = 0;\n  local_30 = 0;\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  local_103d = 0x18;\n  if (*in_stack_00000020 < 0xb) {\n    local_1080 = *in_stack_00000020 * 0x1000 + 0x1000;\n  }\n  else {\n    local_1080 = (*in_stack_00000020 + -1000) * 0x1000 + 0x10000;\n  }\n  local_1084 = local_1038;\n  local_10a0 = 1;\n  if (0x18 < local_103c) {\n    local_10a0 = local_103c / 0x18 + 1;\n  }\n  local_1038[0] = local_103e;\n  for (local_108c = 1; local_108c < local_10a0; local_108c = local_108c + 1) {\n    local_104d = 0xa5;\n    FUN_011825d0(&local_38,&local_104d,&local_103d,local_1080);\n    memcpy((void *)((int)&local_34 + 3),local_1084,(uint)local_103d);\n    local_104e = 0xba;\n    local_10e4 = 0x20;\n    cVar2 = (**(code **)(*local_1044 + 0x14c))(&local_38,&local_10e4,&local_104e);\n    if (cVar2 == '\\0') {\n      pcVar6 = \"setMacro error\";\n      pQVar5 = local_10c0;\n      pQVar4 = (QMessageLogger *)\n               QMessageLogger::QMessageLogger(local_1118,(char *)0x0,0,(char *)0x0);\n      local_10ec = (QDebug *)QMessageLogger::debug(pQVar4);\n      local_8._0_1_ = 2;\n      local_10e8 = local_10ec;\n      QDebug::operator<<(local_10ec,(char *)pQVar5);\n      local_8._0_1_ = 1;\n      QDebug::~QDebug(local_10c0);\n      local_10c4 = 0xffffffff;\n      local_8 = (uint)local_8._1_3_ << 8;\n      FUN_00fe1650(pcVar6);\n      local_8 = 0xffffffff;\n      QVariant::~QVariant((QVariant *)&stack0x00000010);\n      goto LAB_0117b53d;\n    }\n    memset(&local_38,0,0x21);\n    local_103e = local_103e - local_103d;\n    local_1084 = local_1084 + local_103d;\n    local_1080 = (uint)local_103d + local_1080;\n    Sleep(10);\n  }\n  if (local_103e == 0) {\n    local_10c8 = 1;\n    local_8 = local_8 & 0xffffff00;\n    FUN_00fe1650();\n    local_8 = 0xffffffff;\n    QVariant::~QVariant((QVariant *)&stack0x00000010);\n  }\n  else {\n    if (local_103e < local_103d) {\n      local_104f = 0xa5;\n      FUN_011825d0(&local_38,&local_104f,&local_103e,local_1080);\n      memcpy((void *)((int)&local_34 + 3),local_1084,(uint)local_103e);\n      local_1050 = 0xba;\n      local_10f0 = 0x20;\n      cVar2 = (**(code **)(*local_1044 + 0x14c))(&local_38,&local_10f0,&local_1050);\n      if (cVar2 == '\\0') {\n        pcVar6 = \"setMacro error\";\n        pQVar5 = local_10d8;\n        pQVar4 = (QMessageLogger *)\n                 QMessageLogger::QMessageLogger(local_112c,(char *)0x0,0,(char *)0x0);\n        local_10d4 = (QDebug *)QMessageLogger::debug(pQVar4);\n        local_8._0_1_ = 3;\n        local_10d0 = local_10d4;\n        QDebug::operator<<(local_10d4,(char *)pQVar5);\n        local_8._0_1_ = 1;\n        QDebug::~QDebug(local_10d8);\n        local_10dc = 0xffffffff;\n        local_8 = (uint)local_8._1_3_ << 8;\n        FUN_00fe1650(pcVar6);\n        local_8 = 0xffffffff;\n        QVariant::~QVariant((QVariant *)&stack0x00000010);\n        goto LAB_0117b53d;\n      }\n    }\n    Sleep(local_1044[0x70]);\n    local_10e0 = 1;\n    local_8 = local_8 & 0xffffff00;\n    FUN_00fe1650();\n    local_8 = 0xffffffff;\n    QVariant::~QVariant((QVariant *)&stack0x00000010);\n  }\nLAB_0117b53d:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117a8e0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117a8e0",
+     "name": "FUN_0117a8e0"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0117a8e0(void)\n\n{\n  return 0xffffffff;\n}\n\n"
+   },
+   {
+    "address": "0x117b560",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117b560",
+     "name": "FUN_0117b560"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Removing unreachable block (ram,0x0117b6dd) */\n/* WARNING: Removing unreachable block (ram,0x0117b760) */\n\nvoid FUN_0117b560(undefined4 *param_1)\n\n{\n  char cVar1;\n  QMessageLogger *this;\n  QDebug *pQVar2;\n  QMessageLogger local_ec [20];\n  QDebug local_d8 [4];\n  QDebug *local_d4;\n  QDebug *local_d0;\n  undefined4 local_cc;\n  undefined4 local_c8;\n  undefined4 local_c4;\n  int *local_c0;\n  undefined1 local_bc;\n  undefined1 local_bb;\n  undefined1 local_ba;\n  undefined1 local_b9;\n  undefined1 local_b8 [7];\n  char cStack_b1;\n  char cStack_b0;\n  char cStack_af;\n  char cStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237325;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  memset(local_b8,0,0x80);\n  local_38 = 0;\n  local_34 = 0;\n  local_30 = 0;\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  cVar1 = FUN_01182530(&local_38,0x884);\n  if (cVar1 == '\\0') {\n    pQVar2 = local_d8;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_ec,(char *)0x0,0,(char *)0x0);\n    local_d4 = (QDebug *)QMessageLogger::debug(this);\n    local_8 = 0;\n    local_d0 = local_d4;\n    QDebug::operator<<(local_d4,(char *)pQVar2);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_d8);\n  }\n  else {\n    local_b9 = 4;\n    local_ba = 0xa5;\n    FUN_011825d0(local_b8,&local_ba,&local_b9,0x884);\n    cStack_b1 = (char)*param_1 + '\\x01';\n    cStack_b0 = local_34._1_1_;\n    cStack_af = local_34._2_1_;\n    cStack_ae = local_34._3_1_;\n    if (((local_34._1_1_ == '\\0') && (local_34._2_1_ == '\\0')) && (local_34._3_1_ == '\\0')) {\n      cStack_b0 = '\\x01';\n      local_c4 = 9;\n      cStack_af = '\\0';\n      cStack_ae = '\\x03';\n    }\n    if (((local_34._1_1_ == '\\x01') && (local_34._2_1_ == '\\0')) && (local_34._3_1_ == '\\0')) {\n      cStack_b0 = '\\x01';\n      local_c8 = 9;\n      cStack_af = '\\0';\n      cStack_ae = '\\x03';\n    }\n    cVar1 = (**(code **)(*local_c0 + 0x148))();\n    if (cVar1 != '\\0') {\n      local_bb = 0xba;\n      local_cc = 0x20;\n      local_bc = (**(code **)(*local_c0 + 0x14c))(local_b8,&local_cc,&local_bb);\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117b870",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117b870",
+     "name": "FUN_0117b870"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Removing unreachable block (ram,0x0117ba01) */\n\nvoid FUN_0117b870(int *param_1)\n\n{\n  char cVar1;\n  QMessageLogger *pQVar2;\n  QDebug *pQVar3;\n  QMessageLogger local_108 [20];\n  QMessageLogger local_f4 [20];\n  QDebug local_e0 [4];\n  QDebug *local_dc;\n  QDebug *local_d8;\n  undefined4 local_d4;\n  QDebug local_d0 [4];\n  QDebug *local_cc;\n  QDebug *local_c8;\n  undefined4 local_c4;\n  int *local_c0;\n  undefined1 local_bc;\n  undefined1 local_bb;\n  undefined1 local_ba;\n  undefined1 local_b9;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237365;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  if ((*param_1 < 0x65) || (4 < *param_1)) {\n    memset(local_b8,0,0x80);\n    local_b9 = 4;\n    local_ba = 0xa5;\n    FUN_011825d0(local_b8,&local_ba,&local_b9,0x89c);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    cVar1 = FUN_01182530(&local_38,0x89c);\n    if (cVar1 == '\\0') {\n      pQVar3 = local_e0;\n      pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_108,(char *)0x0,0,(char *)0x0)\n      ;\n      local_dc = (QDebug *)QMessageLogger::debug(pQVar2);\n      local_8 = 1;\n      local_d8 = local_dc;\n      QDebug::operator<<(local_dc,(char *)pQVar3);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_e0);\n    }\n    else {\n      uStack_b1 = (undefined1)*param_1;\n      uStack_af = local_34._2_1_;\n      uStack_b0 = local_34._1_1_;\n      local_c4 = 10;\n      uStack_ae = 0;\n      cVar1 = (**(code **)(*local_c0 + 0x148))();\n      if (cVar1 != '\\0') {\n        local_bb = 0xba;\n        local_d4 = 0x20;\n        local_bc = (**(code **)(*local_c0 + 0x14c))(local_b8,&local_d4,&local_bb);\n      }\n    }\n  }\n  else {\n    pQVar3 = local_d0;\n    pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_f4,(char *)0x0,0,(char *)0x0);\n    local_cc = (QDebug *)QMessageLogger::debug(pQVar2);\n    local_8 = 0;\n    local_c8 = local_cc;\n    QDebug::operator<<(local_cc,(char *)pQVar3);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_d0);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117bd30",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117bd30",
+     "name": "FUN_0117bd30"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0117bd30(int *param_1)\n\n{\n  char cVar1;\n  uint uVar2;\n  QMessageLogger *pQVar3;\n  QDebug *pQVar4;\n  QMessageLogger local_10c [20];\n  QMessageLogger local_f8 [20];\n  QDebug local_e4 [4];\n  QDebug *local_e0;\n  QDebug *local_dc;\n  undefined4 local_d8;\n  QDebug local_d4 [4];\n  QDebug *local_d0;\n  QDebug *local_cc;\n  int local_c8;\n  int *local_c4;\n  undefined1 local_be;\n  undefined1 local_bd;\n  undefined1 local_bc;\n  undefined1 local_bb;\n  undefined1 local_ba;\n  undefined1 local_b9;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_012373a5;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar2;\n  if (*param_1 < 10) {\n    local_b9 = (undefined1)*param_1;\n    local_ba = 0;\n    local_c8 = *param_1;\n    switch(local_c8) {\n    case 0:\n      local_b9 = 0;\n      break;\n    case 1:\n      local_b9 = 1;\n      break;\n    case 2:\n      local_b9 = 2;\n      break;\n    case 3:\n      local_b9 = 3;\n      break;\n    case 4:\n      local_b9 = 5;\n      break;\n    case 5:\n      local_b9 = 7;\n      break;\n    case 6:\n      local_b9 = 8;\n      break;\n    case 7:\n      local_ba = 1;\n      local_b9 = 3;\n    }\n    memset(local_b8,0,0x80);\n    local_bb = 4;\n    local_bc = 0xa5;\n    FUN_011825d0(local_b8,&local_bc,&local_bb,0x8ac);\n    uStack_b0 = local_b9;\n    uStack_af = local_ba;\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    cVar1 = FUN_01182530(&local_38,0x8ac);\n    if (cVar1 == '\\0') {\n      pQVar4 = local_e4;\n      pQVar3 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_10c,(char *)0x0,0,(char *)0x0)\n      ;\n      local_e0 = (QDebug *)QMessageLogger::debug(pQVar3);\n      local_8 = 1;\n      local_dc = local_e0;\n      QDebug::operator<<(local_e0,(char *)pQVar4);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_e4);\n    }\n    else {\n      uStack_b1 = (undefined1)local_34;\n      uStack_b0 = local_b9;\n      uStack_af = local_ba;\n      uStack_ae = local_34._3_1_;\n      cVar1 = (**(code **)(*local_c4 + 0x148))(uVar2);\n      if (cVar1 != '\\0') {\n        local_bd = 0xba;\n        local_d8 = 0x20;\n        local_be = (**(code **)(*local_c4 + 0x14c))(local_b8,&local_d8,&local_bd);\n      }\n    }\n  }\n  else {\n    pQVar4 = local_d4;\n    pQVar3 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_f8,(char *)0x0,0,(char *)0x0);\n    local_d0 = (QDebug *)QMessageLogger::debug(pQVar3);\n    local_8 = 0;\n    local_cc = local_d0;\n    QDebug::operator<<(local_d0,(char *)pQVar4);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_d4);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117c070",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117c070",
+     "name": "FUN_0117c070"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0117c070(int *param_1)\n\n{\n  char cVar1;\n  QString *pQVar2;\n  QImage local_1d4 [16];\n  undefined1 *local_1c4;\n  QImage local_1c0 [16];\n  undefined4 local_1b0;\n  QString local_1ac [4];\n  undefined4 local_1a8;\n  undefined4 local_1a4;\n  QString local_1a0 [4];\n  int *local_19c;\n  undefined1 local_197;\n  undefined1 local_196;\n  undefined1 local_195;\n  undefined1 local_194 [384];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_012373fd;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  QImage::QImage(local_1c0,0x40,0x30,2);\n  local_8 = 0;\n  pQVar2 = local_1ac;\n  FUN_00fcb520(pQVar2);\n  local_1a8 = FUN_011c36f0(pQVar2);\n  local_8._0_1_ = 1;\n  local_1a4 = local_1a8;\n  FUN_00fb89e0(local_1a0,local_1a8);\n  local_8._0_1_ = 3;\n  QString::~QString(local_1ac);\n  QImage::load(local_1c0,local_1a0,(char *)0x0);\n  if (*param_1 == 1) {\n    local_195 = 1;\n    local_8 = (uint)local_8._1_3_ << 8;\n    QString::~QString(local_1a0);\n    local_8 = 0xffffffff;\n    QImage::~QImage(local_1c0);\n  }\n  else {\n    local_1c4 = &stack0xfffffe24;\n    FUN_00fb8360(0);\n    QImage::convertToFormat(local_1c0,local_1d4,2);\n    local_8._0_1_ = 4;\n    memset(local_194,0,0x180);\n    cVar1 = FUN_0117f050(local_1d4,local_194);\n    if (cVar1 != '\\0') {\n      FUN_0117f450();\n      local_1b0 = 8;\n      cVar1 = (**(code **)(*local_19c + 0xe8))();\n      if (cVar1 != '\\0') {\n        local_196 = 1;\n        local_8._0_1_ = 3;\n        QImage::~QImage(local_1d4);\n        local_8 = (uint)local_8._1_3_ << 8;\n        QString::~QString(local_1a0);\n        local_8 = 0xffffffff;\n        QImage::~QImage(local_1c0);\n        goto LAB_0117c28a;\n      }\n    }\n    local_197 = 0;\n    local_8._0_1_ = 3;\n    QImage::~QImage(local_1d4);\n    local_8 = (uint)local_8._1_3_ << 8;\n    QString::~QString(local_1a0);\n    local_8 = 0xffffffff;\n    QImage::~QImage(local_1c0);\n  }\nLAB_0117c28a:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117f860",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117f860",
+     "name": "FUN_0117f860"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0117f860(int *param_1)\n\n{\n  uint uVar1;\n  QMessageLogger *this;\n  QDebug *pQVar2;\n  QMessageLogger local_c0 [20];\n  undefined4 local_ac;\n  QDebug local_a8 [4];\n  QDebug *local_a4;\n  QDebug *local_a0;\n  int *local_9c;\n  undefined1 local_98;\n  undefined1 local_97;\n  undefined1 local_96;\n  char local_95;\n  undefined1 local_94 [7];\n  undefined1 uStack_8d;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_0123772e;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar1;\n  if (*param_1 == 8) {\n    memset(local_94,0,0x80);\n    local_96 = 4;\n    local_97 = 0xa5;\n    FUN_011825d0(local_94,&local_97,&local_96,0x8a0);\n    uStack_8d = (undefined1)*param_1;\n    local_98 = 0xba;\n    local_ac = 0x20;\n    local_95 = (**(code **)(*local_9c + 0x14c))(local_94,&local_ac,&local_98,uVar1);\n    if (local_95 != '\\0') {\n      *(char *)((int)local_9c + 0x4a3) = (char)*param_1;\n    }\n  }\n  else {\n    pQVar2 = local_a8;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_c0,(char *)0x0,0,(char *)0x0);\n    local_a4 = (QDebug *)QMessageLogger::debug(this);\n    local_8 = 0;\n    local_a0 = local_a4;\n    QDebug::operator<<(local_a4,(char *)pQVar2);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_a8);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117c2b0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117c2b0",
+     "name": "FUN_0117c2b0"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Removing unreachable block (ram,0x0117c441) */\n\nvoid FUN_0117c2b0(int *param_1)\n\n{\n  char cVar1;\n  QMessageLogger *pQVar2;\n  QDebug *pQVar3;\n  QMessageLogger local_108 [20];\n  QMessageLogger local_f4 [20];\n  QDebug local_e0 [4];\n  QDebug *local_dc;\n  QDebug *local_d8;\n  undefined4 local_d4;\n  QDebug local_d0 [4];\n  QDebug *local_cc;\n  QDebug *local_c8;\n  undefined4 local_c4;\n  int *local_c0;\n  undefined1 local_bc;\n  undefined1 local_bb;\n  undefined1 local_ba;\n  undefined1 local_b9;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_0123743d;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  if ((*param_1 < 4) || (-1 < *param_1)) {\n    memset(local_b8,0,0x80);\n    local_b9 = 4;\n    local_ba = 0xa5;\n    FUN_011825d0(local_b8,&local_ba,&local_b9,0x89c);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    cVar1 = FUN_01182530(&local_38,0x89c);\n    if (cVar1 == '\\0') {\n      pQVar3 = local_e0;\n      pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_108,(char *)0x0,0,(char *)0x0)\n      ;\n      local_dc = (QDebug *)QMessageLogger::debug(pQVar2);\n      local_8 = 1;\n      local_d8 = local_dc;\n      QDebug::operator<<(local_dc,(char *)pQVar3);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_e0);\n    }\n    else {\n      uStack_b0 = (undefined1)*param_1;\n      uStack_af = local_34._2_1_;\n      uStack_b1 = (undefined1)local_34;\n      local_c4 = 10;\n      uStack_ae = 0;\n      local_bb = 0xba;\n      local_d4 = 0x20;\n      local_bc = (**(code **)(*local_c0 + 0x14c))(local_b8,&local_d4,&local_bb);\n    }\n  }\n  else {\n    pQVar3 = local_d0;\n    pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_f4,(char *)0x0,0,(char *)0x0);\n    local_cc = (QDebug *)QMessageLogger::debug(pQVar2);\n    local_8 = 0;\n    local_c8 = local_cc;\n    QDebug::operator<<(local_cc,(char *)pQVar3);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_d0);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117c520",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117c520",
+     "name": "FUN_0117c520"
+    },
+    "status": "ok",
+    "pseudocode": "\n/* WARNING: Removing unreachable block (ram,0x0117c682) */\n/* WARNING: Removing unreachable block (ram,0x0117c6c5) */\n\nvoid FUN_0117c520(int *param_1)\n\n{\n  char cVar1;\n  QMessageLogger *pQVar2;\n  QDebug *pQVar3;\n  QMessageLogger local_110 [20];\n  QMessageLogger local_fc [20];\n  QDebug local_e8 [4];\n  QDebug *local_e4;\n  QDebug *local_e0;\n  undefined4 local_dc;\n  QDebug local_d8 [4];\n  QDebug *local_d4;\n  QDebug *local_d0;\n  undefined4 local_cc;\n  undefined4 local_c8;\n  undefined1 local_c3;\n  undefined1 local_c2;\n  undefined1 local_c1;\n  int *local_c0;\n  char local_b9;\n  undefined1 local_b8 [7];\n  undefined1 uStack_b1;\n  undefined1 uStack_b0;\n  undefined1 uStack_af;\n  undefined1 uStack_ae;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_0123747d;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  if ((*param_1 < 4) || (-1 < *param_1)) {\n    memset(local_b8,0,0x80);\n    local_c1 = 4;\n    local_c2 = 0xa5;\n    FUN_011825d0(local_b8,&local_c2,&local_c1,0x89c);\n    local_38 = 0;\n    local_34 = 0;\n    local_30 = 0;\n    local_2c = 0;\n    local_28 = 0;\n    local_24 = 0;\n    local_20 = 0;\n    local_1c = 0;\n    local_18 = 0;\n    cVar1 = FUN_01182530(&local_38,0x89c);\n    if (cVar1 == '\\0') {\n      pQVar3 = local_e8;\n      pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_110,(char *)0x0,0,(char *)0x0)\n      ;\n      local_e4 = (QDebug *)QMessageLogger::debug(pQVar2);\n      local_8 = 1;\n      local_e0 = local_e4;\n      QDebug::operator<<(local_e4,(char *)pQVar3);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_e8);\n    }\n    else {\n      uStack_b1 = (undefined1)local_34;\n      uStack_b0 = 0;\n      uStack_af = (undefined1)*param_1;\n      local_c8 = 8;\n      local_cc = 10;\n      uStack_ae = 0;\n      local_c3 = 0xba;\n      local_dc = 0x20;\n      local_b9 = (**(code **)(*local_c0 + 0x14c))(local_b8,&local_dc,&local_c3);\n      if (local_b9 != '\\0') {\n        local_c0[0x76] = *param_1;\n        *(char *)((int)local_c0 + 0x4a1) = (char)local_c0[0x76];\n      }\n      Sleep(local_c0[0x70]);\n    }\n  }\n  else {\n    pQVar3 = local_d8;\n    pQVar2 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_fc,(char *)0x0,0,(char *)0x0);\n    local_d4 = (QDebug *)QMessageLogger::debug(pQVar2);\n    local_8 = 0;\n    local_d0 = local_d4;\n    QDebug::operator<<(local_d4,(char *)pQVar3);\n    local_8 = 0xffffffff;\n    QDebug::~QDebug(local_d8);\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117c7f0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117c7f0",
+     "name": "FUN_0117c7f0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0117c7f0(void)\n\n{\n  undefined4 local_94;\n  int *local_90;\n  undefined1 local_8c;\n  undefined1 local_8b;\n  undefined1 local_8a;\n  undefined1 local_89;\n  undefined1 local_88 [3];\n  undefined1 uStack_85;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  memset(local_88,0,0x80);\n  local_89 = 0x52;\n  local_8a = 0xad;\n  FUN_011825d0(local_88,&local_8a,&local_89,0);\n  uStack_85 = 0x3d;\n  local_8b = 0xba;\n  local_94 = 0x20;\n  local_8c = (**(code **)(*local_90 + 0x14c))(local_88,&local_94,&local_8b);\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11246c0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11246c0",
+     "name": "FUN_011246c0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011246c0(char param_1)\n\n{\n  char cVar1;\n  undefined4 local_bc;\n  uint local_b8;\n  int *local_b4;\n  undefined1 local_b0;\n  undefined1 local_af;\n  undefined1 local_ae;\n  undefined1 local_ad;\n  undefined1 local_ac [7];\n  undefined1 uStack_a5;\n  undefined1 uStack_a4;\n  undefined1 uStack_a3;\n  undefined1 uStack_a2;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  memset(local_ac,0,0x80);\n  local_ad = 4;\n  local_ae = 0xa5;\n  FUN_011825d0(local_ac,&local_ae,&local_ad,0x8ac);\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  local_14 = 0;\n  local_10 = 0;\n  local_c = 0;\n  cVar1 = FUN_01182530(&local_2c,0x8ac);\n  if (cVar1 != '\\0') {\n    uStack_a5 = (undefined1)local_28;\n    uStack_a4 = local_28._1_1_;\n    uStack_a3 = local_28._2_1_;\n    uStack_a2 = param_1 != '\\0';\n    local_b8 = (uint)(byte)uStack_a2;\n    cVar1 = (**(code **)(*local_b4 + 0x148))();\n    if (cVar1 != '\\0') {\n      local_af = 0xba;\n      local_bc = 0x20;\n      local_b0 = (**(code **)(*local_b4 + 0x14c))(local_ac,&local_bc,&local_af);\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x1124a20",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1124a20",
+     "name": "FUN_01124a20"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01124a20(int *param_1)\n\n{\n  char cVar1;\n  undefined4 local_bc;\n  int local_b8;\n  int *local_b4;\n  undefined1 local_b0;\n  undefined1 local_af;\n  undefined1 local_ae;\n  undefined1 local_ad;\n  undefined1 local_ac [7];\n  undefined1 uStack_a5;\n  undefined1 uStack_a4;\n  undefined1 uStack_a3;\n  undefined1 uStack_a2;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_b8 = *param_1 + 1;\n  memset(local_ac,0,0x80);\n  local_ad = 4;\n  local_ae = 0xa5;\n  FUN_011825d0(local_ac,&local_ae,&local_ad,0x884);\n  local_2c = 0;\n  local_28 = 0;\n  local_24 = 0;\n  local_20 = 0;\n  local_1c = 0;\n  local_18 = 0;\n  local_14 = 0;\n  local_10 = 0;\n  local_c = 0;\n  cVar1 = FUN_01182530(&local_2c,0x884);\n  if (cVar1 != '\\0') {\n    uStack_a5 = (undefined1)local_28;\n    uStack_a4 = (undefined1)local_b8;\n    uStack_a3 = local_28._2_1_;\n    uStack_a2 = local_28._3_1_;\n    local_af = 0xba;\n    local_bc = 0x20;\n    local_b0 = (**(code **)(*local_b4 + 0x14c))(local_ac,&local_bc,&local_af);\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117cda0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117cda0",
+     "name": "FUN_0117cda0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0117cda0(void)\n\n{\n  undefined4 local_100;\n  undefined4 local_fc;\n  undefined4 local_f8;\n  undefined4 local_f4;\n  undefined4 local_f0;\n  undefined4 local_ec;\n  undefined4 local_e8;\n  undefined4 local_e4;\n  undefined4 local_e0;\n  undefined4 local_dc;\n  undefined4 local_d8;\n  undefined4 local_d4;\n  undefined4 local_d0;\n  undefined4 local_cc;\n  undefined4 local_c8;\n  undefined4 local_c4;\n  undefined4 local_c0;\n  undefined4 local_bc;\n  undefined4 local_b8;\n  undefined4 local_b4;\n  undefined4 local_b0;\n  undefined4 local_ac;\n  int *local_a8;\n  int local_a4;\n  int local_a0;\n  undefined1 local_9c;\n  undefined1 local_9b;\n  undefined1 local_9a;\n  undefined1 local_99;\n  undefined1 local_98;\n  undefined1 local_97;\n  undefined1 local_96;\n  undefined1 local_95;\n  undefined1 local_94 [7];\n  undefined1 uStack_8d;\n  undefined1 uStack_8c;\n  undefined1 uStack_8b;\n  undefined1 uStack_8a;\n  undefined1 uStack_89;\n  undefined1 uStack_88;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  puStack_c = &LAB_012374ad;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_8 = 0;\n  local_b4 = 0;\n  local_b8 = 0;\n  local_e8 = FUN_01000270(&local_b8,&local_b4);\n  local_bc = 0;\n  local_c0 = 1;\n  local_ec = FUN_01000270(&local_c0,&local_bc);\n  local_100 = 0;\n  local_c4 = 2;\n  local_f0 = FUN_01000270(&local_c4,&local_100);\n  local_c8 = 0;\n  local_cc = 3;\n  local_a0 = FUN_01000270(&local_cc,&local_c8);\n  local_d0 = 0;\n  local_d4 = 4;\n  local_a4 = FUN_01000270(&local_d4,&local_d0);\n  local_d8 = 0;\n  local_dc = 5;\n  local_f8 = FUN_01000270(&local_dc,&local_d8);\n  local_e0 = 0;\n  local_e4 = 6;\n  local_f4 = FUN_01000270(&local_e4,&local_e0);\n  local_96 = 0;\n  local_95 = 0;\n  local_ac = local_e8;\n  switch(local_e8) {\n  case 0:\n    local_96 = 1;\n    break;\n  case 1:\n    local_96 = 2;\n    break;\n  case 2:\n    local_96 = 4;\n    break;\n  case 3:\n    local_96 = 8;\n    break;\n  case 4:\n    local_96 = 0x10;\n    break;\n  case 5:\n    local_96 = 0x18;\n    break;\n  case 6:\n    local_96 = 0x20;\n  }\n  local_b0 = local_ec;\n  switch(local_ec) {\n  case 0:\n    local_95 = 1;\n    break;\n  case 1:\n    local_95 = 2;\n    break;\n  case 2:\n    local_95 = 4;\n    break;\n  case 3:\n    local_95 = 8;\n    break;\n  case 4:\n    local_95 = 0x10;\n    break;\n  case 5:\n    local_95 = 0x18;\n    break;\n  case 6:\n    local_95 = 0x20;\n  }\n  if ((local_a0 == 1) && (local_a4 == 1)) {\n    local_97 = 0;\n  }\n  else if ((local_a0 == 1) && (local_a4 == 0)) {\n    local_97 = 2;\n  }\n  else if ((local_a0 == 0) && (local_a4 == 1)) {\n    local_97 = 1;\n  }\n  else {\n    local_97 = 3;\n  }\n  memset(local_94,0,0x80);\n  local_98 = 8;\n  local_99 = 0xa5;\n  FUN_011825d0(local_94,&local_99,&local_98,0x8c0);\n  uStack_8d = local_96;\n  uStack_8c = local_95;\n  uStack_8b = (undefined1)local_f0;\n  uStack_8a = local_97;\n  uStack_89 = (undefined1)local_f4;\n  uStack_88 = (undefined1)local_f8;\n  local_9a = 0xba;\n  local_fc = 0x20;\n  local_9c = (**(code **)(*local_a8 + 0x14c))(local_94,&local_fc,&local_9a);\n  local_8 = 0xffffffff;\n  local_9b = local_9c;\n  FUN_00fc1420();\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117d1d0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117d1d0",
+     "name": "FUN_0117d1d0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0117d1d0(void)\n\n{\n  char cVar1;\n  uint uVar2;\n  int iVar3;\n  char *pcVar4;\n  undefined4 uVar5;\n  undefined4 *puVar6;\n  undefined1 *puVar7;\n  undefined4 local_e4;\n  undefined4 local_e0;\n  uint local_dc;\n  undefined4 local_d8;\n  uint local_d4;\n  undefined4 local_d0;\n  int local_cc;\n  int local_c8;\n  int local_c4;\n  int local_c0;\n  int local_bc;\n  undefined1 local_b8 [5];\n  char local_b3;\n  undefined1 local_b2;\n  undefined1 local_b1;\n  undefined1 local_b0;\n  undefined1 local_af;\n  undefined1 local_ae;\n  undefined1 local_ad;\n  undefined1 local_ac;\n  undefined1 local_ab;\n  undefined1 local_aa;\n  undefined1 local_a9;\n  int local_a8;\n  int *local_a0;\n  char local_99;\n  int local_98;\n  char local_94 [128];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  uint local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_012374eb;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_14 = uVar2;\n  memset(local_94,0,0x80);\n  local_a9 = 0x10;\n  local_aa = 0xa5;\n  cVar1 = FUN_011825d0(local_94,&local_aa,&local_a9,0x888);\n  if (cVar1 != '\\0') {\n    puVar7 = local_b8;\n    FUN_00fb9e10(puVar7,uVar2);\n    FUN_011c4290();\n    FUN_01070b20();\n    FUN_0101f640(puVar7);\n    local_8 = 0;\n    local_98 = 7;\n    local_a8 = 0;\n    FUN_00fb8560();\n    local_8 = CONCAT31(local_8._1_3_,1);\n    local_bc = 0;\n    while (iVar3 = FUN_00fc0ae0(), local_bc < iVar3) {\n      pcVar4 = (char *)FUN_01026ce0(local_bc);\n      if (*pcVar4 == '\\0') {\n        uVar5 = FUN_010136e0(local_bc);\n        FUN_00fe75e0(uVar5);\n        local_a8 = local_a8 + 1;\n      }\n      else {\n        puVar6 = (undefined4 *)FUN_010136e0(local_bc);\n        local_d0 = *puVar6;\n        local_94[local_98] = (char)local_d0;\n        local_94[local_98 + 1] = (char)((uint)local_d0 >> 8);\n        local_98 = local_98 + 2;\n      }\n      local_bc = local_bc + 1;\n    }\n    for (local_c4 = 0; local_c4 < local_a8; local_c4 = local_c4 + 1) {\n      puVar6 = (undefined4 *)FUN_00fe8400(local_c4);\n      local_94[local_98] = (char)*puVar6;\n      local_98 = local_98 + 1;\n      puVar6 = (undefined4 *)FUN_00fe8400(local_c4);\n      local_94[local_98] = (char)((uint)*puVar6 >> 8);\n      local_98 = local_98 + 1;\n    }\n    local_94[local_98] = '\\x06' - (char)local_a8;\n    local_d4 = local_98 + 1;\n    local_98 = local_98 + 2;\n    if (0x7f < local_d4) {\n      ___report_rangecheckfailure();\n    }\n    local_94[local_d4] = '\\0';\n    local_cc = (**(code **)(*local_a0 + 0x38))();\n    if (6 - local_a8 < local_cc) {\n      local_cc = 6 - local_a8;\n      cVar1 = (**(code **)(*local_a0 + 0xac))(&local_cc);\n      if (cVar1 == '\\0') {\n        local_ab = 0;\n        local_8 = local_8 & 0xffffff00;\n        FUN_00fb86c0();\n        local_8 = 0xffffffff;\n        FUN_01022fa0();\n        goto LAB_0117d8e7;\n      }\n    }\n    cVar1 = (**(code **)(*local_a0 + 0x148))();\n    if (cVar1 == '\\0') {\n      local_ac = 0;\n      local_8 = local_8 & 0xffffff00;\n      FUN_00fb86c0();\n      local_8 = 0xffffffff;\n      FUN_01022fa0();\n    }\n    else {\n      local_ad = 0xba;\n      local_e0 = 0x20;\n      local_99 = (**(code **)(*local_a0 + 0x14c))(local_94,&local_e0,&local_ad);\n      if (local_99 == '\\0') {\n        local_ae = 0;\n        local_8 = local_8 & 0xffffff00;\n        FUN_00fb86c0();\n        local_8 = 0xffffffff;\n        FUN_01022fa0();\n      }\n      else {\n        memset(local_94,0,0x80);\n        local_af = 0x10;\n        local_b0 = 0xa5;\n        cVar1 = FUN_011825d0(local_94,&local_b0,&local_af,0x8c8);\n        if (cVar1 == '\\0') {\n          local_b1 = 0;\n          local_8 = local_8 & 0xffffff00;\n          FUN_00fb86c0();\n          local_8 = 0xffffffff;\n          FUN_01022fa0();\n        }\n        else {\n          local_98 = 7;\n          local_a8 = 0;\n          FUN_00fe7750();\n          local_c0 = 0;\n          while (iVar3 = FUN_00fc0ae0(), local_c0 < iVar3) {\n            pcVar4 = (char *)FUN_01026ce0(local_c0);\n            if (*pcVar4 == '\\0') {\n              iVar3 = FUN_010136e0(local_c0);\n              FUN_00fe75e0(iVar3 + 4);\n              local_a8 = local_a8 + 1;\n            }\n            else {\n              iVar3 = FUN_010136e0(local_c0);\n              local_d8 = *(undefined4 *)(iVar3 + 4);\n              local_94[local_98] = (char)local_d8;\n              local_94[local_98 + 1] = (char)((uint)local_d8 >> 8);\n              local_98 = local_98 + 2;\n            }\n            local_c0 = local_c0 + 1;\n          }\n          for (local_c8 = 0; local_c8 < local_a8; local_c8 = local_c8 + 1) {\n            puVar6 = (undefined4 *)FUN_00fe8400(local_c8);\n            local_94[local_98] = (char)*puVar6;\n            local_98 = local_98 + 1;\n            puVar6 = (undefined4 *)FUN_00fe8400(local_c8);\n            local_94[local_98] = (char)((uint)*puVar6 >> 8);\n            local_98 = local_98 + 1;\n          }\n          local_94[local_98] = '\\x06' - (char)local_a8;\n          local_dc = local_98 + 1;\n          local_98 = local_98 + 2;\n          if (0x7f < local_dc) {\n            ___report_rangecheckfailure();\n          }\n          local_94[local_dc] = '\\0';\n          local_b2 = 0xba;\n          local_e4 = 0x20;\n          local_b3 = (**(code **)(*local_a0 + 0x14c))(local_94,&local_e4,&local_b2);\n          local_8 = local_8 & 0xffffff00;\n          local_99 = local_b3;\n          FUN_00fb86c0();\n          local_8 = 0xffffffff;\n          FUN_01022fa0();\n        }\n      }\n    }\n  }\nLAB_0117d8e7:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x112b580",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112b580",
+     "name": "FUN_0112b580"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0112b580(int *param_1,int *param_2)\n\n{\n  uint uVar1;\n  undefined4 *puVar2;\n  int iVar3;\n  int *piVar4;\n  int local_48;\n  undefined4 local_40;\n  undefined4 local_3c;\n  undefined4 local_38;\n  undefined4 local_34;\n  undefined4 local_30;\n  undefined4 local_2c;\n  undefined4 local_28;\n  undefined4 local_24;\n  undefined4 local_20;\n  undefined4 local_1c;\n  undefined1 local_18 [4];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_0123186a;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_40 = 0;\n  local_3c = 2;\n  local_38 = 1;\n  local_34 = 7;\n  local_30 = 8;\n  local_2c = 0xd;\n  local_28 = 0xb;\n  local_24 = 0xc;\n  local_20 = 5;\n  local_1c = 6;\n  local_14 = uVar1;\n  puVar2 = (undefined4 *)FUN_00fc13f0(&local_40,local_18);\n  FUN_00fc12b0(*puVar2,puVar2[1]);\n  local_8 = 0;\n  local_48 = 0;\n  while( true ) {\n    iVar3 = FUN_00fc0ae0(uVar1);\n    if (iVar3 <= local_48) break;\n    piVar4 = (int *)FUN_00fe8400(local_48);\n    if (*piVar4 == *param_1) {\n      *param_2 = local_48;\n    }\n    local_48 = local_48 + 1;\n  }\n  local_8 = 0xffffffff;\n  FUN_00fb86c0();\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117da20",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117da20",
+     "name": "FUN_0117da20"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined1 FUN_0117da20(int *param_1)\n\n{\n  uint uVar1;\n  int iVar2;\n  undefined4 uVar3;\n  int in_ECX;\n  undefined1 *puVar4;\n  int local_24;\n  undefined1 local_1c [4];\n  int local_18;\n  undefined1 local_13;\n  undefined1 local_12;\n  char local_11;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237548;\n  local_10 = ExceptionList;\n  uVar1 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  puVar4 = local_1c;\n  FUN_00fb9e10(puVar4,uVar1);\n  FUN_011c4290();\n  FUN_01070b60();\n  FUN_01040b60(puVar4);\n  local_8 = 0;\n  local_24 = 0;\n  local_11 = '\\0';\n  local_18 = 0;\n  while (iVar2 = FUN_00ff83e0(), local_18 < iVar2) {\n    FUN_00ffc860(local_18);\n    uVar3 = FUN_0104d480();\n    if ((((*(char *)(in_ECX + 0x4a1) == '\\0') || (local_18 != 0)) ||\n        (*(int *)(in_ECX + 0x1e8) <= *(int *)(in_ECX + 0x1e0))) &&\n       (iVar2 = FUN_01033420(uVar1,uVar3), iVar2 == 9)) {\n      local_24 = local_24 + 1;\n      iVar2 = FUN_01033710();\n      if (*param_1 == iVar2) {\n        local_11 = '\\x01';\n      }\n    }\n    local_18 = local_18 + 1;\n  }\n  if ((local_24 < 2) && (local_11 != '\\0')) {\n    local_12 = 0;\n    local_8 = 0xffffffff;\n    FUN_00ff63a0();\n  }\n  else {\n    local_13 = 1;\n    local_8 = 0xffffffff;\n    FUN_00ff63a0();\n    local_12 = local_13;\n  }\n  ExceptionList = local_10;\n  return local_12;\n}\n\n"
+   },
+   {
+    "address": "0x117db60",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117db60",
+     "name": "FUN_0117db60"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined1 FUN_0117db60(void)\n\n{\n  char cVar1;\n  bool bVar2;\n  QMessageLogger *this;\n  int iVar3;\n  undefined4 *puVar4;\n  QDebug *pQVar5;\n  char *pcVar6;\n  undefined4 uVar7;\n  int *piVar8;\n  QMessageLogger local_78 [20];\n  undefined1 local_64 [4];\n  undefined1 local_60;\n  undefined1 local_50 [4];\n  undefined1 local_4c [4];\n  undefined1 local_48 [4];\n  undefined4 local_44;\n  undefined1 local_40 [8];\n  QDebug local_38 [4];\n  QDebug *local_34;\n  QDebug *local_30;\n  undefined1 local_24 [12];\n  int local_18;\n  undefined1 local_12;\n  undefined1 local_11;\n  void *local_10;\n  undefined1 *puStack_c;\n  int local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237594;\n  local_10 = ExceptionList;\n  ExceptionList = &local_10;\n  FUN_00fc1060(DAT_037b6510 ^ (uint)&stack0xfffffffc);\n  local_8 = 0;\n  FUN_00fc1060();\n  local_8._0_1_ = 1;\n  FUN_00fc1060();\n  local_8._0_1_ = 2;\n  FUN_00fb8560();\n  local_8._0_1_ = 3;\n  cVar1 = FUN_00fe4b70();\n  if (cVar1 == '\\0') {\n    local_18 = FUN_0100ab70();\n    while (local_18 = local_18 + -1, -1 < local_18) {\n      iVar3 = FUN_01069940(local_18);\n      if (*(char *)(iVar3 + 4) == '\\x01') {\n        iVar3 = FUN_01069940(local_18);\n        cVar1 = FUN_010168b0(iVar3 + 0x10);\n        if (cVar1 == '\\0') {\n          piVar8 = &local_18;\n          iVar3 = FUN_01069940(local_18);\n          FUN_00fff190(local_48,iVar3 + 0x10,piVar8);\n        }\n        else {\n          piVar8 = &local_18;\n          iVar3 = FUN_01069940(local_18);\n          FUN_00fff190(local_40,iVar3 + 0x10,piVar8);\n          uVar7 = 0;\n          iVar3 = FUN_01069940(local_18);\n          local_44 = FUN_01069dd0(iVar3 + 0x10,uVar7);\n          uVar7 = 0;\n          iVar3 = FUN_01069940(local_18);\n          uVar7 = FUN_01069dd0(iVar3 + 0x10,uVar7);\n          FUN_0106a3b0(uVar7);\n        }\n      }\n      else {\n        iVar3 = FUN_01069940(local_18);\n        cVar1 = FUN_010529f0(iVar3 + 0x10);\n        if (cVar1 == '\\0') {\n          iVar3 = FUN_01069940(local_18);\n          cVar1 = FUN_010168b0(iVar3 + 0x10);\n          if (cVar1 == '\\0') {\n            pcVar6 = \"\";\n            iVar3 = FUN_01069940(local_18);\n            bVar2 = QString::operator!=((QString *)(iVar3 + 0x10),pcVar6);\n            if (bVar2) {\n              uVar7 = FUN_01069940(local_18);\n              FUN_00fe0d60(uVar7);\n              local_8._0_1_ = 5;\n              local_60 = 1;\n              FUN_01052760(local_64);\n              iVar3 = FUN_01069940(local_18);\n              FUN_0100a320(iVar3 + 0x10);\n              local_8._0_1_ = 3;\n              FUN_00fe1650();\n            }\n          }\n        }\n        iVar3 = FUN_01069940(local_18);\n        cVar1 = FUN_010529f0(iVar3 + 0x10);\n        if (cVar1 != '\\0') {\n          iVar3 = FUN_01069940(local_18);\n          cVar1 = FUN_010168b0(iVar3 + 0x10);\n          if (cVar1 == '\\0') {\n            iVar3 = FUN_01069940(local_18);\n            FUN_0106a310(iVar3 + 0x10);\n            iVar3 = FUN_01069940(local_18);\n            FUN_0100a320(iVar3 + 0x10);\n          }\n        }\n      }\n    }\n    cVar1 = FUN_01016b00();\n    if (cVar1 == '\\0') {\n      FUN_010699e0(local_24);\n      while( true ) {\n        uVar7 = FUN_01069a70(local_50);\n        cVar1 = FUN_00fb8890(uVar7);\n        if (cVar1 == '\\0') break;\n        puVar4 = (undefined4 *)FUN_00fc02d0();\n        FUN_0106a3f0(*puVar4);\n        FUN_00fc1650(local_4c,0);\n      }\n    }\n    local_12 = 1;\n    local_8._0_1_ = 2;\n    FUN_00fe13d0();\n    local_8._0_1_ = 1;\n    FUN_00fe1210();\n    local_8 = (uint)local_8._1_3_ << 8;\n    FUN_00fe1210();\n    local_8 = 0xffffffff;\n    FUN_00fe1210();\n    local_11 = local_12;\n  }\n  else {\n    pcVar6 = \"[Error] macro is empty!!\";\n    pQVar5 = local_38;\n    this = (QMessageLogger *)QMessageLogger::QMessageLogger(local_78,(char *)0x0,0,(char *)0x0);\n    local_34 = (QDebug *)QMessageLogger::debug(this);\n    local_8._0_1_ = 4;\n    local_30 = local_34;\n    QDebug::operator<<(local_34,(char *)pQVar5);\n    local_8._0_1_ = 3;\n    QDebug::~QDebug(local_38);\n    local_11 = 0;\n    local_8._0_1_ = 2;\n    FUN_00fe13d0(pcVar6);\n    local_8._0_1_ = 1;\n    FUN_00fe1210();\n    local_8 = (uint)local_8._1_3_ << 8;\n    FUN_00fe1210();\n    local_8 = 0xffffffff;\n    FUN_00fe1210();\n  }\n  ExceptionList = local_10;\n  return local_11;\n}\n\n"
+   },
+   {
+    "address": "0x117c8c0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117c8c0",
+     "name": "FUN_0117c8c0"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0117c8c0(void)\n\n{\n  return 0;\n}\n\n"
+   },
+   {
+    "address": "0x112c2a0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112c2a0",
+     "name": "FUN_0112c2a0"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0112c2a0(void)\n\n{\n  char cVar1;\n  int iVar2;\n  undefined4 uVar3;\n  QMessageLogger *pQVar4;\n  QDebug *pQVar5;\n  int *in_ECX;\n  char *pcVar6;\n  QMessageLogger local_68 [20];\n  QMessageLogger local_54 [20];\n  undefined8 local_40;\n  QDebug local_38 [4];\n  QDebug *local_34;\n  QDebug *local_30;\n  QDebug local_2c [4];\n  QDebug *local_28;\n  QDebug *local_24;\n  undefined4 local_20;\n  int local_1c;\n  int local_18;\n  int *local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01231a59;\n  local_10 = ExceptionList;\n  ExceptionList = &local_10;\n  local_14 = in_ECX;\n  if (in_ECX[0x6e] < 0x2000) {\n    local_40 = (**(code **)(*in_ECX + 0x98))(DAT_037b6510 ^ (uint)&stack0xfffffffc);\n    if (local_40 == -1) {\n      ExceptionList = local_10;\n      return 0;\n    }\n    FUN_01202720(local_40);\n  }\n  iVar2 = (**(code **)(*local_14 + 0x144))();\n  if (iVar2 == -1) {\n    cVar1 = (**(code **)(*local_14 + 0x15c))();\n    if (cVar1 == '\\0') {\n      ExceptionList = local_10;\n      return 0;\n    }\n    iVar2 = (**(code **)(*local_14 + 0x144))();\n    if (iVar2 == -1) {\n      ExceptionList = local_10;\n      return 0;\n    }\n  }\n  local_1c = (**(code **)(*local_14 + 0x34))();\n  if (local_1c == -1) {\n    uVar3 = 0;\n  }\n  else {\n    FUN_012026e0(local_1c);\n    for (local_18 = 1; local_18 < 4; local_18 = local_18 + 1) {\n      if (local_14[0x73] != 1) {\n        local_20 = 1;\n        cVar1 = FUN_0117ff30(&local_20);\n        if (cVar1 == '\\0') {\n          pQVar5 = local_2c;\n          pQVar4 = (QMessageLogger *)\n                   QMessageLogger::QMessageLogger(local_54,(char *)0x0,0,(char *)0x0);\n          local_28 = (QDebug *)QMessageLogger::debug(pQVar4);\n          local_8 = 0;\n          local_24 = local_28;\n          QDebug::operator<<(local_28,(char *)pQVar5);\n          local_8 = 0xffffffff;\n          QDebug::~QDebug(local_2c);\n          if (local_18 == 3) {\n            ExceptionList = local_10;\n            return 0;\n          }\n        }\n      }\n    }\n    if (0x2000 < local_14[0x6e]) {\n      Sleep(0x32);\n      iVar2 = (**(code **)(*local_14 + 0x68))();\n      local_14[0x71] = iVar2;\n      pcVar6 = \"mBattrey:\";\n      pQVar5 = local_38;\n      pQVar4 = (QMessageLogger *)QMessageLogger::QMessageLogger(local_68,(char *)0x0,0,(char *)0x0);\n      local_34 = (QDebug *)QMessageLogger::debug(pQVar4);\n      local_8 = 1;\n      local_30 = local_34;\n      pQVar5 = QDebug::operator<<(local_34,(char *)pQVar5);\n      QDebug::operator<<(pQVar5,(int)pcVar6);\n      local_8 = 0xffffffff;\n      QDebug::~QDebug(local_38);\n      if (local_14[0x71] != -1) {\n        FUN_01202320(local_14[0x71]);\n      }\n    }\n    uVar3 = 1;\n  }\n  ExceptionList = local_10;\n  return uVar3;\n}\n\n"
+   },
+   {
+    "address": "0x117e4e0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117e4e0",
+     "name": "FUN_0117e4e0"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0117e4e0(void)\n\n{\n  bool bVar1;\n  int in_ECX;\n  \n  if (*(char *)(in_ECX + 10) == '\\0') {\n    *(undefined1 *)(in_ECX + 10) = 1;\n  }\n  bVar1 = QTimer::isActive((QTimer *)(in_ECX + 0x64c));\n  if (bVar1) {\n    QTimer::stop((QTimer *)(in_ECX + 0x64c));\n  }\n  return 1;\n}\n\n"
+   },
+   {
+    "address": "0x117df00",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117df00",
+     "name": "FUN_0117df00"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0117df00(uint param_1)\n\n{\n  undefined4 uVar1;\n  \n  if (param_1 < 0x2d6) {\n    if (param_1 < 0x2a0) {\n      if (param_1 < 0x29e) {\n        if (param_1 < 0x29c) {\n          if (param_1 < 0x29a) {\n            if (param_1 < 0x299) {\n              if (param_1 < 0x297) {\n                if (param_1 < 0x296) {\n                  if (param_1 < 0x294) {\n                    if (param_1 < 0x292) {\n                      if (param_1 < 0x290) {\n                        if (param_1 < 0x28e) {\n                          if (param_1 < 0x28d) {\n                            if (param_1 < 0x28b) {\n                              if (param_1 < 0x289) {\n                                if (param_1 < 0x288) {\n                                  if (param_1 < 0x287) {\n                                    if (param_1 < 0x284) {\n                                      if (param_1 < 0x282) {\n                                        if (param_1 < 0x281) {\n                                          if (param_1 < 0x27f) {\n                                            if (param_1 < 0x27e) {\n                                              if (param_1 < 0x27c) {\n                                                if (param_1 < 0x27b) {\n                                                  if (param_1 < 0x279) {\n                                                    if (param_1 < 0x277) {\n                                                      if (param_1 < 0x275) {\n                                                        if (param_1 < 0x273) {\n                                                          if (param_1 < 0x272) {\n                                                            if (param_1 < 0x270) {\n                                                              if (param_1 < 0x268) {\n                                                                if (param_1 < 0x266) {\n                                                                  if (param_1 < 0x263) {\n                                                                    if (param_1 < 0x260) {\n                                                                      if (param_1 < 600) {\n                                                                        if (param_1 < 0x254) {\n                                                                          if (param_1 < 0x250) {\n                                                                            if (param_1 < 0x247) {\n                                                                              if (param_1 < 0x23f) {\n                                                                                if (param_1 < 0x236)\n                                                                                {\n                                                                                  if (param_1 < \n                                                  0x22e) {\n                                                    if (param_1 < 0x226) {\n                                                      if (param_1 < 0x21d) {\n                                                        if (param_1 == 0) {\n                                                          uVar1 = 0;\n                                                        }\n                                                        else {\n                                                          uVar1 = 0xffffffff;\n                                                        }\n                                                      }\n                                                      else {\n                                                        uVar1 = 2;\n                                                      }\n                                                    }\n                                                    else {\n                                                      uVar1 = 3;\n                                                    }\n                                                  }\n                                                  else {\n                                                    uVar1 = 4;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 6;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 7;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 8;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 10;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0xc;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0xe;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x10;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x13;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x15;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x17;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x19;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x1c;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x1e;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x21;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x23;\n                                                  }\n                                                  }\n                                                  else {\n                                                    uVar1 = 0x25;\n                                                  }\n                                                }\n                                                else {\n                                                  uVar1 = 0x29;\n                                                }\n                                              }\n                                              else {\n                                                uVar1 = 0x2d;\n                                              }\n                                            }\n                                            else {\n                                              uVar1 = 0x33;\n                                            }\n                                          }\n                                          else {\n                                            uVar1 = 0x43;\n                                          }\n                                        }\n                                        else {\n                                          uVar1 = 0x47;\n                                        }\n                                      }\n                                      else {\n                                        uVar1 = 0x4a;\n                                      }\n                                    }\n                                    else {\n                                      uVar1 = 0x4c;\n                                    }\n                                  }\n                                  else {\n                                    uVar1 = 0x4e;\n                                  }\n                                }\n                                else {\n                                  uVar1 = 0x51;\n                                }\n                              }\n                              else {\n                                uVar1 = 0x54;\n                              }\n                            }\n                            else {\n                              uVar1 = 0x56;\n                            }\n                          }\n                          else {\n                            uVar1 = 0x57;\n                          }\n                        }\n                        else {\n                          uVar1 = 0x58;\n                        }\n                      }\n                      else {\n                        uVar1 = 0x59;\n                      }\n                    }\n                    else {\n                      uVar1 = 0x5a;\n                    }\n                  }\n                  else {\n                    uVar1 = 0x5b;\n                  }\n                }\n                else {\n                  uVar1 = 0x5d;\n                }\n              }\n              else {\n                uVar1 = 0x5e;\n              }\n            }\n            else {\n              uVar1 = 0x5f;\n            }\n          }\n          else {\n            uVar1 = 0x60;\n          }\n        }\n        else {\n          uVar1 = 0x61;\n        }\n      }\n      else {\n        uVar1 = 0x62;\n      }\n    }\n    else {\n      uVar1 = 99;\n    }\n  }\n  else {\n    uVar1 = 100;\n  }\n  return uVar1;\n}\n\n"
+   },
+   {
+    "address": "0x117fde0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117fde0",
+     "name": "FUN_0117fde0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0117fde0(void)\n\n{\n  undefined4 local_3c;\n  int *local_38;\n  void *local_34;\n  undefined1 local_30;\n  undefined1 local_2f;\n  undefined1 local_2e;\n  char local_2d;\n  uint local_2c [8];\n  undefined1 local_c;\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  local_34 = malloc(0x20);\n  if (local_34 != (void *)0x0) {\n    memset(local_34,0,0x20);\n    local_2e = 0;\n    local_2f = 0xa2;\n    FUN_011825d0(local_34,&local_2f,&local_2e,0);\n    local_2c[0] = 0;\n    local_2c[1] = 0;\n    local_2c[2] = 0;\n    local_2c[3] = 0;\n    local_2c[4] = 0;\n    local_2c[5] = 0;\n    local_2c[6] = 0;\n    local_2c[7] = 0;\n    local_c = 0;\n    local_2d = 0;\n    local_30 = 0xba;\n    local_3c = 0x20;\n    local_2d = (**(code **)(*local_38 + 0x150))(local_34,local_2c,&local_3c,&local_30);\n    free(local_34);\n    if (local_2d != '\\0') {\n      local_38[0x73] = local_2c[0] >> 8 & 0xff;\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x117fee0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x117fee0",
+     "name": "FUN_0117fee0"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0117fee0(void)\n\n{\n  char cVar1;\n  int in_ECX;\n  undefined4 local_c [2];\n  \n  if ((*(char *)(in_ECX + 0x625) == '\\0') && (*(int *)(in_ECX + 0x1cc) != 1)) {\n    local_c[0] = 1;\n    cVar1 = FUN_0117ff30(local_c);\n    if (cVar1 == '\\0') {\n      return 0;\n    }\n  }\n  return 1;\n}\n\n"
+   },
+   {
+    "address": "0x1182690",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1182690",
+     "name": "FUN_01182690"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_01182690(undefined4 param_1,undefined4 param_2,undefined4 param_3)\n\n{\n  char cVar1;\n  uint uVar2;\n  int iVar3;\n  int *in_ECX;\n  int local_ac;\n  int local_a8;\n  QMutexLocker local_a4 [7];\n  undefined1 local_9d;\n  undefined1 local_9c;\n  undefined1 local_9b;\n  undefined1 local_9a;\n  undefined1 local_99;\n  int *local_98;\n  undefined1 local_94 [128];\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01237971;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_98 = in_ECX;\n  local_14 = uVar2;\n  QMutexLocker::QMutexLocker(local_a4,(QBasicMutex *)in_ECX[0x18a]);\n  local_8 = 0;\n  if (local_98[0x6a] == 0) {\n    local_99 = 0;\n    local_8 = 0xffffffff;\n    QMutexLocker::~QMutexLocker(local_a4);\n  }\n  else {\n    memset(local_94,0,0x80);\n    for (local_a8 = 0; local_a8 < 3; local_a8 = local_a8 + 1) {\n      if (*(char *)((int)local_98 + 9) != '\\0') {\n        local_9a = 0;\n        local_8 = 0xffffffff;\n        QMutexLocker::~QMutexLocker(local_a4);\n        goto LAB_011828ab;\n      }\n      cVar1 = (**(code **)(*local_98 + 0x154))(param_1,param_2,param_3,uVar2);\n      if (cVar1 != '\\0') {\n        Sleep(0x32);\n        for (local_ac = 0; local_ac < 3; local_ac = local_ac + 1) {\n          iVar3 = (**(code **)(*local_98 + 0x158))(local_94,param_2,param_3);\n          if (iVar3 == 2) {\n            Sleep(0x32);\n            local_9b = 1;\n            local_8 = 0xffffffff;\n            QMutexLocker::~QMutexLocker(local_a4);\n            goto LAB_011828ab;\n          }\n          if (*(char *)((int)local_98 + 9) != '\\0') {\n            local_9c = 0;\n            local_8 = 0xffffffff;\n            QMutexLocker::~QMutexLocker(local_a4);\n            goto LAB_011828ab;\n          }\n          Sleep(0x32);\n        }\n      }\n      Sleep(0x32);\n    }\n    local_9d = 0;\n    local_8 = 0xffffffff;\n    QMutexLocker::~QMutexLocker(local_a4);\n  }\nLAB_011828ab:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11828d0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11828d0",
+     "name": "FUN_011828d0"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined1 FUN_011828d0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)\n\n{\n  char cVar1;\n  uint uVar2;\n  int iVar3;\n  int *in_ECX;\n  int local_28;\n  int local_24;\n  QMutexLocker local_20 [4];\n  int *local_1c;\n  undefined1 local_15;\n  undefined1 local_14;\n  undefined1 local_13;\n  undefined1 local_12;\n  undefined1 local_11;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_012379a2;\n  local_10 = ExceptionList;\n  uVar2 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  local_1c = in_ECX;\n  QMutexLocker::QMutexLocker(local_20,(QBasicMutex *)in_ECX[0x18a]);\n  local_8 = 0;\n  if (local_1c[0x6a] == 0) {\n    local_11 = 0;\n    local_8 = 0xffffffff;\n    QMutexLocker::~QMutexLocker(local_20);\n  }\n  else {\n    for (local_24 = 0; local_24 < 3; local_24 = local_24 + 1) {\n      if (*(char *)((int)local_1c + 9) != '\\0') {\n        local_12 = 0;\n        local_8 = 0xffffffff;\n        QMutexLocker::~QMutexLocker(local_20);\n        ExceptionList = local_10;\n        return local_12;\n      }\n      cVar1 = (**(code **)(*local_1c + 0x154))(param_1,param_3,param_4,uVar2);\n      if (cVar1 != '\\0') {\n        Sleep(0x32);\n        for (local_28 = 0; local_28 < 3; local_28 = local_28 + 1) {\n          iVar3 = (**(code **)(*local_1c + 0x158))(param_2,param_3,param_4);\n          if (iVar3 == 2) {\n            Sleep(0x32);\n            local_13 = 1;\n            local_8 = 0xffffffff;\n            QMutexLocker::~QMutexLocker(local_20);\n            ExceptionList = local_10;\n            return local_13;\n          }\n          if (*(char *)((int)local_1c + 9) != '\\0') {\n            local_14 = 0;\n            local_8 = 0xffffffff;\n            QMutexLocker::~QMutexLocker(local_20);\n            ExceptionList = local_10;\n            return local_14;\n          }\n          Sleep(0x32);\n        }\n      }\n      Sleep(0x32);\n    }\n    local_15 = 0;\n    local_8 = 0xffffffff;\n    QMutexLocker::~QMutexLocker(local_20);\n    local_11 = local_15;\n  }\n  ExceptionList = local_10;\n  return local_11;\n}\n\n"
+   },
+   {
+    "address": "0x1182a70",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1182a70",
+     "name": "FUN_01182a70"
+    },
+    "status": "ok",
+    "pseudocode": "\nbool FUN_01182a70(void *param_1,size_t *param_2,undefined4 param_3)\n\n{\n  char cVar1;\n  void *_Dst;\n  int in_ECX;\n  bool bVar2;\n  \n  if (*(int *)(in_ECX + 0x1a8) == 0) {\n    bVar2 = false;\n  }\n  else {\n    _Dst = malloc(*param_2);\n    if (_Dst == (void *)0x0) {\n      bVar2 = false;\n    }\n    else {\n      memset(_Dst,0,*param_2);\n      memcpy(_Dst,param_1,*param_2);\n      cVar1 = FUN_00fc6900(param_3,_Dst,*param_2 + 1);\n      free(_Dst);\n      bVar2 = cVar1 == '\\x01';\n    }\n  }\n  return bVar2;\n}\n\n"
+   },
+   {
+    "address": "0x1182b30",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x1182b30",
+     "name": "FUN_01182b30"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_01182b30(void *param_1,size_t *param_2,undefined4 param_3)\n\n{\n  char cVar1;\n  char *_Dst;\n  int in_ECX;\n  undefined4 local_10;\n  \n  if (*(int *)(in_ECX + 0x1a8) == 0) {\n    local_10 = 4;\n  }\n  else {\n    _Dst = malloc(*param_2);\n    if (_Dst == (char *)0x0) {\n      local_10 = 4;\n    }\n    else {\n      memset(_Dst,0,*param_2);\n      cVar1 = FUN_00fc69a0(param_3,_Dst,*param_2 + 1);\n      if (cVar1 == '\\x01') {\n        cVar1 = *_Dst;\n        if (cVar1 == '\\0') {\n          local_10 = 1;\n        }\n        else if (cVar1 == '\\x01') {\n          memcpy(param_1,_Dst,*param_2);\n          local_10 = 2;\n        }\n        else if (cVar1 == '\\x02') {\n          local_10 = 3;\n        }\n      }\n      else {\n        local_10 = 0;\n      }\n      free(_Dst);\n    }\n  }\n  return local_10;\n}\n\n"
+   },
+   {
+    "address": "0x112c4f0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112c4f0",
+     "name": "FUN_0112c4f0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0112c4f0(void)\n\n{\n  char cVar1;\n  int *in_ECX;\n  undefined4 local_b4;\n  QObject *local_b0;\n  undefined4 local_ac;\n  QObject *local_a8;\n  int local_a4;\n  QObject *local_a0;\n  int *local_9c;\n  undefined1 local_98;\n  undefined1 local_97;\n  undefined1 local_96;\n  undefined1 local_95;\n  undefined1 local_94 [2];\n  undefined1 uStack_92;\n  uint local_14;\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  local_8 = 0xffffffff;\n  puStack_c = &LAB_01231a89;\n  local_10 = ExceptionList;\n  local_14 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  ExceptionList = &local_10;\n  if (in_ECX[0x19c] != 0) {\n    local_9c = in_ECX;\n    local_a4 = FUN_01209c6b(0x106c,local_14);\n    local_8 = 0;\n    if (local_a4 == 0) {\n      local_a8 = (QObject *)0x0;\n    }\n    else {\n      local_a8 = (QObject *)FUN_00fc5ef0(0);\n    }\n    local_b0 = local_a8;\n    local_8 = 0xffffffff;\n    local_a0 = local_a8;\n    cVar1 = FUN_00fc5fe0(0x24ae,(short)local_9c[0x19c],0xe,0xff00,0);\n    if (cVar1 != '\\0') {\n      memset(local_94,0,0x80);\n      local_95 = 0;\n      local_96 = 0xab;\n      FUN_011825d0(local_94,&local_96,&local_95,0);\n      if (local_9c[0x19c] < 0x1800) {\n        local_ac = 0xb1;\n      }\n      else {\n        local_ac = 0xb2;\n      }\n      uStack_92 = (undefined1)local_ac;\n      local_97 = 0xba;\n      local_b4 = 0x20;\n      local_98 = (**(code **)(*local_9c + 0x160))(local_a0,local_94,&local_b4,&local_97);\n      QObject::deleteLater(local_a0);\n      local_a0 = (QObject *)0x0;\n    }\n  }\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x112c6d0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112c6d0",
+     "name": "FUN_0112c6d0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_0112c6d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)\n\n{\n  char cVar1;\n  int iVar2;\n  int *in_ECX;\n  int local_90;\n  undefined1 local_88 [128];\n  uint local_8;\n  \n  local_8 = DAT_037b6510 ^ (uint)&stack0xfffffffc;\n  if (param_1 != 0) {\n    memset(local_88,0,0x80);\n    cVar1 = (**(code **)(*in_ECX + 0x164))(param_1,param_2,param_3,param_4);\n    if (cVar1 != '\\0') {\n      Sleep(0x32);\n      for (local_90 = 0; local_90 < 3; local_90 = local_90 + 1) {\n        iVar2 = (**(code **)(*in_ECX + 0x168))(param_1,local_88,param_3,param_4);\n        if (iVar2 == 2) {\n          Sleep(0x32);\n          break;\n        }\n        if (*(char *)((int)in_ECX + 9) != '\\0') break;\n        Sleep(0x32);\n      }\n    }\n  }\n  __security_check_cookie(local_8 ^ (uint)&stack0xfffffffc);\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x112c7e0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112c7e0",
+     "name": "FUN_0112c7e0"
+    },
+    "status": "ok",
+    "pseudocode": "\nbool FUN_0112c7e0(int param_1,void *param_2,size_t *param_3,undefined4 param_4)\n\n{\n  char cVar1;\n  void *_Dst;\n  bool bVar2;\n  \n  if (param_1 == 0) {\n    bVar2 = false;\n  }\n  else {\n    _Dst = malloc(*param_3);\n    if (_Dst == (void *)0x0) {\n      bVar2 = false;\n    }\n    else {\n      memset(_Dst,0,*param_3);\n      memcpy(_Dst,param_2,*param_3);\n      cVar1 = FUN_00fc6900(param_4,_Dst,*param_3 + 1);\n      free(_Dst);\n      bVar2 = cVar1 == '\\x01';\n    }\n  }\n  return bVar2;\n}\n\n"
+   },
+   {
+    "address": "0x112c890",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x112c890",
+     "name": "FUN_0112c890"
+    },
+    "status": "ok",
+    "pseudocode": "\nundefined4 FUN_0112c890(int param_1,void *param_2,size_t *param_3,undefined4 param_4)\n\n{\n  char cVar1;\n  char *_Dst;\n  undefined4 local_10;\n  \n  if (param_1 == 0) {\n    local_10 = 4;\n  }\n  else {\n    _Dst = malloc(*param_3);\n    if (_Dst == (char *)0x0) {\n      local_10 = 4;\n    }\n    else {\n      memset(_Dst,0,*param_3);\n      cVar1 = FUN_00fc69a0(param_4,_Dst,*param_3 + 1);\n      if (cVar1 == '\\x01') {\n        cVar1 = *_Dst;\n        if (cVar1 == '\\0') {\n          local_10 = 1;\n        }\n        else if (cVar1 == '\\x01') {\n          memcpy(param_2,_Dst,*param_3);\n          local_10 = 2;\n        }\n        else if (cVar1 == '\\x02') {\n          local_10 = 3;\n        }\n      }\n      else {\n        local_10 = 0;\n      }\n      free(_Dst);\n    }\n  }\n  return local_10;\n}\n\n"
+   }
+  ],
+  "total": 66,
+  "succeeded": 66,
+  "failed": 0
+ },
+ "confidence": "derived",
+ "authority": "shipped-artifact",
+ "environment": null,
+ "limitations": [
+  "Derived by an REA composed workflow."
+ ],
+ "locations": [
+  {
+   "kind": "address",
+   "address": "0x112c980"
+  },
+  {
+   "kind": "address",
+   "address": "0x1174fb0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1175280"
+  },
+  {
+   "kind": "address",
+   "address": "0x11752a0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1175490"
+  },
+  {
+   "kind": "address",
+   "address": "0x11755b0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1175850"
+  },
+  {
+   "kind": "address",
+   "address": "0x1175960"
+  },
+  {
+   "kind": "address",
+   "address": "0x1175d40"
+  },
+  {
+   "kind": "address",
+   "address": "0x1175e50"
+  },
+  {
+   "kind": "address",
+   "address": "0x1175fd0"
+  },
+  {
+   "kind": "address",
+   "address": "0x11760e0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1129d80"
+  },
+  {
+   "kind": "address",
+   "address": "0x1176e20"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177410"
+  },
+  {
+   "kind": "address",
+   "address": "0x1176f40"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177060"
+  },
+  {
+   "kind": "address",
+   "address": "0x11772f0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177620"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177730"
+  },
+  {
+   "kind": "address",
+   "address": "0x1124860"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177840"
+  },
+  {
+   "kind": "address",
+   "address": "0x1124940"
+  },
+  {
+   "kind": "address",
+   "address": "0x112c090"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177850"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177d10"
+  },
+  {
+   "kind": "address",
+   "address": "0x1177fe0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1178220"
+  },
+  {
+   "kind": "address",
+   "address": "0x11786e0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1178b40"
+  },
+  {
+   "kind": "address",
+   "address": "0x1178e30"
+  },
+  {
+   "kind": "address",
+   "address": "0x1179120"
+  },
+  {
+   "kind": "address",
+   "address": "0x11793d0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117bb00"
+  },
+  {
+   "kind": "address",
+   "address": "0x112a740"
+  },
+  {
+   "kind": "address",
+   "address": "0x117a8f0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117a8e0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117b560"
+  },
+  {
+   "kind": "address",
+   "address": "0x117b870"
+  },
+  {
+   "kind": "address",
+   "address": "0x117bd30"
+  },
+  {
+   "kind": "address",
+   "address": "0x117c070"
+  },
+  {
+   "kind": "address",
+   "address": "0x117f860"
+  },
+  {
+   "kind": "address",
+   "address": "0x117c2b0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117c520"
+  },
+  {
+   "kind": "address",
+   "address": "0x117c7f0"
+  },
+  {
+   "kind": "address",
+   "address": "0x11246c0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1124a20"
+  },
+  {
+   "kind": "address",
+   "address": "0x117cda0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117d1d0"
+  },
+  {
+   "kind": "address",
+   "address": "0x112b580"
+  },
+  {
+   "kind": "address",
+   "address": "0x117da20"
+  },
+  {
+   "kind": "address",
+   "address": "0x117db60"
+  },
+  {
+   "kind": "address",
+   "address": "0x117c8c0"
+  },
+  {
+   "kind": "address",
+   "address": "0x112c2a0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117e4e0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117df00"
+  },
+  {
+   "kind": "address",
+   "address": "0x117fde0"
+  },
+  {
+   "kind": "address",
+   "address": "0x117fee0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1182690"
+  },
+  {
+   "kind": "address",
+   "address": "0x11828d0"
+  },
+  {
+   "kind": "address",
+   "address": "0x1182a70"
+  },
+  {
+   "kind": "address",
+   "address": "0x1182b30"
+  },
+  {
+   "kind": "address",
+   "address": "0x112c4f0"
+  },
+  {
+   "kind": "address",
+   "address": "0x112c6d0"
+  },
+  {
+   "kind": "address",
+   "address": "0x112c7e0"
+  },
+  {
+   "kind": "address",
+   "address": "0x112c890"
+  }
+ ],
+ "evidence_links": []
+}

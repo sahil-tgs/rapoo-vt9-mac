@@ -1,0 +1,123 @@
+{
+ "evidence_id": "ev_d3f54d5624140c895cefe29b1776fad5229e383523ea567ffb9c1ccbafce2a48",
+ "subject": {
+  "name": "RapooGameDev.exe",
+  "digest": {
+   "sha256": "ff11081104c9e6dd51a10fef49f4f343cb00ac58b5bb29400531c60827acba5b"
+  },
+  "format": "pe",
+  "architecture": "x86",
+  "local_path": "/Users/sahil-m-TC/personal-projects/rapoo-vt9-mac/teardown/bin/app3/INSTDIR/RapooGameDev.exe"
+ },
+ "provider": {
+  "id": "rea-workflow",
+  "name": "REA composed investigation workflow",
+  "version": "1"
+ },
+ "analysis_profile": {
+  "provider": {
+   "id": "rea-workflow",
+   "name": "REA composed investigation workflow",
+   "version": "1"
+  },
+  "parameters": {
+   "upstream_analysis_profile": {
+    "provider": {
+     "id": "ghidra",
+     "name": "Ghidra",
+     "version": "12.1.4"
+    },
+    "parameters": {
+     "target_kind": "executable",
+     "target_format": "pe",
+     "executable_role": "application",
+     "managed": false,
+     "native_aot_metadata": {
+      "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+      "source_bytes": 134217728,
+      "work_units": 67108864,
+      "working_memory_bytes": 67108864,
+      "report_bytes": 4194304
+     },
+     "architecture": "x86",
+     "available_architectures": [
+      "x86"
+     ],
+     "import_mode": "ephemeral-source-immutable",
+     "annotation_policy": "atomic-function-entry-metadata-v1",
+     "load_image_observations": "source-mappings-entry-context-v2",
+     "function_body_evidence": "complete-inclusive-ranges-v1",
+     "function_references": "complete-body-and-entry-reference-manager-v2",
+     "string_inventory_evidence": "defined-data-coverage-v1",
+     "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+     "instruction_flow_evidence": "decoded-return-pcode-v1",
+     "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+     "no_return_repair": "returning-imports-decoded-return-v2",
+     "process_launch": "inspected-jvm-launch-support-v1",
+     "jump_table_evidence": "typed-case-default-blocks-v1",
+     "decompiler_jump_loads": true,
+     "loader": "auto-from-header",
+     "language_id": "auto-from-header",
+     "compiler_spec_id": "auto-default",
+     "analyzer_preset": "ghidra-default"
+    },
+    "digest": "4f6212bfe31448a7b96743a449e91c35890105cedd34e1d9951e9467d284e0a5"
+   },
+   "workflow_revision": 2
+  },
+  "digest": "4ac93523d89696a48def07d531bb54c8331c5fd9eb058f5a45b9444a3d4389d6"
+ },
+ "predicate_type": "rea.analysis",
+ "operation": "batch_decompile",
+ "parameters": {
+  "addresses": [
+   "0x11e99b0",
+   "0x11fcb70"
+  ]
+ },
+ "raw_result": null,
+ "normalized_result": {
+  "items": [
+   {
+    "address": "0x11e99b0",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11e99b0",
+     "name": "FUN_011e99b0"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011e99b0(undefined4 param_1,int param_2,undefined4 param_3,int *param_4)\n\n{\n  undefined4 *puVar1;\n  undefined1 uVar2;\n  undefined1 *puVar3;\n  undefined4 uVar4;\n  undefined1 local_d;\n  undefined1 local_c;\n  undefined1 local_b;\n  undefined1 local_a;\n  undefined1 local_9;\n  undefined1 local_8;\n  undefined1 local_7;\n  undefined1 local_6;\n  undefined1 local_5;\n  \n  if (param_2 == 0) {\n    switch(param_3) {\n    case 0:\n      FUN_011ea0f0();\n      break;\n    case 1:\n      FUN_011ea120();\n      break;\n    case 2:\n      FUN_011ea150();\n      break;\n    case 3:\n      FUN_011ea180();\n      break;\n    case 4:\n      FUN_011ea1b0();\n      break;\n    case 5:\n      FUN_011ea1e0();\n      break;\n    case 6:\n      FUN_011ea210();\n      break;\n    case 7:\n      FUN_011ea240();\n      break;\n    case 8:\n      FUN_011ea270();\n      break;\n    case 9:\n      FUN_011ea2a0();\n      break;\n    case 10:\n      FUN_00fede70();\n      break;\n    case 0xb:\n      local_5 = FUN_00fec960(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_5);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0xc:\n      local_6 = FUN_00fecbd0(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_6);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0xd:\n      local_7 = FUN_00fece40(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_7);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0xe:\n      local_8 = FUN_00fed0e0(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_8);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0xf:\n      local_9 = FUN_00fed350(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_9);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0x10:\n      local_a = FUN_00fed5c0(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_a);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0x11:\n      local_b = FUN_00fed830(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_b);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0x12:\n      local_c = FUN_00fed960(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_c);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0x13:\n      local_d = FUN_00fedc00(param_4[1]);\n      if (*param_4 != 0) {\n        puVar3 = (undefined1 *)addressof<>(&local_d);\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n    }\n  }\n  else if (param_2 == 10) {\n    puVar1 = (undefined4 *)*param_4;\n    if (*(code **)param_4[1] == FUN_011ea0f0) {\n      *puVar1 = 0;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea120) {\n      *puVar1 = 1;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea150) {\n      *puVar1 = 2;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea180) {\n      *puVar1 = 3;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea1b0) {\n      *puVar1 = 4;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea1e0) {\n      *puVar1 = 5;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea210) {\n      *puVar1 = 6;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea240) {\n      *puVar1 = 7;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea270) {\n      *puVar1 = 8;\n    }\n    else if (*(code **)param_4[1] == FUN_011ea2a0) {\n      *puVar1 = 9;\n    }\n  }\n  else if (param_2 == 1) {\n    puVar1 = (undefined4 *)*param_4;\n    switch(param_3) {\n    case 0:\n      uVar4 = FUN_00fedf20();\n      *puVar1 = uVar4;\n      break;\n    case 1:\n      uVar4 = FUN_00fedf40();\n      *puVar1 = uVar4;\n      break;\n    case 2:\n      uVar4 = FUN_00fedf60();\n      *puVar1 = uVar4;\n      break;\n    case 3:\n      uVar2 = FUN_00fedf80();\n      *(undefined1 *)puVar1 = uVar2;\n      break;\n    case 4:\n      uVar2 = FUN_00fedfa0();\n      *(undefined1 *)puVar1 = uVar2;\n      break;\n    case 5:\n      uVar2 = FUN_00fedfc0();\n      *(undefined1 *)puVar1 = uVar2;\n      break;\n    case 6:\n      uVar2 = FUN_00fedfe0();\n      *(undefined1 *)puVar1 = uVar2;\n      break;\n    case 7:\n      uVar4 = FUN_00fee000();\n      *puVar1 = uVar4;\n      break;\n    case 8:\n      uVar2 = FUN_00fee020();\n      *(undefined1 *)puVar1 = uVar2;\n    }\n  }\n  else if (param_2 == 2) {\n    puVar1 = (undefined4 *)*param_4;\n    switch(param_3) {\n    case 0:\n      FUN_00fee040(puVar1,0);\n      break;\n    case 1:\n      FUN_00fee070(puVar1,0);\n      break;\n    case 2:\n      FUN_00fee0a0(puVar1,0);\n      break;\n    case 3:\n      FUN_00fee0d0(puVar1,0);\n      break;\n    case 4:\n      FUN_00fee100(puVar1,0);\n      break;\n    case 5:\n      FUN_00fee130(puVar1,0);\n      break;\n    case 6:\n      FUN_00fee160(puVar1,0);\n      break;\n    case 7:\n      FUN_00fee190(*puVar1,0);\n      break;\n    case 8:\n      FUN_00fee1c0(puVar1,0);\n    }\n  }\n  return;\n}\n\n"
+   },
+   {
+    "address": "0x11fcb70",
+    "procedure": {
+     "status": "resolved",
+     "address": "0x11fcb70",
+     "name": "FUN_011fcb70"
+    },
+    "status": "ok",
+    "pseudocode": "\nvoid FUN_011fcb70(undefined4 param_1,int param_2,int param_3,int *param_4)\n\n{\n  undefined4 *puVar1;\n  undefined1 uVar2;\n  undefined1 *puVar3;\n  undefined4 uVar4;\n  int iStack_48;\n  byte *pbStack_44;\n  undefined1 *local_40;\n  undefined1 *local_3c;\n  undefined1 local_38 [4];\n  undefined4 local_34;\n  int local_30;\n  int local_2c;\n  int local_28;\n  int local_24;\n  undefined4 local_20;\n  byte *local_1c;\n  undefined4 *local_18;\n  undefined4 local_14;\n  undefined4 local_c;\n  undefined1 local_8;\n  undefined1 local_7;\n  undefined1 local_6;\n  undefined1 local_5;\n  \n  if (param_2 == 0) {\n    local_c = param_1;\n    local_24 = param_3;\n    switch(param_3) {\n    case 0:\n      pbStack_44 = (byte *)0x11fcba8;\n      FUN_011fd200();\n      break;\n    case 1:\n      pbStack_44 = (byte *)0x11fcbb5;\n      FUN_011fd230();\n      break;\n    case 2:\n      pbStack_44 = (byte *)0x11fcbc2;\n      FUN_011fd260();\n      break;\n    case 3:\n      pbStack_44 = (byte *)0x11fcbcf;\n      FUN_011fd290();\n      break;\n    case 4:\n      pbStack_44 = (byte *)0x11fcbdc;\n      FUN_011fd2c0();\n      break;\n    case 5:\n      pbStack_44 = (byte *)0x11fcbe9;\n      FUN_011fd2f0();\n      break;\n    case 6:\n      pbStack_44 = (byte *)0x11fcbf6;\n      FUN_011fd320();\n      break;\n    case 7:\n      pbStack_44 = (byte *)0x11fcc03;\n      FUN_011fd350();\n      break;\n    case 8:\n      pbStack_44 = (byte *)0x11fcc10;\n      FUN_011fd380();\n      break;\n    case 9:\n      local_3c = (undefined1 *)&iStack_48;\n      QJsonObject::QJsonObject((QJsonObject *)&iStack_48,(QJsonObject *)param_4[1]);\n      FUN_011fd3b0();\n      break;\n    case 10:\n      pbStack_44 = (byte *)0x11fcc47;\n      FUN_0106bb30();\n      break;\n    case 0xb:\n      pbStack_44 = *(byte **)param_4[2];\n      iStack_48 = *(int *)param_4[1];\n      FUN_0106bc60();\n      break;\n    case 0xc:\n      local_40 = (undefined1 *)&iStack_48;\n      QJsonObject::QJsonObject((QJsonObject *)&iStack_48,(QJsonObject *)param_4[1]);\n      FUN_0106bd10();\n      break;\n    case 0xd:\n      pbStack_44 = (byte *)(uint)*(byte *)param_4[2];\n      iStack_48 = param_4[1];\n      local_5 = FUN_0106b5f0();\n      if (*param_4 != 0) {\n        pbStack_44 = &local_5;\n        iStack_48 = 0x11fcce9;\n        puVar3 = (undefined1 *)addressof<>();\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0xe:\n      pbStack_44 = (byte *)0x1;\n      iStack_48 = param_4[1];\n      local_6 = FUN_0106b5f0();\n      if (*param_4 != 0) {\n        pbStack_44 = &local_6;\n        iStack_48 = 0x11fcd39;\n        puVar3 = (undefined1 *)addressof<>();\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0xf:\n      pbStack_44 = (byte *)(uint)*(byte *)param_4[2];\n      iStack_48 = param_4[1];\n      local_7 = FUN_0106b760();\n      if (*param_4 != 0) {\n        pbStack_44 = &local_7;\n        iStack_48 = 0x11fcd98;\n        puVar3 = (undefined1 *)addressof<>();\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n      break;\n    case 0x10:\n      pbStack_44 = (byte *)0x1;\n      iStack_48 = param_4[1];\n      local_8 = FUN_0106b760();\n      if (*param_4 != 0) {\n        pbStack_44 = &local_8;\n        iStack_48 = 0x11fcde5;\n        puVar3 = (undefined1 *)addressof<>();\n        *(undefined1 *)*param_4 = *puVar3;\n      }\n    }\n  }\n  else if (param_2 == 10) {\n    puVar1 = (undefined4 *)*param_4;\n    if (*(code **)param_4[1] == FUN_011fd200) {\n      *puVar1 = 0;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd230) {\n      *puVar1 = 1;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd260) {\n      *puVar1 = 2;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd290) {\n      *puVar1 = 3;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd2c0) {\n      *puVar1 = 4;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd2f0) {\n      *puVar1 = 5;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd320) {\n      *puVar1 = 6;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd350) {\n      *puVar1 = 7;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd380) {\n      *puVar1 = 8;\n    }\n    else if (*(code **)param_4[1] == FUN_011fd3b0) {\n      *puVar1 = 9;\n    }\n  }\n  else if (param_2 == 0xb) {\n    local_30 = param_3;\n    if (param_3 == 2) {\n      pbStack_44 = (byte *)0x11fcfb4;\n      uVar4 = FUN_011e8a30();\n      *(undefined4 *)*param_4 = uVar4;\n    }\n    else {\n      *(undefined4 *)*param_4 = 0xffffffff;\n    }\n  }\n  else if (param_2 == 1) {\n    local_14 = param_1;\n    local_18 = (undefined4 *)*param_4;\n    local_28 = param_3;\n    switch(param_3) {\n    case 0:\n      pbStack_44 = (byte *)0x11fd00c;\n      uVar4 = FUN_0106b970();\n      *local_18 = uVar4;\n      break;\n    case 1:\n      pbStack_44 = (byte *)0x11fd01e;\n      uVar4 = FUN_0106b930();\n      *local_18 = uVar4;\n      break;\n    case 2:\n      pbStack_44 = local_38;\n      iStack_48 = 0x11fd031;\n      pbStack_44 = (byte *)FUN_0106b8d0();\n      iStack_48 = 0x11fd040;\n      local_34 = pbStack_44;\n      FUN_0111d070();\n      pbStack_44 = (byte *)0x11fd048;\n      FUN_00fb86c0();\n      break;\n    case 3:\n      pbStack_44 = (byte *)0x11fd052;\n      uVar4 = FUN_0106b9b0();\n      *local_18 = uVar4;\n      break;\n    case 4:\n      pbStack_44 = (byte *)0x11fd061;\n      uVar2 = FUN_0106baf0();\n      *(undefined1 *)local_18 = uVar2;\n      break;\n    case 5:\n      pbStack_44 = (byte *)0x11fd070;\n      uVar4 = FUN_0106b9f0();\n      *local_18 = uVar4;\n      break;\n    case 6:\n      pbStack_44 = (byte *)0x11fd07f;\n      uVar4 = FUN_0106ba30();\n      *local_18 = uVar4;\n      break;\n    case 7:\n      pbStack_44 = (byte *)0x11fd08e;\n      uVar4 = FUN_0106ba70();\n      *local_18 = uVar4;\n      break;\n    case 8:\n      pbStack_44 = (byte *)0x11fd09d;\n      uVar4 = FUN_0106bab0();\n      *local_18 = uVar4;\n    }\n  }\n  else if (param_2 == 2) {\n    local_20 = param_1;\n    local_1c = (byte *)*param_4;\n    local_2c = param_3;\n    switch(param_3) {\n    case 0:\n      pbStack_44 = *(byte **)local_1c;\n      iStack_48 = 0x11fd0f0;\n      FUN_0106b990();\n      break;\n    case 1:\n      pbStack_44 = *(byte **)local_1c;\n      iStack_48 = 0x11fd100;\n      FUN_0106b950();\n      break;\n    case 2:\n      iStack_48 = 0x11fd10e;\n      pbStack_44 = local_1c;\n      FUN_0106b910();\n      break;\n    case 3:\n      pbStack_44 = *(byte **)local_1c;\n      iStack_48 = 0x11fd11e;\n      FUN_0106b9d0();\n      break;\n    case 4:\n      pbStack_44 = (byte *)(uint)*local_1c;\n      iStack_48 = 0x11fd12f;\n      FUN_0106bb10();\n      break;\n    case 5:\n      pbStack_44 = *(byte **)local_1c;\n      iStack_48 = 0x11fd13f;\n      FUN_0106ba10();\n      break;\n    case 6:\n      pbStack_44 = *(byte **)local_1c;\n      iStack_48 = 0x11fd14f;\n      FUN_0106ba50();\n      break;\n    case 7:\n      pbStack_44 = *(byte **)local_1c;\n      iStack_48 = 0x11fd15f;\n      FUN_0106ba90();\n      break;\n    case 8:\n      pbStack_44 = *(byte **)local_1c;\n      iStack_48 = 0x11fd16f;\n      FUN_0106bad0();\n    }\n  }\n  return;\n}\n\n"
+   }
+  ],
+  "total": 2,
+  "succeeded": 2,
+  "failed": 0
+ },
+ "confidence": "derived",
+ "authority": "shipped-artifact",
+ "environment": null,
+ "limitations": [
+  "Derived by an REA composed workflow."
+ ],
+ "locations": [
+  {
+   "kind": "address",
+   "address": "0x11e99b0"
+  },
+  {
+   "kind": "address",
+   "address": "0x11fcb70"
+  }
+ ],
+ "evidence_links": []
+}

@@ -1,0 +1,227 @@
+{
+ "evidence_id": "ev_630b00ceb8ab7e67e2392bd7a9da529ba4121245f3ec1a8aba7de23c35eafda3",
+ "subject": {
+  "name": "RapooGameDev.exe",
+  "digest": {
+   "sha256": "ff11081104c9e6dd51a10fef49f4f343cb00ac58b5bb29400531c60827acba5b"
+  },
+  "format": "pe",
+  "architecture": "x86",
+  "local_path": "/Users/sahil-m-TC/personal-projects/rapoo-vt9-mac/teardown/bin/app3/INSTDIR/RapooGameDev.exe"
+ },
+ "provider": {
+  "id": "ghidra",
+  "name": "Ghidra",
+  "version": "12.1.4"
+ },
+ "analysis_profile": {
+  "provider": {
+   "id": "ghidra",
+   "name": "Ghidra",
+   "version": "12.1.4"
+  },
+  "parameters": {
+   "target_kind": "executable",
+   "target_format": "pe",
+   "executable_role": "application",
+   "managed": false,
+   "native_aot_metadata": {
+    "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+    "source_bytes": 134217728,
+    "work_units": 67108864,
+    "working_memory_bytes": 67108864,
+    "report_bytes": 4194304
+   },
+   "architecture": "x86",
+   "available_architectures": [
+    "x86"
+   ],
+   "import_mode": "ephemeral-source-immutable",
+   "annotation_policy": "atomic-function-entry-metadata-v1",
+   "load_image_observations": "source-mappings-entry-context-v2",
+   "function_body_evidence": "complete-inclusive-ranges-v1",
+   "function_references": "complete-body-and-entry-reference-manager-v2",
+   "string_inventory_evidence": "defined-data-coverage-v1",
+   "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+   "instruction_flow_evidence": "decoded-return-pcode-v1",
+   "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+   "no_return_repair": "returning-imports-decoded-return-v2",
+   "process_launch": "inspected-jvm-launch-support-v1",
+   "jump_table_evidence": "typed-case-default-blocks-v1",
+   "decompiler_jump_loads": true,
+   "loader": "auto-from-header",
+   "language_id": "auto-from-header",
+   "compiler_spec_id": "auto-default",
+   "analyzer_preset": "ghidra-default"
+  },
+  "digest": "4f6212bfe31448a7b96743a449e91c35890105cedd34e1d9951e9467d284e0a5"
+ },
+ "predicate_type": "rea.analysis",
+ "operation": "search_procedures",
+ "parameters": {
+  "pattern": "HidD_",
+  "mode": "literal",
+  "case_sensitive": false
+ },
+ "raw_result": [
+  {
+   "address": "EXTERNAL:0x42d",
+   "value": "HID.DLL::HidD_GetPreparsedData"
+  },
+  {
+   "address": "EXTERNAL:0x42e",
+   "value": "HID.DLL::HidD_FreePreparsedData"
+  },
+  {
+   "address": "EXTERNAL:0x42f",
+   "value": "HID.DLL::HidD_GetFeature"
+  },
+  {
+   "address": "EXTERNAL:0x430",
+   "value": "HID.DLL::HidD_GetHidGuid"
+  },
+  {
+   "address": "EXTERNAL:0x431",
+   "value": "HID.DLL::HidD_GetInputReport"
+  },
+  {
+   "address": "EXTERNAL:0x432",
+   "value": "HID.DLL::HidD_SetOutputReport"
+  },
+  {
+   "address": "EXTERNAL:0x433",
+   "value": "HID.DLL::HidD_GetProductString"
+  },
+  {
+   "address": "EXTERNAL:0x434",
+   "value": "HID.DLL::HidD_GetAttributes"
+  },
+  {
+   "address": "EXTERNAL:0x435",
+   "value": "HID.DLL::HidD_SetFeature"
+  },
+  {
+   "address": "0x120b14d",
+   "value": "HID.DLL::HidD_GetAttributes"
+  },
+  {
+   "address": "0x120b153",
+   "value": "HID.DLL::HidD_GetHidGuid"
+  },
+  {
+   "address": "0x120b159",
+   "value": "HID.DLL::HidD_GetPreparsedData"
+  },
+  {
+   "address": "0x120b15f",
+   "value": "HID.DLL::HidD_FreePreparsedData"
+  },
+  {
+   "address": "0x120b165",
+   "value": "HID.DLL::HidD_GetFeature"
+  },
+  {
+   "address": "0x120b16b",
+   "value": "HID.DLL::HidD_SetFeature"
+  },
+  {
+   "address": "0x120b171",
+   "value": "HID.DLL::HidD_GetInputReport"
+  },
+  {
+   "address": "0x120b177",
+   "value": "HID.DLL::HidD_SetOutputReport"
+  },
+  {
+   "address": "0x120b17d",
+   "value": "HID.DLL::HidD_GetProductString"
+  }
+ ],
+ "normalized_result": [
+  {
+   "address": "EXTERNAL:0x42d",
+   "value": "HID.DLL::HidD_GetPreparsedData"
+  },
+  {
+   "address": "EXTERNAL:0x42e",
+   "value": "HID.DLL::HidD_FreePreparsedData"
+  },
+  {
+   "address": "EXTERNAL:0x42f",
+   "value": "HID.DLL::HidD_GetFeature"
+  },
+  {
+   "address": "EXTERNAL:0x430",
+   "value": "HID.DLL::HidD_GetHidGuid"
+  },
+  {
+   "address": "EXTERNAL:0x431",
+   "value": "HID.DLL::HidD_GetInputReport"
+  },
+  {
+   "address": "EXTERNAL:0x432",
+   "value": "HID.DLL::HidD_SetOutputReport"
+  },
+  {
+   "address": "EXTERNAL:0x433",
+   "value": "HID.DLL::HidD_GetProductString"
+  },
+  {
+   "address": "EXTERNAL:0x434",
+   "value": "HID.DLL::HidD_GetAttributes"
+  },
+  {
+   "address": "EXTERNAL:0x435",
+   "value": "HID.DLL::HidD_SetFeature"
+  },
+  {
+   "address": "0x120b14d",
+   "value": "HID.DLL::HidD_GetAttributes"
+  },
+  {
+   "address": "0x120b153",
+   "value": "HID.DLL::HidD_GetHidGuid"
+  },
+  {
+   "address": "0x120b159",
+   "value": "HID.DLL::HidD_GetPreparsedData"
+  },
+  {
+   "address": "0x120b15f",
+   "value": "HID.DLL::HidD_FreePreparsedData"
+  },
+  {
+   "address": "0x120b165",
+   "value": "HID.DLL::HidD_GetFeature"
+  },
+  {
+   "address": "0x120b16b",
+   "value": "HID.DLL::HidD_SetFeature"
+  },
+  {
+   "address": "0x120b171",
+   "value": "HID.DLL::HidD_GetInputReport"
+  },
+  {
+   "address": "0x120b177",
+   "value": "HID.DLL::HidD_SetOutputReport"
+  },
+  {
+   "address": "0x120b17d",
+   "value": "HID.DLL::HidD_GetProductString"
+  }
+ ],
+ "confidence": "observed",
+ "authority": "shipped-artifact",
+ "environment": null,
+ "limitations": [
+  "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+  "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+  "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+  "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+  "Regex mode uses Java Pattern semantics. Matcher or compiler stack exhaustion returns a resource constraint without closing the session; literal mode avoids regex recursion and returns complete matching values.",
+  "macOS sessions require a matching executable Ghidra native decompiler; REA checks for it but does not build native components or change Gatekeeper quarantine state."
+ ],
+ "locations": [],
+ "evidence_links": []
+}

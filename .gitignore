@@ -2,3 +2,6 @@
 # Vendor binaries and clones of other repos: kept in the USB backup, not in git
 teardown/bin/
 teardown/refs/
+
+# Built disk images: attached to GitHub releases, not committed
+dist/
